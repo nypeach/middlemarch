@@ -2,7 +2,9 @@
 // SERVER CONFIGURATION
 //================================================================================================================
 const path = require('path');
-const express = require("express");
+const express = require('express');
+const dotenv = require('dotenv');
+dotenv.config();
 
 const PORT = process.env.PORT || 3030;
 
@@ -21,7 +23,7 @@ app.get('/', (req, res) => {
 
 // Handle GET requests to /api route
 app.get("/api", (req, res) => {
-  res.json({ message: "Hello from server at api!" });
+  res.json({ message: `Hello from server at ${process.env.MYSQL_USER}!` });
 });
 
 // All other GET requests not handled before will return our React app
