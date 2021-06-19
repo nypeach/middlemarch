@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
 // Handle GET requests to /api route
 app.get("/api", (req, res) => {
-  res.json({ message: `Hello from server at ${process.env.MYSQL_USER}!` });
+  res.json({ message: `Hello from server at ${process.env.DB_USER}!` });
 });
 
 // All other GET requests not handled before will return our React app
