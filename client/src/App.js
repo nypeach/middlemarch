@@ -1,24 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const [data, setData] = React.useState(null);
+  useEffect(() => {
+    axios.get('/api/hello')
+      .then(res => setState(res.data))
+  }, [])
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  const [state, setState] = useState('')
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
+    <div>
+      Home
+      <p>{state}</p>
     </div>
-  );
+  )
 }
 
 

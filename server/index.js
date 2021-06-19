@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 // Handle GET requests to /api route
-app.get("/api", (req, res) => {
+app.get('/api', (req, res) => {
   res.json({ message: `Hello from server at ${process.env.DB_USER}!` });
 });
 
