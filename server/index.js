@@ -1,8 +1,9 @@
 //================================================================================================================
 // SERVER CONFIGURATION
 //================================================================================================================
-const path = require('path');
 const express = require('express');
+const path = require('path');
+const router = require('./routes/index.js');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -12,6 +13,9 @@ const app = express();
 
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, '../client/build')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+app.use('/api', router);
 
 //================================================================================================================
 // APPLICATION SERVER ROUTES
