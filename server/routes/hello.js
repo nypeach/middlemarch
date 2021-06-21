@@ -1,5 +1,3 @@
-
-
 const hello = (req, res) => {
   res.json('hello blarg')
 }

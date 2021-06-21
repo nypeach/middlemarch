@@ -1,0 +1,12 @@
+.section-firm {
+  height: 100vh;
+  text-align: center;
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.our-firm-tiles {
+  background-color: cornflowerblue;
+  border: cornsilk solid 1pt;
+  margin: 2rem 0 0 0;
+}
