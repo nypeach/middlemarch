@@ -1,19 +1,17 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import './Modal.css';
 
-
-const Modal = (props) => {
-
-
-  return (
-    <div className="qanda-modal-wrapper">
-      <div className="qanda-modal-backdrop" onClick={props.toggle()} />
-      <div className="qanda-modal-box">
-        Some Modal Text Here Just to Test
-        <i className="far fa-times-circle fa-2x" onClick={props.toggle()}></i>
+const Modal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPortal(
+  <React.Fragment>
+    <div className="modal-wrapper">
+      <div className="modal-backdrop" aria-modal aria-hidden tabIndex={-1} role="dialog" onClick={toggle} />
+      <div className="modal-box">
+        <i className="far fa-times-circle fa-2x" onClick={toggle}></i>
+        <div className="modal-content">{modalComponent}</div>
       </div>
     </div>
-  )
-}
+  </React.Fragment>, document.getElementById('modal-root')
+) : null;
 
 export default Modal;

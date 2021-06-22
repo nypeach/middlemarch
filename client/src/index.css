@@ -71,7 +71,23 @@ body {
   font-weight: 700;
   display: inline-block;
   color: var(--heading-color);
-  margin-bottom: 3rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+.heading-secondary-dk {
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  color: var(--heading-color);
+  margin: 3rem 0;
+  font-family: "Lato", sans-serif;
+}
+
+.heading-tertiary {
+font-size: 1.6rem;
+font-weight: 700;
+text-transform: uppercase;
+color: #1B2C59;
 }
 
 .btn-text:link, .btn-text:visited {

@@ -6,7 +6,22 @@
 }
 
 .our-firm-tiles {
-  background-color: cornflowerblue;
-  border: cornsilk solid 1pt;
   margin: 2rem 0 0 0;
+  height: 50vh;
+  cursor: pointer;
+  overflow: scroll;
+  border: none;
+}
+
+.our-firm-tiles-card {
+  height: 50vh;
+}
+
+.our-firm-tiles-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  height: auto;
+  margin-top: 5rem;
 }

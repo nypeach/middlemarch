@@ -1,0 +1,89 @@
+.merch-bank-row {
+ height:inherit;
+}
+.merch-bank-title {
+ background-color: bisque;
+}
+.merch-bank-left {
+  background-color: aquamarine;
+  height: 100%;
+}
+.merch-bank-left-div {
+  background-color: saddlebrown;
+  height: inherit;
+}
+
+.merch-bank-right {
+  background-color: aquamarine;
+  height: 100%;
+}
+.merch-bank-right-div {
+  background-color: saddlebrown;
+  height: inherit;
+}
+
+
+
+
+
+.section-merch-bank {
+  text-align: center;
+  width: 90vw;
+  height: 90vh;
+  background-color: lightblue;
+}
+/* .merch-bank-left {
+  margin-right: 10px;
+} */
+.merch-bank-left-text {
+  font-size: 2.5rem;
+}
+/* .merch-bank-right {
+  margin-left: 10px;
+} */
+
+.composition {
+  position: relative;
+  margin-left: 12px;
+  margin-top: 24px;
+}
+
+.composition__photo {
+  width: 25%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all .2sec;
+  outline-offset: 2rem;
+}
+.composition__photo--p1 {
+  left: 35%;
+  top: 30%;
+}
+.composition__photo--p2 {
+  left: 12%;
+  top: 50%;
+}
+.composition__photo--p3 {
+  left: 31.5%;
+  top: 10rem;
+}
+.composition__photo--p4 {
+  left: 6.5%;
+  top: 20rem;
+  }
+.composition__photo--p5 {
+  right: 6%;
+  top: 20rem;
+}
+.composition__photo:hover {
+  outline: 1.5rem solid #1B2C59;
+  transform: scale(1.2);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.85);
+}
+

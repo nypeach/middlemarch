@@ -1,0 +1,40 @@
+import React from 'react';
+import './MerchantBank.css';
+import merchantBank from './images/mm_merchantbank.png';
+
+const MerchantBank = () => {
+
+  return (
+    <div className="section-merch-bank">
+
+      <div className="row">
+          <div className="col-6">
+            <h2 className="heading-secondary-dk">SASHA GRUTMAN</h2>
+            <p className="merch-bank-left-text">
+              Mr. Grutman is a founder of Middlemarch Partners and co-leads the firm’s merchant banking and investing efforts. He has
+              spent his entire career investing and advising high-growth financial services and business services companies that
+              leverage technology to create sustainable advantage.
+
+              At Middlemarch, Mr. Grutman advises clients on business and capital strategy issues, has sourced over $730M of capital
+              for clients, and serves as a board member for a number of Middlemarch clients and portfolio companies.
+            </p>
+
+          </div>
+          <div className="col-6 merch-bank-right">
+            <div className="composition">
+              <img src={merchantBank} alt="Photo 1" className="composition__photo composition__photo--p1" />
+              <img src={merchantBank} alt="Photo 2" className="composition__photo composition__photo--p2" />
+              <img src={merchantBank} alt="Photo 3" className="composition__photo composition__photo--p3" />
+              <img src={merchantBank} alt="Photo 4" className="composition__photo composition__photo--p4" />
+              <img src={merchantBank} alt="Photo 5" className="composition__photo composition__photo--p5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+  );
+}
+
+
+
+export default MerchantBank;

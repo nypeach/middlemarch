@@ -1,41 +1,48 @@
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.fa-times-circle {
+  float:right;
 }
 
-
-
-.qanda-modal-wrapper {
+.modal-wrapper {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
-.qanda-modal-backdrop {
+.modal-backdrop {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1001;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.qanda-modal-box {
+.modal-box {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
-  width: 60%;
+  height: 90vh;
+  width: 90vw;
   background-color: white;
-  z-index: 101;
-  box-shadow: 0 8px 6px -6px steelblue;
-  border:steelblue solid 1px;
+  z-index: 1002;
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  border: var(--background-grad-dk) solid 1px;
   padding: 20px;
   box-sizing: border-box;
-  overflow: auto;
+}
+.modal-content {
+  padding: 0px 20px;
+  background-color: lightblue;
+  height: 95%;
+}
+.modal-title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0;
+  text-align: center;
 }
