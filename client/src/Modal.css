@@ -1,5 +1,10 @@
 .fa-times-circle {
-  float:right;
+  position:fixed;
+  top: 2%;
+  right: 1%;
+  color: var(--heading-color);
+  cursor: pointer;
+  z-index: 1003;
 }
 
 .modal-wrapper {
@@ -35,8 +40,9 @@
 }
 .modal-content {
   padding: 0px 20px;
-  background-color: lightblue;
   height: 95%;
+  border: 0;
+  overflow-y: scroll;
 }
 .modal-title {
   font-size: 4rem;

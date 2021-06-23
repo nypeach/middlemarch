@@ -7,7 +7,7 @@ const Modal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPo
     <div className="modal-wrapper">
       <div className="modal-backdrop" aria-modal aria-hidden tabIndex={-1} role="dialog" onClick={toggle} />
       <div className="modal-box">
-        <i className="far fa-times-circle fa-2x" onClick={toggle}></i>
+        <i className="far fa-times-circle fa-3x" onClick={toggle}></i>
         <div className="modal-content">{modalComponent}</div>
       </div>
     </div>

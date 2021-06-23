@@ -1,54 +1,68 @@
 .merch-bank-row {
  height:inherit;
+ border: 0;
 }
 .merch-bank-title {
- background-color: bisque;
+ text-align: center;
+ height: 30%;
+ overflow-y: auto;
 }
 .merch-bank-left {
-  background-color: aquamarine;
-  height: 100%;
+  height: 70%;
+  overflow-y: auto;
 }
+
 .merch-bank-left-div {
-  background-color: saddlebrown;
-  height: inherit;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .merch-bank-right {
-  background-color: aquamarine;
-  height: 100%;
+  height: 70%;
+  overflow-y: auto;
 }
 .merch-bank-right-div {
-  background-color: saddlebrown;
-  height: 85%;
-  margin: 50px 10px 0 0;
+  height: 70%;
+  margin: 40px 10px 0 0;
 
 }
 .merch-bank-right-row {
   height: 100%;
 }
 
-
-
-
-
 .section-merch-bank {
   text-align: center;
   width: 90vw;
   height: 90vh;
-  background-color: lightblue;
 }
-/* .merch-bank-left {
-  margin-right: 10px;
-} */
+
 .merch-bank-left-text {
   font-size: 2.5rem;
 }
-/* .merch-bank-right {
-  margin-left: 10px;
-} */
-.image-container {
-  height: 95%;
-  width: 95%
+
+.image-containers {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.image1 {
+  top: 22.5%;
+  left: 35%;
+}
+
+.image2 {
+  top: 47.5%;
+  left: 12.5%;
+}
+
+.image3 {
+  top: 47.5%;
+  left: 57.5%;
 }
 
 .image {
@@ -65,47 +79,8 @@
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
 }
-.composition {
-  position: relative;
-  margin-left: 12px;
-  margin-top: 24px;
-}
 
-.composition__photo {
+.private-cap-circle {
+  border-radius: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
-  position: absolute;
-  z-index: 10;
-  transition: all .2sec;
-  outline-offset: 2rem;
 }
-.composition__photo--p1 {
-  left: 35%;
-  top: 30%;
-}
-.composition__photo--p2 {
-  left: 12%;
-  top: 50%;
-}
-.composition__photo--p3 {
-  left: 31.5%;
-  top: 10rem;
-}
-.composition__photo--p4 {
-  left: 6.5%;
-  top: 20rem;
-  }
-.composition__photo--p5 {
-  right: 6%;
-  top: 20rem;
-}
-.composition__photo:hover {
-  outline: 1.5rem solid #1B2C59;
-  transform: scale(1.2);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 20;
-}
-.composition:hover .composition__photo:not(:hover) {
-  transform: scale(0.85);
-}
-
