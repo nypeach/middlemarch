@@ -124,3 +124,12 @@ button {
 	cursor: pointer;
 	outline: inherit;
 }
+
+.image-tall {
+  max-height: 100%;
+  width: auto;
+}
+.image-wide {
+  max-width: 100%;
+  height: auto;
+}

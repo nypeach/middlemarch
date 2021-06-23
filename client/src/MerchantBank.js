@@ -1,6 +1,8 @@
 import React from 'react';
 import './MerchantBank.css';
-import merchantBank from './images/mm_merchantbank.png';
+import merchantBankAdvisor from './images/advisory-ltb.png';
+import merchantBankInnovate from './images/broker-svc-ltb.png';
+import merchantBankGrowth from './images/futures-contract-ltb.png';
 
 const MerchantBank = () => {
 
@@ -14,34 +16,26 @@ const MerchantBank = () => {
 
       <div className="col-6 merch-bank-right">
         <div className="merch-bank-right-div">
-          <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-3">
-                One of two columns
-                <img src={merchantBank} alt="Photo 1" className="composition__photo" />
-              </div>
-            </div>
-            <div class="row justify-content-center align-items-center">
-              <div class="col-3 ">
-                One of two columns
-                  <img src={merchantBank} alt="Photo 2" className="composition__photo" />
-              </div>
-              <div class="col-3">
-                One of two columns
-                  <img src={merchantBank} alt="Photo 3" className="composition__photo" />
+
+          <div class="d-flex flex-row justify-content-center align-items-center bd-highlight h-50">
+            <div className="border bd-highlight justify-content-center h-100">
+              <div className="image-container justify-content-center align-items-center">
+              <img src={merchantBankAdvisor} alt="Responsive 1" className="img-fluid mx-auto d-block justify-content-center image image-tall" />
               </div>
             </div>
           </div>
-          {/* <div className="composition">
-            <img src={merchantBank} alt="Photo 1" className="composition__photo composition__photo--p1" />
-            <img src={merchantBank} alt="Photo 2" className="composition__photo composition__photo--p2" />
-            <img src={merchantBank} alt="Photo 3" className="composition__photo composition__photo--p3" />
-            <img src={merchantBank} alt="Photo 4" className="composition__photo composition__photo--p4" />
-            <img src={merchantBank} alt="Photo 5" className="composition__photo composition__photo--p5" />
-          </div> */}
+
+          <div class="d-flex flex-row justify-content-center align-items-center bd-highlight h-50">
+            <div className="border bd-highlight flex-fill justify-content-center h-100">
+              <img src={merchantBankInnovate} alt="Responsive 1" className="img-fluid mx-auto d-block justify-content-center image image-wide" />
+            </div>
+            <div className="border bd-highlight flex-fill justify-content-center h-100">
+              <img src={merchantBankGrowth} alt="Responsive 1" className="img-fluid mx-auto d-block justify-content-center image image-wide" />
+            </div>
+          </div>
+
         </div>
       </div>
-
     </div>
 
   );

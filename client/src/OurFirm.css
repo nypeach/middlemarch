@@ -18,10 +18,6 @@
 }
 
 .our-firm-tiles-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: auto;
-  margin-top: 5rem;
+ width: 75%;
+ height: auto;
 }

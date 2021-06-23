@@ -19,7 +19,12 @@
 }
 .merch-bank-right-div {
   background-color: saddlebrown;
-  height: inherit;
+  height: 85%;
+  margin: 50px 10px 0 0;
+
+}
+.merch-bank-right-row {
+  height: 100%;
 }
 
 
@@ -41,7 +46,25 @@
 /* .merch-bank-right {
   margin-left: 10px;
 } */
+.image-container {
+  height: 95%;
+  width: 95%
+}
 
+.image {
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  transition: all .2sec;
+  outline-offset: 1.5rem;
+  z-index: 10;
+}
+
+.image:hover {
+  outline: 1.5rem solid #1B2C59;
+  transform: scale(1.1);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+}
 .composition {
   position: relative;
   margin-left: 12px;
@@ -49,7 +72,6 @@
 }
 
 .composition__photo {
-  width: 25%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   position: absolute;
