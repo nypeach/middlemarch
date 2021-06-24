@@ -4,11 +4,11 @@
 }
 .merch-bank-title {
  text-align: center;
- height: 30%;
+ height: 35%;
  overflow-y: auto;
 }
 .merch-bank-left {
-  height: 70%;
+  height: 65%;
   overflow-y: auto;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .merch-bank-right {
-  height: 70%;
+  height: 65%;
   overflow-y: auto;
 }
 .merch-bank-right-div {
-  height: 70%;
+  height: 65%;
   margin: 40px 10px 0 0;
 
 }
@@ -42,45 +42,73 @@
   font-size: 2.5rem;
 }
 
-.image-containers {
+
+.image-containers-merch {
   position: absolute;
-  height: 30%;
-  width: 30%;
   background-color: white;
   cursor: pointer;
 }
+.image-containers-priv {
+  position: absolute;
+}
 
 .image1 {
-  top: 22.5%;
-  left: 35%;
+  top: 20%;
+  left: 30%;
 }
 
 .image2 {
-  top: 47.5%;
-  left: 12.5%;
+  top: 50%;
+  left: 7.5%;
 }
 
 .image3 {
-  top: 47.5%;
-  left: 57.5%;
+  top: 50%;
+  left: 55%;
 }
 
+.image4 {
+  top: 7.5%;
+  left: 12.5%;
+}
+
+.image-merch, .image-merch:hover {
+  border-radius: 2px;
+  height: 40%;
+  width: 35%;
+}
+.image-priv, .image-priv:hover {
+  border-radius: 50%;
+  height: auto;
+  width: 85%;
+  z-index: 10;
+  padding: 15px;
+}
 .image {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 2px;
   transition: all .2sec;
   outline-offset: 1.5rem;
   z-index: 10;
+  border-radius: 2px;
+  height: 40%;
+  width: 35%;
 }
-
 .image:hover {
   outline: 1.5rem solid #1B2C59;
   transform: scale(1.1);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
+  border-radius: 2px;
+  height: 40%;
+  width: 35%;
 }
-
+.private-cap {
+  width: 50%;
+  height: 50%;
+}
 .private-cap-circle {
   border-radius: 50%;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  max-width: 100%;
+  height: auto;
 }

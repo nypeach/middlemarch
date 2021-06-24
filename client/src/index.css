@@ -12,19 +12,26 @@
 }
 
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
+  font-size: 1.1vmin;
 }
 
 body {
   box-sizing: border-box;
-  line-height: 1.7;
+  /* line-height: 1.7; */
+  line-height: 1.6;
   font-family: "Lato", sans-serif;
 }
 p {
   font-size: 2.5rem;
   text-align: justify;
 }
-
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(86, 61, 124, .15);
+  border: 1px solid rgba(86, 61, 124, .2);
+}
 .paragraph, .extra-content {
   font-size: 2.5rem;
   width: 75vw;

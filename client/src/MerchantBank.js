@@ -39,6 +39,7 @@ const MerchantBank = () => {
 
 
   return (
+
     <div className="row merch-bank-row">
       <div className="col-12 merch-bank-title">
         <h2 className="heading-primary-dk" style={{ margin: "1rem 0" }}>Merchant Banking</h2>
@@ -57,14 +58,14 @@ const MerchantBank = () => {
 
       <div className="col-6 merch-bank-right">
         <div className="merch-bank-right-div">
-          <div className="image-containers image2 image" onMouseEnter={() => setFocus('Advisor')} onClick={() => setFocus('Advisor')}>
+          <div className="image-containers-merch image2 image" onMouseEnter={() => setFocus('Advisor')} onClick={() => setFocus('Advisor')}>
             <img src={merchantBankAdvisor} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
-          <div className="image-containers image1 image" onMouseEnter={() => setFocus('Growth')} onClick={() => setFocus('Growth')} >
-            <img src={merchantBankGrowth} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "20px 10px" }} />
+          <div className="image-containers-merch image1 image" onMouseEnter={() => setFocus('Growth')} onClick={() => setFocus('Growth')} >
+            <img src={merchantBankGrowth} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
-          <div className="image-containers image3 image" onMouseEnter={() => setFocus('Innovate')} onClick={() => setFocus('Innovate')}>
-            <img src={merchantBankInnovate} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "20px 10px" }} />
+          <div className="image-containers-merch image3 image" onMouseEnter={() => setFocus('Innovate')} onClick={() => setFocus('Innovate')}>
+            <img src={merchantBankInnovate} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
         </div>
       </div>
