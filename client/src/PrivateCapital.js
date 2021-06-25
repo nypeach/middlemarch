@@ -39,11 +39,6 @@ const PrivateCapital = () => {
           <div className="image-containers-priv image4 image-priv">
             <img src={privateCapital} class="image-fluid mx-auto d-block" alt="Private Capital" style={{ maxWidth: "100%", maxHeight: "100%" }} />
           </div>
-      {/* <div className="col-6 merch-bank-right">
-        <div className="merch-bank-right-div">
-            <div className="private-cap">
-              <img src={privateCapital} class="image-fluid mx-auto d-block private-cap-circle" alt="Private Capital"  />
-            </div> */}
         </div>
       </div>
 

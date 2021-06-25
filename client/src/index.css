@@ -9,6 +9,7 @@
 :root {
   --background-grad-dk: rgba(27, 44, 89, 0.8);
   --heading-color: rgba(27,44,89,1);
+  --heading-light: #77C7EF;
 }
 
 html {
@@ -86,6 +87,15 @@ font-size: 1.6rem;
 font-weight: 700;
 text-transform: uppercase;
 color: #1B2C59;
+text-align: center;
+margin: 6px 0;
+}
+
+.heading-tertiary-lt {
+font-size: 2rem;
+font-weight: 700;
+text-transform: uppercase;
+color: var(--heading-light);
 text-align: center;
 margin: 6px 0;
 }
