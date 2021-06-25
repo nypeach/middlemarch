@@ -15,7 +15,7 @@ const IndustryFocus = () => {
   return (
     <div className="ind-focus">
       <div className="ind-focus-div">
-        <h2 className="ind-focus-title">Industry Focus</h2>
+        <h2 className="ind-focus-title">Industry Blarg</h2>
         <div className="ind-focus-0">
           <img src={middlemarch} alt="middlemarch"/>
         </div>

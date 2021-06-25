@@ -21,19 +21,19 @@ app.use('/api', router);
 // APPLICATION SERVER ROUTES
 //================================================================================================================
 
-app.get('/', (req, res) => {
-  res.send('Hello from the server!');
-})
-
 // Handle GET requests to /api route
-app.get('/api', (req, res) => {
+app.get('/api/*', (req, res) => {
   res.json({ message: `Hello from server at ${process.env.DB_USER}!` });
 });
 
-// All other GET requests not handled before will return our React app
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
 });
+
+// All other GET requests not handled before will return our React app
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+// });
 
 //================================================================================================================
 // SERVER LISTENING
