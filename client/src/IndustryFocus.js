@@ -8,6 +8,7 @@ import specialtyfinance from './images/debt-resolution-dkb.svg';
 import electroniccapital from './images/analytics-dkb.svg';
 import businesssvc from './images/securities-mkt-dkb.svg';
 import useToggle from './hooks/useToggle';
+import {TransitionGroup} from 'react-transition-group';
 
 const IndustryFocus = () => {
   const [isHovered, isHoveredToggle] = useToggle(false);
@@ -15,12 +16,21 @@ const IndustryFocus = () => {
   return (
     <div className="ind-focus">
       <div className="ind-focus-div">
-        <h2 className="ind-focus-title">Industry Blarg</h2>
+        <h2 className="ind-focus-title">Industry Focus</h2>
         <div className="ind-focus-0">
           <img src={middlemarch} alt="middlemarch"/>
         </div>
         <div className="ind-focus-1" onMouseEnter={isHoveredToggle} onMouseLeave={isHoveredToggle}>
-          {isHovered ? <div className="popover">Testing the Popover</div> : null}
+          {isHovered ?
+
+          <TransitionGroup
+          transitionName="example"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
+              <div className="popover">Testing the Popover</div>
+          </TransitionGroup>
+
+        : null}
           <button class="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
         </div>
         <div className="ind-focus-2">
