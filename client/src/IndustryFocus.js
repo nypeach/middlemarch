@@ -31,22 +31,22 @@ const IndustryFocus = () => {
           </TransitionGroup>
 
         : null}
-          <button class="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
         </div>
         <div className="ind-focus-2">
-          <button class="share_btn focus"><img className="focus-img" src={txnprocess} alt="transaction processing" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={txnprocess} alt="transaction processing" /></button>
         </div>
         <div className="ind-focus-3">
-          <button class="share_btn focus"><img className="focus-img" src={electroniccapital} alt="electronic cap" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={electroniccapital} alt="electronic cap" /></button>
         </div>
         <div className="ind-focus-4">
-          <button class="share_btn focus"><img className="focus-img" src={businesssvc} alt="business services" style={{width: "65%"}} /></button>
+          <button className="share_btn focus"><img className="focus-img" src={businesssvc} alt="business services" style={{width: "65%"}} /></button>
         </div>
         <div className="ind-focus-5">
-          <button class="share_btn focus"><img className="focus-img" src={assetmgmt} alt="asset management" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={assetmgmt} alt="asset management" /></button>
         </div>
         <div className="ind-focus-6">
-          <button class="share_btn focus"><img className="focus-img" src={fintech} alt="fin tech" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={fintech} alt="fin tech" /></button>
         </div>
 
       </div>

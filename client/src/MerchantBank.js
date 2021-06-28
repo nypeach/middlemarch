@@ -59,13 +59,13 @@ const MerchantBank = () => {
       <div className="col-6 merch-bank-right">
         <div className="merch-bank-right-div">
           <div className="image-containers-merch image2 image" onMouseEnter={() => setFocus('Advisor')} onClick={() => setFocus('Advisor')}>
-            <img src={merchantBankAdvisor} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
+            <img src={merchantBankAdvisor} className="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
           <div className="image-containers-merch image1 image" onMouseEnter={() => setFocus('Growth')} onClick={() => setFocus('Growth')} >
-            <img src={merchantBankGrowth} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
+            <img src={merchantBankGrowth} className="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
           <div className="image-containers-merch image3 image" onMouseEnter={() => setFocus('Innovate')} onClick={() => setFocus('Innovate')}>
-            <img src={merchantBankInnovate} class="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
+            <img src={merchantBankInnovate} className="image-fluid mx-auto d-block" alt="Merchant Bank Advisors" style={{ maxWidth: "100%", maxHeight: "100%", padding: "10px" }} />
           </div>
         </div>
       </div>

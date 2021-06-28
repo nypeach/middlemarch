@@ -1,0 +1,85 @@
+@import './index.scss';
+
+.landing {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, var(--background-grad-dk), var(--background-grad-dk)), url(./images/landing.jpeg);
+  background-size: cover;
+  background-position: top;
+
+  .landing-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin:auto;
+    width:max-content;
+  }
+
+  .landing-logo-box {
+    height: 15rem;
+    margin-bottom: 8rem;
+    display: inline-block;
+    text-align: center;
+
+    @include respond(bp-medium) {
+      width : auto;
+      height: 7.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .landing-logo {
+    height: 15rem;
+    margin-bottom: 8rem;
+
+    @include respond(bp-medium) {
+      width : auto;
+      height: 7.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .landing-primary {
+    color: var(--color-primary-wt);
+    font-size: 10rem;
+    font-family: var(--serif-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: -2rem;
+
+    @include respond(bp-medium) {
+        font-size: 5rem;
+        margin-bottom: -1rem;
+    }
+  }
+
+  .landing-secondary {
+    color: var(--color-primary-wt);
+    font-size: 5rem;
+    font-family: var(--sans-serif-font);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    text-align: center;
+
+    @include respond(bp-medium) {
+      font-size: 2.5rem;
+      margin-bottom: 5rem;
+    }
+  }
+  .landing-tagline {
+    font-family: var(--serif-font);
+    color: var(--color-primary-wt);
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 0.25rem;
+
+    @include respond(bp-medium) {
+      font-size: 2rem;
+    }
+  }
+
+}
+

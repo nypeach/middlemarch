@@ -1,0 +1,311 @@
+:root {
+  --color-primary-dk: #1E2C56;
+  --color-primary-md: #4B85A3;
+  --color-primary-lt: #77C7EF;
+  --color-primary-wt: #FFFFFF;
+
+
+  --shadow-dk: 0 2rem 6rem rgba(30,44,86,.8);
+  --shadow-lt: 1px 1px 1px rgba(255, 255, 255, 0.80);
+  --background-grad-dk: rgba(30,44,86,.8);
+
+  --serif-font: "Lora", serif;
+  --sans-serif-font: "Lato", sans-serif;
+
+}
+
+// BREAKPOINTS
+$bp-bigdesktop: 112.5em; // 1800px
+$bp-largest: 75em;       // 1200px
+$bp-large: 68.75em;      // 1100px
+$bp-medium: 56.25em;     // 900px
+$bp-small: 37.5em;       // 600px
+$bp-smallest: 31.25em;   // 500px
+
+// MIXINS
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == bp-smallest {
+        @media only screen and (max-width: $bp-smallest) { @content };    // 500px
+    }
+    @if $breakpoint == bp-small {
+        @media only screen and (max-width: $bp-small) { @content };      // 600px
+    }
+    @if $breakpoint == bp-medium {
+        @media only screen and (max-width: $bp-medium) { @content };     // 900px
+    }
+    @if $breakpoint == bp-large {
+        @media only screen and (max-width: $bp-large) { @content };      // 1100px
+    }
+    @if $breakpoint == bp-largest {
+        @media only screen and (max-width: $bp-largest) { @content };    // 1200px
+    }
+    @if $breakpoint == bp-bigdesktop {
+        @media only screen and (min-width: $bp-bigdesktop) { @content }; // 1800px
+    }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  line-height: 1.5;
+  font-family: var(--sans-serif-font);
+
+    @include respond(bp-largest) { // asks width < 1200?
+      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+    @include respond(bp-medium) { // asks width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+
+}
+
+.section {
+  min-height: 100vh;
+  text-align: center;
+  padding: 1.5rem;
+  overflow: scroll;
+}
+
+.heading {
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    // display: inline-block;
+    margin: 2.5rem 0;
+    line-height: 1.2;
+
+    @include respond(bp-medium) {
+      line-height: 1.0;
+    }
+
+    &-primary {
+      color: var(--color-primary-dk);
+      text-transform: uppercase;
+      font-size: 4rem;
+
+      @include respond(bp-medium) {
+        font-size: 3rem;
+      }
+    }
+
+
+    &-secondary {
+        &-dk {
+            color: var(--color-primary-dk);
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+    }
+    &-tertiary {
+        color: var(--color-primary-lt);
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+}
+
+.paragraph, .extra-content {
+  font-size: 2.5rem;
+  width: 75vw;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond(bp-medium) {
+    font-size: 2rem;
+     width: 85vw;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    }
+}
+
+.read-more-link {
+  color: var(--color-primary-dk);
+  font-size: 2.5rem;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-primary-wt);
+  display:inline-block;
+
+  @include respond(bp-medium) {
+        font-size: 2rem;
+      }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    }
+
+  &:hover {
+    background-color: #1B2C59;
+    color: #fff;
+  }
+}
+
+
+// .paragraph, .extra-content {
+//   font-size: 2.5rem;
+//   width: 75vw;
+//   text-align: justify;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .paragraph:not(:last-child) {
+//   margin-bottom: 3rem;
+// }
+// .extra-content:not(:last-child) {
+//   margin-bottom: 3rem;
+// }
+
+
+
+
+
+// *,
+// *::after,
+// *::before {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: inherit;
+// }
+
+// :root {
+//   --background-grad-dk: rgba(27, 44, 89, 0.8);
+//   --heading-color: rgba(27,44,89,1);
+//   --heading-light: #77C7EF;
+// }
+
+// html {
+//   /* font-size: 62.5%; */
+//   font-size: 1.1vmin;
+// }
+
+// body {
+//   box-sizing: border-box;
+//   /* line-height: 1.7; */
+//   line-height: 1.6;
+//   font-family: "Lato", sans-serif;
+// }
+// p {
+//   font-size: 2.5rem;
+//   text-align: justify;
+// }
+// .themed-grid-col {
+//   padding-top: 15px;
+//   padding-bottom: 15px;
+//   background-color: rgba(86, 61, 124, .15);
+//   border: 1px solid rgba(86, 61, 124, .2);
+// }
+
+
+
+
+// .heading-primary-dk {
+//   font-size: 4rem;
+//   text-transform: uppercase;
+//   font-weight: 700;
+//   display: inline-block;
+//   color: var(--heading-color);
+//   margin: 3rem 0;
+//   text-align: center;
+// }
+// .heading-secondary-dk {
+//   font-size: 3rem;
+//   font-weight: 700;
+//   display: inline-block;
+//   color: var(--heading-color);
+//   margin: 3rem 0;
+//   font-family: "Lato", sans-serif;
+// }
+
+// .heading-tertiary {
+// font-size: 1.6rem;
+// font-weight: 700;
+// text-transform: uppercase;
+// color: #1B2C59;
+// text-align: center;
+// margin: 6px 0;
+// }
+
+// .heading-tertiary-lt {
+// font-size: 2rem;
+// font-weight: 700;
+// text-transform: uppercase;
+// color: var(--heading-light);
+// text-align: center;
+// margin: 6px 0;
+// }
+
+// .btn-text:link, .btn-text:visited {
+//   color: #1B2C59;
+//   display: inline-block;
+//   text-decoration: none;
+//   border-bottom: 1.5px solid #1B2C59;
+//   padding: 3px;
+//   font-size: 1.6rem;
+//   transition: all .2s;
+//   text-align: left;
+// }
+
+// .btn-text:hover {
+//   background-color: #1B2C59;
+//   color: #fff;
+//   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+//   transform: translateY(-2px);
+//   text-align: left;
+// }
+
+// .btn-text:active {
+//   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+//   transform: translateY(0);
+//   text-align: left;
+// }
+// /* button, input[type="submit"], input[type="reset"]  */
+// button {
+// 	background: none;
+// 	color: inherit;
+// 	border: none;
+// 	padding: 0;
+// 	font: inherit;
+// 	cursor: pointer;
+// 	outline: inherit;
+// }
+
+// .image-tall {
+//   max-height: 100%;
+//   width: auto;
+// }
+// .image-wide {
+//   max-width: 100%;
+//   height: auto;
+// }

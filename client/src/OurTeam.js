@@ -15,40 +15,40 @@ const OurTeam = () => {
 
         <div className="team-card-div">
 
-          <div class="row" style={{ marginBottom: "5rem" }}>
+          <div className="row" style={{ marginBottom: "5rem" }}>
 
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team1} alt="team 1" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team1} alt="team 1" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">Sasha Grutman</h2>
                       <h3 className="team-card-title">PARTNER</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team3} alt="team 2" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team3} alt="team 2" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">Demetris Papademetriou</h2>
                       <h3 className="team-card-title">PARTNER</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
@@ -57,38 +57,38 @@ const OurTeam = () => {
           </div>
 
           <div className="row" style={{ marginBottom: "5rem" }}>
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team2} alt="team 2" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team2} alt="team 2" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">Alexander Mack</h2>
                       <h3 className="team-card-title">CFO &amp; CCO</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team4} alt="team 2" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team4} alt="team 2" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">Elliot Weinberg</h2>
                       <h3 className="team-card-title">VICE PRESIDENT</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
@@ -97,38 +97,38 @@ const OurTeam = () => {
           </div>
 
           {/* <div className="row" style={{ marginBottom: "5rem", overflow: "scroll" }}>
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team2} alt="team 2" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team2} alt="team 2" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">Someone Else</h2>
                       <h3 className="team-card-title">TITLE</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-6 col-12">
-              <div class="card card-profile overflow-hidden card-wrapper border-0">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
-                    <div class="pe-md-0">
-                      <img class="w-100 border-radius-md" src={team4} alt="team 2" />
+            <div className="col-lg-6 col-12">
+              <div className="card card-profile overflow-hidden card-wrapper border-0">
+                <div className="row">
+                  <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <div className="pe-md-0">
+                      <img className="w-100 border-radius-md" src={team4} alt="team 2" />
                     </div>
                   </div>
-                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                    <div class="card-body wrapper">
+                  <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div className="card-body wrapper">
                       <h2 className="team-card-name">SOMEONE ELSE</h2>
                       <h3 className="team-card-title">TITLE</h3>
-                      <p class="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
+                      <p className="mb-4 mt-1 team-card-text">"Some brilliant, funny and witty quote"</p>
                     </div>
                   </div>
                 </div>
