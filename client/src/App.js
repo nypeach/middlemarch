@@ -18,8 +18,8 @@ function App() {
     <div>
       <Landing />
       <OurFirm />
-      {/* <OurTeam />
-      <IndustryFocus /> */}
+      <OurTeam />
+      {/* <IndustryFocus /> */}
     </div>
   )
 }

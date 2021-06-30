@@ -1,0 +1,57 @@
+@import './index.scss';
+
+.priv {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0,6.5vw) minmax(0,35.75vw) minmax(0,3.25vw) minmax(0,9.75vw) minmax(0,6.5vw) minmax(0,3.25vw) minmax(0,6.5vw) minmax(0,9.75vw) minmax(0,6.5vw);
+  grid-template-rows: 5.78vh 5.78vh 23.12vh 5.78vh 17.34vh 5.78vh 17.34vh 5.78vh;
+}
+
+
+.priv-header {
+  grid-area: 1 / 2 / 3 / 9;
+  text-align: center;
+}
+
+.priv-text {
+  grid-area: 3 / 2 / 4 / 9;
+  font-size: 3rem;
+  @include respond(bp-medium) { //asks width < 900?
+    grid-area: 3 / 1 / 4 / 10;
+    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  }
+}
+.priv-bottom-left {
+  font-size: 2.5rem;
+  padding: 11px 22px;
+  grid-area: 4 / 2 / 8 / 3;
+  overflow-y: auto;
+  @include respond(bp-medium) { //asks width < 900?
+    grid-area: 4 / 1 / 8 / 6;
+    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    padding: 0;
+  }
+}
+
+.priv-bottom-right {
+  grid-area: 4 / 4 / 8 / 9;
+  z-index: 2;
+  margin-top: 50px;
+  @include respond(bp-medium) { //asks width < 900?
+    grid-area: 4 / 7 / 7 / 9;
+    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    margin-top: 20px;
+  }
+
+  &:hover {
+     z-index: 20;
+  }
+}
+.priv-image {
+  margin-left: 25%;
+  @include respond(bp-medium) { //asks width < 900?
+    width: 100%;
+    margin-left: 0%;
+  }
+}

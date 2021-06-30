@@ -7,10 +7,8 @@ import './OurFirm.scss';
 const OurFirm = () => {
 return (
   <section className="section">
-    <div className="our-firm-text">
-      <h2 className="heading heading-primary">Our Firm</h2>
-      <OurFirmText />
-    </div>
+    <h2 className="heading heading-primary">Our Firm</h2>
+    <OurFirmText />
     <OurFirmTiles />
   </section>
 );

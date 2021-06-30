@@ -4,8 +4,8 @@ import useToggle from './hooks/useToggle';
 import Modal from './Modal';
 import privateCap from './images/angel-investors-ltb.png';
 import merchantBank from './images/stock-exchange-ltb.png';
-import MerchantBank from './MerchantBank';
-import PrivateCapital from './PrivateCapital';
+import OurFirmMerch from './OurFirmMerch';
+import OurFirmPriv from './OurFirmPriv';
 
 const OurFirmTiles = () => {
   const [isMerchOpen, isMerchOpenToggle] = useToggle(false);
@@ -23,8 +23,8 @@ const OurFirmTiles = () => {
 
   return (
     <div className="our-firm-tiles">
-      {isMerchOpen ? <Modal isOpen={isMerchOpen} toggle={isMerchOpenToggle} modalComponent={<MerchantBank />} /> : null}
-      {isPrivOpen ? <Modal isOpen={isPrivOpen} toggle={isPrivOpenToggle} modalComponent={<PrivateCapital />} /> : null}
+      {isMerchOpen ? <Modal isOpen={isMerchOpen} toggle={isMerchOpenToggle} modalComponent={<OurFirmMerch />} /> : null}
+      {isPrivOpen ? <Modal isOpen={isPrivOpen} toggle={isPrivOpenToggle} modalComponent={<OurFirmPriv />} /> : null}
 
       <div className="container">
         <div className="row" onClick={isMerchOpenToggle}>

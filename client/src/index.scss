@@ -16,8 +16,8 @@
 
 // BREAKPOINTS
 $bp-bigdesktop: 112.5em; // 1800px
-$bp-largest: 75em;       // 1200px
-$bp-large: 68.75em;      // 1100px
+$bp-largest: 93.75em;     // 1500px
+$bp-large: 75em;         // 1200px
 $bp-medium: 56.25em;     // 900px
 $bp-small: 37.5em;       // 600px
 $bp-smallest: 31.25em;   // 500px
@@ -49,10 +49,10 @@ $bp-smallest: 31.25em;   // 500px
         @media only screen and (max-width: $bp-medium) { @content };     // 900px
     }
     @if $breakpoint == bp-large {
-        @media only screen and (max-width: $bp-large) { @content };      // 1100px
+        @media only screen and (max-width: $bp-large) { @content };      // 1200px
     }
     @if $breakpoint == bp-largest {
-        @media only screen and (max-width: $bp-largest) { @content };    // 1200px
+        @media only screen and (max-width: $bp-largest) { @content };    // 1500px
     }
     @if $breakpoint == bp-bigdesktop {
         @media only screen and (min-width: $bp-bigdesktop) { @content }; // 1800px
@@ -76,19 +76,23 @@ html {
   line-height: 1.5;
   font-family: var(--sans-serif-font);
 
-    @include respond(bp-largest) { // asks width < 1200?
-      font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-    }
-    @include respond(bp-medium) { // asks width < 900?
-        font-size: 50%; //1 rem = 8px, 8/16 = 50%
-    }
+  @include respond(bp-large) { //asks width < 1200?
+    font-size: 50.00%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(bp-medium) { //asks width < 900?
+    font-size: 40%; //1 rem = 9px, 9/16 = 50%
+  }
+  @include respond(bp-bigdesktop) { //asks width > 1800?
+    font-size: 60%; //1 rem = 9px, 9/16 = 50%
+  }
 
 }
 
 .section {
   min-height: 100vh;
   text-align: center;
-  padding: 1.5rem;
+  // padding: 1.5rem;
   overflow: scroll;
 }
 
@@ -109,6 +113,13 @@ html {
       text-transform: uppercase;
       font-size: 4rem;
 
+      &-wt {
+        color: var(--color-primary-wt);
+        @include respond(bp-medium) {
+          font-size: 3rem;
+        }
+      }
+
       @include respond(bp-medium) {
         font-size: 3rem;
       }
@@ -120,6 +131,9 @@ html {
             color: var(--color-primary-dk);
             font-size: 3rem;
             margin: 1rem 0;
+            @include respond(bp-medium) {
+              font-size: 2.5rem;
+            }
         }
     }
     &-tertiary {

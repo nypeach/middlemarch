@@ -13,21 +13,6 @@
     margin: 2.5rem 5rem;
   }
 
-  // .our-firm-tiles-card {
-  //   height: 50vh;
-  // }
-
-  // .our-firm-tiles-img-container {
-  //   position:absolute;
-  //   width: 15%;
-  //   height: 15%;
-  //   border: 1pt solid black;
-  // }
-  // .our-firm-tiles-img {
-  //   width: 10%;
-  //   height: auto;
-  // }
-
   .container {
    min-height: 50vh;
     display: flex;
@@ -77,9 +62,199 @@
       font-size: 2.25rem;
       margin: 2rem;
       flex: 1;
+      @include respond(bp-bigdesktop) { //asks width < 900?
+      font-size: 2.5rem; //1 rem = 9px, 9/16 = 50%
+      }
     }
   }
-
-
-
 }
+// ======== OUR FIRM TILES MODAL ========= //
+// .merch-container {
+//   min-height: 100%;
+//   display: flex;
+//   gap : 4rem;
+//   flex-direction : row;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+
+//     @include respond(bp-medium) {
+//       flex-direction : column;
+//       justify-content: space-evenly;
+//       width: 100%;
+//       gap: 2rem;
+//     }
+
+
+//   .merch-row {
+//     width: 45%;
+//     height: 45vh;
+//     flex: 1;
+//     display:flex;
+//     flex-direction: row;
+//     background-color: pink;
+//     border: 1pt solid black;
+
+//     @include respond(bp-medium) {
+//       flex-direction: column;
+//       width: 85%;
+//       flex-basis: 100%;
+//       margin: 0 4rem;
+//       }
+
+//     .merch-row-text {
+//       padding: 0 2rem;
+//       font-size: 2.5rem;
+//       text-align: justify;
+//       margin-left: auto;
+//       margin-right: auto;
+
+//       @include respond(bp-medium) {
+//         font-size: 2rem;
+//       }
+//     }
+//   }
+
+
+// }
+
+
+
+// .image-containers-merch {
+//   position: relative;
+//   width: 60vh;
+//   height: 40vh;
+// }
+
+// .image {
+//   position: absolute;
+//   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+//   transition: all .2sec;
+//   outline-offset: 1.5rem;
+//   z-index: 10;
+//   border-radius: 2px;
+//   // width: 100%;
+//   // height:auto;
+//   object-fit: contain;
+//   background-color: white;
+//   cursor: pointer;
+//   max-width: 100%;
+//   max-height: 100%;
+//   padding: "10px";
+// }
+// .image:hover {
+//   position: absolute;
+//   outline: 1.5rem solid #1B2C59;
+//   transform: scale(1.1);
+//   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+//   z-index: 20;
+//   border-radius: 2px;
+//   // width: 100%;
+//   // height: auto;
+//   object-fit: contain;
+//   max-width: 100%;
+//   max-height: 100%;
+//   padding: "10px";
+// }
+// .image1 {
+//   position: absolute;
+//   top: 95%;
+//   left: 175%;
+// }
+
+// .image2 {
+//   position: absolute;
+//   top: 95%;
+//   left: 20%;
+// }
+
+// .image3 {
+//   position: absolute;
+//   top: 20%;
+//   left: 100%;
+// }
+
+
+
+
+// .merch-bank-row {
+//  height:inherit;
+//  border: 0;
+// }
+// .merch-bank-title {
+//  text-align: center;
+//  height: 35%;
+//  overflow-y: auto;
+// }
+// .merch-bank-left {
+//   height: 65%;
+//   overflow-y: auto;
+// }
+
+// .merch-bank-left-div {
+//   min-height: 100%;
+//   display: flex;
+//   align-items: center;
+//   padding: 0 20px;
+// }
+
+// .merch-bank-right {
+//   height: 65%;
+//   overflow-y: auto;
+// }
+// .merch-bank-right-div {
+//   height: 65%;
+//   margin: 40px 10px 0 0;
+
+// }
+// .merch-bank-right-row {
+//   height: 100%;
+// }
+
+// .section-merch-bank {
+//   text-align: center;
+//   width: 90vw;
+//   height: 90vh;
+// }
+
+// .merch-bank-left-text {
+//   font-size: 2.5rem;
+// }
+
+
+
+// .image-containers-priv {
+//   position: absolute;
+// }
+
+
+
+// .image4 {
+//   top: 7.5%;
+//   left: 12.5%;
+// }
+
+// .image-merch, .image-merch:hover {
+//   border-radius: 2px;
+//   height: 40%;
+//   width: 35%;
+// }
+// .image-priv, .image-priv:hover {
+//   border-radius: 50%;
+//   height: auto;
+//   width: 85%;
+//   z-index: 10;
+//   padding: 15px;
+// }
+
+// .private-cap {
+//   width: 50%;
+//   height: 50%;
+// }
+// .private-cap-circle {
+//   border-radius: 50%;
+//   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+//   max-width: 100%;
+//   height: auto;
+// }
+
+
