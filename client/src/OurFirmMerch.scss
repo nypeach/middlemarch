@@ -6,42 +6,57 @@
   display: grid;
   grid-template-columns: minmax(0,6.5vw) minmax(0,35.75vw) minmax(0,3.25vw) minmax(0,9.75vw) minmax(0,6.5vw) minmax(0,3.25vw) minmax(0,6.5vw) minmax(0,9.75vw) minmax(0,6.5vw);
   grid-template-rows: 5.78vh 5.78vh 23.12vh 5.78vh 17.34vh 5.78vh 17.34vh 5.78vh;
+
 }
 
 
 .merch-header {
   grid-area: 1 / 2 / 3 / 9;
   text-align: center;
+  @media only screen and (max-width: 1200px) {
+    grid-area: 1 / 2 / 2 / 9;
+   }
 }
 
 .merch-text {
   grid-area: 3 / 2 / 4 / 9;
-  font-size: 3rem;
-  @include respond(bp-medium) { //asks width < 900?
-    grid-area: 3 / 1 / 4 / 10;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
-  }
+  font-size: 3vmin;
+  margin-top: -3vmin;
+
+   @media only screen and (max-width: 1200px) {
+    grid-area: 2 / 1 / 4 / 10;
+   }
+
 }
 .merch-bottom-left {
-  font-size: 2.5rem;
-  padding: 0 22px;
+  font-size: 3vmin;
+  padding: 0 11px;
   grid-area: 5 / 2 / 8 / 3;
   overflow-y: auto;
-  @include respond(bp-medium) { //asks width < 900?
+   margin-top: -5vmin;
+  @media only screen and (max-width: 1200px) {
     grid-area: 4 / 1 / 8 / 3;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    // font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
     padding: 0 11px;
+    margin-top: -3vmin;
+    font-size: 2.5vmin;
   }
 }
 
 .merch-bottom-right-1 {
   grid-area: 5 / 5 / 7 / 8;
   z-index: 2;
-  margin-top: 20px;
-  @include respond(bp-medium) { //asks width < 900?
-    grid-area: 4 / 5 / 7 / 8;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  margin-top: -3vmin;
+  @media only screen and (max-width: 1200px) {
+    // font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    padding: 0 11px;
+    margin-top: -5vmin;
+    margin-left: -3vmin;
   }
+  // @include respond(bp-medium) { //asks width < 900?
+  //   grid-area: 4 / 5 / 7 / 8;
+  //   font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  // }
 
   &:hover {
      z-index: 20;
@@ -50,11 +65,17 @@
 .merch-bottom-right-2 {
   grid-area: 6 / 4 / 8 / 6;
   z-index: 1;
-  margin-top: 20px;
-  @include respond(bp-medium) { //asks width < 900?
-    margin-top: 0px;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  margin-top: -3vmin;
+  @media only screen and (max-width: 1200px) {
+    // font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    padding: 0 11px;
+    margin-top: -5vmin;
+    margin-left: -5vmin;
   }
+  // @include respond(bp-medium) { //asks width < 900?
+  //   margin-top: 0px;
+  //   font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  // }
 
   &:hover {
      z-index: 20;
@@ -63,12 +84,19 @@
 .merch-bottom-right-3 {
   grid-area: 6 / 7 / 8 / 9;
   z-index: 3;
-  margin-top: 20px;
+  margin-top: -3vmin;
   margin-left: 20px;
-  @include respond(bp-medium) { //asks width < 900?
-    margin-top: 0px;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  @media only screen and (max-width: 1200px) {
+    // font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    padding: 0 11px;
+    margin-top: -5vmin;
+    margin-left: 2vmin;
+
   }
+  // @include respond(bp-medium) { //asks width < 900?
+  //   margin-top: 0px;
+  //   font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+  // }
 
   &:hover {
      z-index: 20;
@@ -76,9 +104,9 @@
 }
 
 .image {
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1.5vmin 4vmin rgba(0, 0, 0, 0.4);
   transition: all .2sec;
-  outline-offset: 1.5rem;
+  outline-offset: 1.5vmin;
   z-index: 10;
   border-radius: 2px;
   // max-width: 16%;
@@ -93,16 +121,16 @@
   width: 30vh;
   height: 20vh;
   object-fit: scale-down;
-   @media only screen and (max-width: 1100px) {
-     width: 25vh;
-    height: 15vh;
-   }
+  //  @media only screen and (max-width: 1100px) {
+  //    width: 25vh;
+  //   height: 15vh;
+  //  }
 
 }
 .image:hover {
-  outline: 1.5rem solid #1B2C59;
+  outline: 1.5vmin solid #1B2C59;
   transform: scale(1.1);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2.5vmin 4vmin rgba(0, 0, 0, 0.5);
   z-index: 20;
   border-radius: 2px;
   // max-width: 16%;
@@ -117,8 +145,8 @@
   min-width: 30vh;
   min-height: 20vh;
   object-fit: scale-down;
-  @media only screen and (max-width: 1100px) {
-    width: 25vh;
-    height: 15vh;
-   }
+  // @media only screen and (max-width: 1100px) {
+  //   width: 25vh;
+  //   height: 15vh;
+  //  }
 }

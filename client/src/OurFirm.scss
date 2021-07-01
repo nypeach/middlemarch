@@ -3,27 +3,28 @@
 
 .our-firm-tiles {
   min-height: 50vh;
-  margin: 5rem 22.5rem;
+  margin: 5vmin 22.5vmin;
   cursor: pointer;
   overflow: scroll;
   border: none;
   text-align: center;
 
-  @include respond(bp-medium) {
-    margin: 2.5rem 5rem;
-  }
+ @media only screen and (max-width: 1200px) {
+     font-size: 3vmin;
+     margin: 2.5vmin 11.25vmin;
+   }
 
   .container {
    min-height: 50vh;
     display: flex;
-    gap : 5rem;
+    gap : 5vmin;
     flex-direction : row;
     justify-content: space-around;
     flex-wrap: wrap;
 
-    @include respond(bp-medium) {
+    @media only screen and (max-width: 1200px) {
       flex-direction : column;
-      gap : 2rem;
+      gap : 2vmin;
     }
   }
 
@@ -37,6 +38,9 @@
   .column {
     justify-content: center;
     align-self: center;
+    @include respond(bp-medium) {
+    margin: 2.5vmin 5vmin;
+  }
 
     &-img-container {
       width: 35%;
@@ -55,16 +59,16 @@
     }
 
     &-heading {
-      margin-top: 2rem 0;
+      margin-top: 2vmin 0;
     }
 
     &-text {
-      font-size: 2.25rem;
-      margin: 2rem;
+      font-size: 2.25vmin;
+      margin: 2vmin;
       flex: 1;
-      @include respond(bp-bigdesktop) { //asks width < 900?
-      font-size: 2.5rem; //1 rem = 9px, 9/16 = 50%
-      }
+     @include respond(bp-medium) {
+    margin: 2.5vmin 5vmin;
+  }
     }
   }
 }

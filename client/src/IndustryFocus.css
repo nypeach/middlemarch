@@ -17,7 +17,7 @@
   top: -12.5%;
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4vmin;
   font-weight: 700;
   /* display: inline-block; */
   color: var(--heading-color);

@@ -17,68 +17,43 @@
   }
 
   .landing-logo-box {
-    height: 15rem;
-    margin-bottom: 8rem;
+    height: 15vmin;
+    margin-bottom: 8vmin;
     display: inline-block;
     text-align: center;
-
-    @include respond(bp-medium) {
-      width : auto;
-      height: 7.5rem;
-      margin-bottom: 4rem;
-    }
   }
 
   .landing-logo {
-    height: 15rem;
-    margin-bottom: 8rem;
-
-    @include respond(bp-medium) {
-      width : auto;
-      height: 7.5rem;
-      margin-bottom: 4rem;
-    }
+    height: 15vmin;
+    margin-bottom: 8vmin;
   }
 
   .landing-primary {
     color: var(--color-primary-wt);
-    font-size: 10rem;
+    font-size: 10vmin;
     font-family: var(--serif-font);
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: -2rem;
-
-    @include respond(bp-medium) {
-        font-size: 5rem;
-        margin-bottom: -1rem;
-    }
+    margin-bottom: -2vmin;
   }
 
   .landing-secondary {
     color: var(--color-primary-wt);
-    font-size: 5rem;
+    font-size: 5vmin;
     font-family: var(--sans-serif-font);
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 10rem;
+    margin-bottom: 10vmin;
     text-align: center;
-
-    @include respond(bp-medium) {
-      font-size: 2.5rem;
-      margin-bottom: 5rem;
-    }
   }
+
   .landing-tagline {
     font-family: var(--serif-font);
     color: var(--color-primary-wt);
-    font-size: 3rem;
+    font-size: 3vmin;
     font-style: italic;
-    letter-spacing: 0.25rem;
-
-    @include respond(bp-medium) {
-      font-size: 2rem;
-    }
+    letter-spacing: 0.25vmin;
   }
 
 }

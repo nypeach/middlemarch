@@ -5,7 +5,7 @@
   --color-primary-wt: #FFFFFF;
 
 
-  --shadow-dk: 0 2rem 6rem rgba(30,44,86,.8);
+  --shadow-dk: 0 2vmin 6vmin rgba(30,44,86,.8);
   --shadow-lt: 1px 1px 1px rgba(255, 255, 255, 0.80);
   --background-grad-dk: rgba(30,44,86,.8);
 
@@ -72,20 +72,24 @@ $bp-smallest: 31.25em;   // 500px
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+  // font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
   line-height: 1.5;
   font-family: var(--sans-serif-font);
+  font-size: 1.3vmin;
 
-  @include respond(bp-large) { //asks width < 1200?
-    font-size: 50.00%; //1 rem = 9px, 9/16 = 50%
-  }
+  // @media only screen and (max-width: 1200px) {
+  //    font-size: 1.75vmin;
+  //  }
+  // @include respond(bp-large) { //asks width < 1200?
+  //   font-size: 50.00%; //1 rem = 9px, 9/16 = 50%
+  // }
 
-  @include respond(bp-medium) { //asks width < 900?
-    font-size: 40%; //1 rem = 9px, 9/16 = 50%
-  }
-  @include respond(bp-bigdesktop) { //asks width > 1800?
-    font-size: 60%; //1 rem = 9px, 9/16 = 50%
-  }
+  // @include respond(bp-medium) { //asks width < 900?
+  //   font-size: 40%; //1 rem = 9px, 9/16 = 50%
+  // }
+  // @include respond(bp-bigdesktop) { //asks width > 1800?
+  //   font-size: 60%; //1 rem = 9px, 9/16 = 50%
+  // }
 
 }
 
@@ -101,83 +105,91 @@ html {
     text-align: center;
     display: block;
     // display: inline-block;
-    margin: 2.5rem 0;
+    margin: 2.5vmin 0;
     line-height: 1.2;
 
-    @include respond(bp-medium) {
-      line-height: 1.0;
-    }
+    // @include respond(bp-medium) {
+    //   line-height: 1.0;
+    // }
 
     &-primary {
       color: var(--color-primary-dk);
       text-transform: uppercase;
-      font-size: 4rem;
+      font-size: 4vmin;
 
       &-wt {
         color: var(--color-primary-wt);
-        @include respond(bp-medium) {
-          font-size: 3rem;
-        }
+        // @include respond(bp-medium) {
+        //   font-size: 3rem;
+        // }
       }
 
-      @include respond(bp-medium) {
-        font-size: 3rem;
-      }
+      // @include respond(bp-medium) {
+      //   font-size: 3rem;
+      // }
     }
 
 
     &-secondary {
         &-dk {
             color: var(--color-primary-dk);
-            font-size: 3rem;
-            margin: 1rem 0;
-            @include respond(bp-medium) {
-              font-size: 2.5rem;
-            }
+            font-size: 3vmin;
+            margin: 1vmin 0;
+            // @include respond(bp-medium) {
+            //   font-size: 2.5vmin;
+            // }
         }
     }
     &-tertiary {
         color: var(--color-primary-lt);
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 2vmin;
     }
 }
 
 .paragraph, .extra-content {
-  font-size: 2.5rem;
-  width: 75vw;
+  font-size: 3vmin;
+  width: 85vw;
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
 
-  @include respond(bp-medium) {
-    font-size: 2rem;
-     width: 85vw;
-  }
+  @media only screen and (max-width: 1200px) {
+    width: 85vw;
+    font-size: 3vmin;
+   }
+
+  // @include respond(bp-medium) {
+  //   // font-size: 2rem;
+  //    width: 85vw;
+  // }
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 3vmin;
     }
 }
 
 .read-more-link {
   color: var(--color-primary-dk);
-  font-size: 2.5rem;
+  font-size: 2.5vmin;
   text-decoration: underline;
-  letter-spacing: 1px;
+  // letter-spacing: 1px;
   cursor: pointer;
   text-align: center;
   border: 0;
   padding: 0;
   background-color: var(--color-primary-wt);
   display:inline-block;
+  @media only screen and (max-width: 1200px) {
+    font-size: 3vmin;
+   }
 
-  @include respond(bp-medium) {
-        font-size: 2rem;
-      }
+  // @include respond(bp-medium) {
+  //       font-size: 2rem;
+  //     }
 
   &:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 3vmin;
     }
 
   &:hover {

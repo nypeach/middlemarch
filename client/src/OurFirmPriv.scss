@@ -16,20 +16,22 @@
 
 .priv-text {
   grid-area: 3 / 2 / 4 / 9;
-  font-size: 3rem;
+  font-size: 3vmin;
+  margin-top: -3vmin;
   @include respond(bp-medium) { //asks width < 900?
     grid-area: 3 / 1 / 4 / 10;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    font-size: 1.75vmin; //1 vmin = 9px, 9/16 = 50%
   }
 }
 .priv-bottom-left {
-  font-size: 2.5rem;
+  font-size: 2.5vmin;
   padding: 11px 22px;
   grid-area: 4 / 2 / 8 / 3;
   overflow-y: auto;
+  margin-top: -3vmin;
   @include respond(bp-medium) { //asks width < 900?
     grid-area: 4 / 1 / 8 / 6;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    font-size: 1.75vmin; //1 vmin = 9px, 9/16 = 50%
     padding: 0;
   }
 }
@@ -37,10 +39,10 @@
 .priv-bottom-right {
   grid-area: 4 / 4 / 8 / 9;
   z-index: 2;
-  margin-top: 50px;
+  margin-top: 2vmin;
   @include respond(bp-medium) { //asks width < 900?
     grid-area: 4 / 7 / 7 / 9;
-    font-size: 1.75rem; //1 rem = 9px, 9/16 = 50%
+    font-size: 1.75vmin; //1 vmin = 9px, 9/16 = 50%
     margin-top: 20px;
   }
 
