@@ -13,7 +13,7 @@ const Landing = () => {
           <br></br>
           <img src={mmpartners} alt="logo" className="landing-logo" />
         </h1>
-        <p className="landing-tagline">Your tagline here, limit to this many characters</p>
+        <div className="landing-tagline">Your tagline here, establishing long-term relationships that endure beyond the initial transaction</div>
       </div>
     </header>
   );

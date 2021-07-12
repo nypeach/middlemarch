@@ -22,9 +22,10 @@
 }
 
 .team-card-div {
-margin: 0 10rem;
-height: 90vh;
-overflow-y: scroll;
+  margin: 0 10rem;
+  height: 80vh;
+  overflow-y: scroll;
+  background: rgba(255, 255, 255, 0.4)
 }
 
 /* .team-card {
