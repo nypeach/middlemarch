@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import './OurFirm.css';
 import useToggle from './hooks/useToggle';
 

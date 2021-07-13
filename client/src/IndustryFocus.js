@@ -17,26 +17,26 @@ const IndustryFocus = () => {
       <div className="ind-focus-div">
         <h2 className="ind-focus-title">Industry Focus</h2>
         <div className="ind-focus-0">
-          <img src={middlemarch} alt="middlemarch"/>
+          <img src={middlemarch} alt="middlemarch" />
         </div>
-        <div className="ind-focus-1" onMouseEnter={isHoveredToggle} onMouseLeave={isHoveredToggle}>
+        <div className="ind-focus-1">
           {isHovered ? <div className="popover">Testing the Popover</div> : null}
-          <button class="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
         </div>
         <div className="ind-focus-2">
-          <button class="share_btn focus"><img className="focus-img" src={txnprocess} alt="transaction processing" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={txnprocess} alt="transaction processing" /></button>
         </div>
         <div className="ind-focus-3">
-          <button class="share_btn focus"><img className="focus-img" src={electroniccapital} alt="electronic cap" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={electroniccapital} alt="electronic cap" /></button>
         </div>
         <div className="ind-focus-4">
-          <button class="share_btn focus"><img className="focus-img" src={businesssvc} alt="business services" style={{width: "65%"}} /></button>
+          <button className="share_btn focus"><img className="focus-img" src={businesssvc} alt="business services" style={{ width: "65%" }} /></button>
         </div>
         <div className="ind-focus-5">
-          <button class="share_btn focus"><img className="focus-img" src={assetmgmt} alt="asset management" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={assetmgmt} alt="asset management" /></button>
         </div>
         <div className="ind-focus-6">
-          <button class="share_btn focus"><img className="focus-img" src={fintech} alt="fin tech" /></button>
+          <button className="share_btn focus"><img className="focus-img" src={fintech} alt="fin tech" /></button>
         </div>
 
       </div>
