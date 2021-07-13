@@ -4,6 +4,7 @@ import Landing from './Landing';
 import OurFirm from './OurFirm';
 import OurTeam from './OurTeam';
 import IndustryFocus from './IndustryFocus';
+import Hamburger from './Hamburger';
 
 function App() {
   // useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div>
+      <Hamburger />
       <Landing />
       <OurFirm />
       <OurTeam />
