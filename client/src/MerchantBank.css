@@ -24,12 +24,17 @@
   overflow-y: auto;
 }
 .merch-bank-right-div {
-  height: 65%;
-  margin: 40px 10px 0 0;
-
+  height: 100%;
+  /* margin: 0px 0px 0 0; */
+  position: relative;
 }
 .merch-bank-right-row {
   height: 100%;
+}
+
+.merch-bank-click {
+  color: #1B2C59;
+  font-size: 2rem;
 }
 
 .section-merch-bank {
@@ -74,8 +79,8 @@
 
 .image-merch, .image-merch:hover {
   border-radius: 2px;
-  height: 40%;
-  width: 35%;
+  height: 100%;
+  width: auto;
 }
 .image-priv, .image-priv:hover {
   border-radius: 50%;

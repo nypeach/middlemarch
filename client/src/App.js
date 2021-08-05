@@ -4,7 +4,10 @@ import Landing from './Landing';
 import OurFirm from './OurFirm';
 import OurTeam from './OurTeam';
 import IndustryFocus from './IndustryFocus';
+import Blog from './Blog';
+import Transactions from './Transactions';
 import Hamburger from './Hamburger';
+
 
 function App() {
   // useEffect(() => {
@@ -21,6 +24,10 @@ function App() {
       <OurFirm />
       <OurTeam />
       <IndustryFocus />
+      <Transactions />
+      <Blog />
+
+
     </div>
   )
 }

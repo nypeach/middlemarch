@@ -1,69 +1,42 @@
 .team {
-  height: 100vh;
+  /* height: 100vh; */
+  display:block;
+  overflow: auto;
   background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/coins.png);
   background-size: cover;
   background-position: top;
+       min-height: 100vh;
 }
 
 .team-section {
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
+  display:block;
+  overflow: auto;
 }
 .team main {
-  height: 100vh;
+    /* height: 100vh; */
+  display:block;
+  overflow: auto;
   margin-bottom: 16px;
 }
 
 .team-header {
-  margin: 2rem 0;
+  /* margin: -5rem 10rem 0 0; */
+  margin-top: -5rem;
   height: 10vh;
   /* overflow-y: auto; */
   text-align: center;
 }
 
 .team-card-div {
-  margin: 0 10rem;
-  height: 80vh;
-  overflow-y: scroll;
+  margin: 2rem 15rem;
+  /* height: 83vh;
+  overflow-y: scroll; */
+  display:block;
+  overflow: auto;
   background: rgba(255, 255, 255, 0.4)
 }
-
-/* .team-card {
-  height: 30vh;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  background-color: white;
-  cursor: pointer;
-}
-.team-card-left {
-  margin-right: 4px;
-  display: table;
-  width: 100%;
-}
-
-.team-card-right {
-  margin-left: 4px;
-  display: table;
-  width: 100%;
-  vertical-align:middle;
-}
-
-.team-card-image {
-  height: auto;
-  width: 30vh;
-  vertical-align: middle;
-  display: table-cell;
-  background-color: teal;
-  cursor: pointer;
-}
-
-.team-card-text {
-  height: inherit;
-  vertical-align:middle;
-  display: table-cell;
-  background-color:thistle;
-  text-align: center;
-
-} */
 
 
 .team-card-name {
@@ -81,6 +54,7 @@
   color: var(--heading-light);
   margin-bottom: 2rem 0;
   font-family: "Lato", sans-serif;
+  text-transform: uppercase;
 }
 
 .team-card-text {
@@ -89,13 +63,22 @@
   margin-right: 2rem;
 }
 
+.team-card-icon {
+  line-height: 1.5;
+  text-align: center;
+  margin-right: 2rem;
+  color: var(--heading-light);
+  font-size: 3rem;
+}
+
 .wrapper {
   text-align: center;
 }
 
-.card-wrapper {
+.card-profile {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
   cursor: pointer;
+  border:0;
 }
 
 
