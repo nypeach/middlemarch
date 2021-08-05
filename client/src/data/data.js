@@ -62,25 +62,471 @@ var team = [
   }
 ];
 
-var transactions = [
-  {
-    'txntype': 'Principle',
-    'industry': 'Business Services',
-    'fundtype': 'Equity Raise',
-    'amount': '25,000,000',
-    'month': 6,
-    'year': 2018,
-    'logo': '../images/transactions/elevate.png'
-  },
-   {
-    'txntype': 'Principle',
-    'industry': 'Consumer Finance',
-    'fundtype': 'Growth Equity Investment',
-    'amount': '22,000,000',
-    'month': 6,
-    'year': 2016,
-    'logo': '../images/transactions/FlexShopper.png'
-  }
-];
+var transactions =
+  [
+    {
+      'Logo': 'ResMae.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Mortgage Finance',
+      'Type': 'Growth Equity Investment',
+      'Amount': '25,000,000',
+      'Year': 2003,
+      'Month': 10,
+      'Date': 'October 2003'
+    },
+    {
+      'Logo': 'New.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Business Services',
+      'Type': 'Growth Buyout',
+      'Amount': '271,000,000',
+      'Year': 2004,
+      'Month': 7,
+      'Date': 'July 2004'
+    },
+    {
+      'Logo': 'New.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Business Services',
+      'Type': 'Secured Credit Facility',
+      'Amount': '380,000,000',
+      'Year': 2005,
+      'Month': 7,
+      'Date': 'July 2005'
+    },
+    {
+      'Logo': 'CheckSmart.jpeg',
+      'Name': '',
+      'Division': 'Advisory',
+      'Industry': 'Underbanked Services',
+      'Type': 'Management Buyout',
+      'Amount': '180,000,000',
+      'Year': 2005,
+      'Month': 8,
+      'Date': 'August 2005'
+    },
+    {
+      'Logo': 'VelocityExpress.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Business Services',
+      'Type': 'Growth Equity Raise',
+      'Amount': '40,000,000',
+      'Year': 2006,
+      'Month': 6,
+      'Date': 'June 2006'
+    },
+    {
+      'Logo': 'CashEdge.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Transaction Processing',
+      'Type': 'Growth Equity Raise',
+      'Amount': '32,000,000',
+      'Year': 2007,
+      'Month': 1,
+      'Date': 'January 2007'
+    },
+    {
+      'Logo': 'Currenex.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Capital Markets',
+      'Type': 'Sale to State Street',
+      'Amount': '564,000,000',
+      'Year': 2007,
+      'Month': 3,
+      'Date': 'March 2007'
+    },
+    {
+      'Logo': 'Ballista.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Capital Markets',
+      'Type': 'Growth Equity Investment',
+      'Amount': '12,000,000',
+      'Year': 2009,
+      'Month': 6,
+      'Date': 'June 2009'
+    },
+    {
+      'Logo': 'Knight.jpeg',
+      'Name': '',
+      'Division': 'Principal',
+      'Industry': 'Capital Markets',
+      'Type': 'Strategic Sale to FXCM',
+      'Amount': 'Undisclosed',
+      'Year': 2009,
+      'Month': 6,
+      'Date': 'June 2009'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Undisclosed',
+      'Division': 'Principal',
+      'Industry': 'Financial Technology',
+      'Type': 'Growth Equity Investment',
+      'Amount': '12,000,000',
+      'Year': 2009,
+      'Month': 6,
+      'Date': 'June 2009'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Mortgage Originator',
+      'Division': 'Principal',
+      'Industry': 'Specialty Lending',
+      'Type': 'Acquisition',
+      'Amount': '22,000,000+',
+      'Year': 2009,
+      'Month': 12,
+      'Date': 'December 2009'
+    },
+    {
+      'Logo': 'UrbanFinancial.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Mortgage Finance',
+      'Type': 'Acquisition',
+      'Amount': '25,000,000',
+      'Year': 2009,
+      'Month': 12,
+      'Date': 'December 2009'
+    },
+    {
+      'Logo': 'Pico.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Capital Markets',
+      'Type': 'Growth Equity Investment',
+      'Amount': '6,500,000+',
+      'Year': 2010,
+      'Month': 3,
+      'Date': 'March 2010'
+    },
+    {
+      'Logo': 'AstorInvestment.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Asset Management',
+      'Type': 'Acquisition',
+      'Amount': '20,000,000',
+      'Year': 2010,
+      'Month': 6,
+      'Date': 'June 2010'
+    },
+    {
+      'Logo': 'Equiduct.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Capital Markets',
+      'Type': 'Growth Equity Investment',
+      'Amount': '10,000,000',
+      'Year': 2010,
+      'Month': 6,
+      'Date': 'June 2010'
+    },
+    {
+      'Logo': 'CreditMax.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '5,500,000',
+      'Year': 2010,
+      'Month': 8,
+      'Date': 'August 2010'
+    },
+    {
+      'Logo': 'CreditMax.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Growth Equity Investment',
+      'Amount': '2,500,000',
+      'Year': 2010,
+      'Month': 8,
+      'Date': 'August 2010'
+    },
+    {
+      'Logo': 'NexisCard.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Transaction Processing',
+      'Type': 'Equity Raise',
+      'Amount': '1,000,000',
+      'Year': 2010,
+      'Month': 12,
+      'Date': 'December 2010'
+    },
+    {
+      'Logo': 'DriveFactor.jpeg',
+      'Name': '',
+      'Division': 'Advisory',
+      'Industry': 'Financial Technology',
+      'Type': 'Growth Equity Investment',
+      'Amount': '2,500,000',
+      'Year': 2011,
+      'Month': 6,
+      'Date': 'June 2011'
+    },
+    {
+      'Logo': 'canebay.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Online Consumer Finance',
+      'Type': 'Equity Raise',
+      'Amount': '80,000,000',
+      'Year': 2011,
+      'Month': 12,
+      'Date': 'December 2011'
+    },
+    {
+      'Logo': 'canebay.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Online Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '20,000,000',
+      'Year': 2011,
+      'Month': 12,
+      'Date': 'December 2011'
+    },
+    {
+      'Logo': 'BenchSymbol.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Business Services',
+      'Type': 'Seed Capital Raise',
+      'Amount': '2,000,000',
+      'Year': 2011,
+      'Month': 1,
+      'Date': 'December 2010'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Short-Term Online Lender',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '20,000,000',
+      'Year': 2012,
+      'Month': 11,
+      'Date': 'November 2012'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Short-Term Online Lender',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Equity Raise',
+      'Amount': '80,000,000',
+      'Year': 2012,
+      'Month': 11,
+      'Date': 'November 2012'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Online Consumer Lender',
+      'Division': 'Advisory',
+      'Industry': 'Specialty Lending',
+      'Type': 'Growth Buyout',
+      'Amount': '75,000,000+',
+      'Year': 2012,
+      'Month': 12,
+      'Date': 'December 2012'
+    },
+    {
+      'Logo': 'BenchSymbol.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Business Services',
+      'Type': 'Series A Capital Raise',
+      'Amount': '8,000,000',
+      'Year': 2012,
+      'Month': 1,
+      'Date': 'December 2011'
+    },
+    {
+      'Logo': 'macfarlane.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Online Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '25,000,000',
+      'Year': 2014,
+      'Month': 8,
+      'Date': 'August 2014'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Online Installment Lender',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '25,000,000',
+      'Year': 2014,
+      'Month': 8,
+      'Date': 'August 2014'
+    },
+    {
+      'Logo': 'Privlo.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Mortgage Finance',
+      'Type': 'Debt Raise',
+      'Amount': '350,000,000',
+      'Year': 2014,
+      'Month': 8,
+      'Date': 'August 2014'
+    },
+    {
+      'Logo': 'FlexShopper.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '100,000,000',
+      'Year': 2015,
+      'Month': 3,
+      'Date': 'March 2015'
+    },
+    {
+      'Logo': 'FlexShopper.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Equity Raise',
+      'Amount': '9,350,000',
+      'Year': 2015,
+      'Month': 3,
+      'Date': 'March 2015'
+    },
+    {
+      'Logo': 'moneykey.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Online Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '17,500,000',
+      'Year': 2015,
+      'Month': 3,
+      'Date': 'March 2015'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Short-Term Online Lender',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '17,500,000',
+      'Year': 2015,
+      'Month': 3,
+      'Date': 'March 2015'
+    },
+    {
+      'Logo': 'Photonic.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Commercial Finance',
+      'Type': 'Equity Raise',
+      'Amount': '1,000,000',
+      'Year': 2016,
+      'Month': 3,
+      'Date': 'March 2016'
+    },
+    {
+      'Logo': 'CapFusion.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Small Business Lender',
+      'Type': 'Debt Raise',
+      'Amount': '60,000,000',
+      'Year': 2016,
+      'Month': 5,
+      'Date': 'May 2016'
+    },
+    {
+      'Logo': 'FlexShopper.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Growth Equity Investment',
+      'Amount': '22,000,000',
+      'Year': 2016,
+      'Month': 6,
+      'Date': 'June 2016'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Project El Dorado',
+      'Division': '',
+      'Industry': 'Commercial Finance',
+      'Type': 'Capital Raise',
+      'Amount': '10,000,000',
+      'Year': 2016,
+      'Month': 8,
+      'Date': 'August 2016'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Project Dynamo',
+      'Division': '',
+      'Industry': 'Consumer Finance',
+      'Type': 'Debt Raise',
+      'Amount': '10,000,000',
+      'Year': 2016,
+      'Month': 9,
+      'Date': 'September 2016'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'Photonic Capital & Photonic Labratories',
+      'Division': '',
+      'Industry': 'Commercial Finance',
+      'Type': 'Debt Raise',
+      'Amount': '100,000,000',
+      'Year': 2017,
+      'Month': 1,
+      'Date': 'January 2017'
+    },
+    {
+      'Logo': 'channel.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Small Business Lender',
+      'Type': 'Equity Raise',
+      'Amount': 'Undisclosed',
+      'Year': 2018,
+      'Month': 5,
+      'Date': 'May 2018'
+    },
+    {
+      'Logo': 'elevate.jpeg',
+      'Name': '',
+      'Division': '',
+      'Industry': 'Business Services',
+      'Type': 'Equity Raise',
+      'Amount': '25,000,000',
+      'Year': 2018,
+      'Month': 6,
+      'Date': 'June 2018'
+    },
+    {
+      'Logo': 'logo.jpeg',
+      'Name': 'MCP-Gold, L.P.',
+      'Division': '',
+      'Industry': 'Commercial Finance',
+      'Type': 'Capital Raise',
+      'Amount': '20,000,000',
+      'Year': 2018,
+      'Month': 6,
+      'Date': 'June 2018'
+    },
 
-export {team, transactions};
+  ]
+
+export { team, transactions };

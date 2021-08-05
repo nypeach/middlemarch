@@ -1,5 +1,5 @@
 .txn {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/transactions-background.png);
   background-size: cover;
   background-position: top;
@@ -7,65 +7,56 @@
 
 .txn-section {
   text-align: center;
-  height: 100vh;
+  display:block;
+  overflow: auto;
 }
 .txn main {
-  height: 100vh;
+  display:block;
+  overflow: auto;
   margin-bottom: 16px;
 }
 
 .txn-header {
-  /* margin: -5rem 10rem 0 0; */
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   height: 10vh;
-  /* overflow-y: auto; */
   text-align: center;
 }
 
 .txn-card-div {
   margin: 2rem 14rem;
-  height: 83vh;
+  display:block;
+  overflow: auto;
 }
 
 .txn-card {
-  width: 24rem;
+  width: 32rem;
   height: 32rem;
-  /* background: rgba(255, 255, 255, 0.4) */
+  position:relative;
 }
 
-/* FontAwesome for working BootSnippet :> */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
-    box-shadow: none;
-    outline: none;
+.txn-division {
+  display:block;
+  position:absolute;
+  /* top: 0px;
+  left: 25%; */
+  text-transform: uppercase;
+  text-align: center;
 }
-
-.btn-primary {
-    color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+.txn-nologo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  line-height: 1;
+  width: 100%;
+  color: var(--heading-light);
 }
-
-section {
-    padding: 60px 0;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-#team .card {
-    border: none;
-
-
+.txn-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .image-flip:hover .backside,
@@ -155,11 +146,14 @@ section .section-title {
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color: #007b5e !important;
+  margin-top: 12px;
+  font-size: 2.5rem;
+  line-height: 2;
+  width: 100%;
+  color: var(--heading-light);
 }
 
 .frontside .card .card-body img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 95%;
+    height: auto;
 }

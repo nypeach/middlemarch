@@ -10,6 +10,7 @@
   --background-grad-dk: rgba(27, 44, 89, 0.8);
   --heading-color: rgba(27,44,89,1);
   --heading-light: #77C7EF;
+  --heading-dark: rgba(27,44,89,1);
 }
 
 html {
