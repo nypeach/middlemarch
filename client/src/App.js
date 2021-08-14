@@ -4,7 +4,7 @@ import Landing from './Landing';
 import OurFirm from './OurFirm';
 import OurTeam from './OurTeam';
 import IndustryFocus from './IndustryFocus';
-import Blog from './Blog';
+import News from './News';
 import Transactions from './Transactions';
 import Hamburger from './Hamburger';
 
@@ -25,7 +25,7 @@ function App() {
       <OurTeam />
       <IndustryFocus />
       <Transactions />
-      <Blog />
+      <News />
 
 
     </div>

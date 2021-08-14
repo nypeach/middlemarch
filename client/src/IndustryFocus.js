@@ -1,49 +1,49 @@
-import React from 'react';
 import './IndustryFocus.css';
-import middlemarch from './images/icon_only-transparent.svg';
-import txnprocess from './images/txn-processing-dkb.svg';
-import fintech from './images/stock-screeners-dkb.svg';
-import assetmgmt from './images/asset-mgmt-dkb.svg';
-import specialtyfinance from './images/debt-resolution-dkb.svg';
-import electroniccapital from './images/analytics-dkb.svg';
-import businesssvc from './images/securities-mkt-dkb.svg';
-import useToggle from './hooks/useToggle';
+import IndustryFocusBubbles from './IndustryFocusBubbles';
 
 const IndustryFocus = () => {
-  const [isHovered, isHoveredToggle] = useToggle(false);
 
   return (
-    <div className="ind-focus">
-      <div className="ind-focus-div">
-        <h2 className="ind-focus-title">Industry Focus</h2>
-        <div className="ind-focus-0">
-          <img src={middlemarch} alt="middlemarch" />
-        </div>
-        <div className="ind-focus-1">
-          {isHovered ? <div className="popover">Testing the Popover</div> : null}
-          <button className="share_btn focus"><img className="focus-img" src={specialtyfinance} alt="specialty finance" /></button>
-        </div>
-        <div className="ind-focus-2">
-          <button className="share_btn focus"><img className="focus-img" src={txnprocess} alt="transaction processing" /></button>
-        </div>
-        <div className="ind-focus-3">
-          <button className="share_btn focus"><img className="focus-img" src={electroniccapital} alt="electronic cap" /></button>
-        </div>
-        <div className="ind-focus-4">
-          <button className="share_btn focus"><img className="focus-img" src={businesssvc} alt="business services" style={{ width: "65%" }} /></button>
-        </div>
-        <div className="ind-focus-5">
-          <button className="share_btn focus"><img className="focus-img" src={assetmgmt} alt="asset management" /></button>
-        </div>
-        <div className="ind-focus-6">
-          <button className="share_btn focus"><img className="focus-img" src={fintech} alt="fin tech" /></button>
+
+    <section className="ind-focus ind-focus-section">
+      <div className="ind-focus-main">
+        <div className="ind-focus-header">
+          <h2 className="heading-primary-dk">Industry Focus</h2>
         </div>
 
+        {/* <div className="ind-focus"> */}
+        {/* <div className="ind-focus-div"> */}
+        {/* <h2 className="ind-focus-title">Industry Focus</h2> */}
+        <div className="ind-focus-grid">
+          <div className="ind-focus-left">
+            <div className="ind-focus-left-text" style={{marginTop: "96px"}}>
+              Middlemarch focuses on financial services and business services, where our Partners have spent their entire careers as investment bankers, investors, and operators.
+            </div>
+            <div className="ind-focus-left-text">
+              Middlemarch believes the unique characteristics of the financial services sector require deep expertise to exploit growth opportunities and to minimize exposure to risk.
+            </div>
+          </div>
+          <div className="ind-focus-bubble"><IndustryFocusBubbles /></div>
+          <div className="ind-focus-right">
+            <h2 className="heading-secondary-dk" style={{marginTop: "96px"}}>Financial Services Market Drivers</h2>
+            <ul style={{marginTop: "-20px"}}>
+              <li className="ind-focus-right-text">Evolving regulatory environment</li>
+              <li className="ind-focus-right-text">Market dislocations and cyclicality</li>
+              <li className="ind-focus-right-text">Technology and product innovation</li>
+              <li className="ind-focus-right-text">Alternative service delivery and globalization</li>
+              <li className="ind-focus-right-text">Unique capital structure needs</li>
+            </ul>
+            {/* <div className="ind-focus-right-text">&bull;&nbsp;&nbsp;Evolving regulatory environment</div>
+            <div className="ind-focus-right-text">&bull;&nbsp;&nbsp;Market dislocations and cyclicality</div>
+            <div className="ind-focus-right-text">&bull;&nbsp;&nbsp;Technology and product innovation</div>
+            <div className="ind-focus-right-text">&bull;&nbsp;&nbsp;Alternative service delivery and globalization</div>
+            <div className="ind-focus-right-text">&bull;&nbsp;&nbsp;Unique capital structure needs</div> */}
+          </div>
+
+        </div>
       </div>
-    </div>
-
+    </section>
   )
-
 }
 
 export default IndustryFocus;
