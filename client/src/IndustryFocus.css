@@ -71,6 +71,20 @@ text-align: left;
 .ind-focus-modal-text {
   font-size: 2rem;
 }
+.popover-container {
+  box-shadow: 0 2px 2px rgba(27, 44, 89, .4);
+  border: .5px solid rgba(27, 44, 89, .4);
+}
+.popover-header {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  color: var(--heading-dark);
+  text-transform: uppercase;
+}
+.popover-text {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
 
 .ind-focus-0 {
   position: fixed;
