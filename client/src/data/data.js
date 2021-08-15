@@ -8,7 +8,8 @@ var team = [
     'linkedin': 'https://www.linkedin.com/in/sasha-grutman-45a38/',
     'twitter': '',
     'email': 'mailto:sgrutman@middlemarchllc.com',
-    'photo': 'team1.jpeg'
+    'photo': 'team1.jpeg',
+    'modal': 'Team1'
   },
   {
     'name': 'Demetris Papademetriou',

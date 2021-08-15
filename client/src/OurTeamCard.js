@@ -1,14 +1,27 @@
 import './OurTeam.css';
+import Modal from './Modal';
+import useToggle from './hooks/useToggle';
+import Team1 from './Team1';
 
 const OurTeamCard = (props) => {
+
+  const [team1Open, team1OpenToggle] = useToggle(false);
+// const [team2Open, team2OpenToggle] = useToggle(false);
+// const [team3Open, team3OpenToggle] = useToggle(false);
+// const [team4Open, team4OpenToggle] = useToggle(false);
+  let modal = props.modal;
   return (
 
+
+
     <div className="col-lg-6 col-12 ml-auto mr-auto">
+      {team1Open ? <Modal isOpen={team1Open} toggle={team1OpenToggle} modalComponent={<Team1 />} /> : null}
+      {/* {team2Open ? <Modal isOpen={team2Open} toggle={team2OpenToggle} modalComponent={<Team2 />} /> : null} */}
       <div className="card card-profile overflow-hidden border-0">
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
             <div className="pe-md-0">
-              <img className="w-100 border-radius-md" src={props.image} alt={`${props.name}`} />
+              <img className="w-100 border-radius-md" src={props.image} alt={`${props.name}`} onClick={team1OpenToggle} />
             </div>
           </div>
           <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">

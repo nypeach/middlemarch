@@ -2,6 +2,7 @@ import './OurTeam.css';
 import OurTeamCard from './OurTeamCard';
 import {team} from './data/data.js';
 
+
 function importAll(r) {
   let photos = {};
   r.keys().map(r).map(o =>
@@ -9,11 +10,12 @@ function importAll(r) {
   )
   return photos;
 }
-
 const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|svg)$/))
 
 
+
 const OurTeam = () => {
+
   console.log(images);
   return (
     <section className="team team-section">

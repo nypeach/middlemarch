@@ -17,4 +17,18 @@
 
 .btn-xxl {
   font-size: 5rem;
+  color: var(--heading-dark);
+}
+
+.offcanvas-right-label {
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  color: var(--heading-dark);
+  margin-bottom: 2.5rem;
+  margin-left: 2rem;
+}
+
+.offcanvas-header {
+  font-size: 3rem;
+  margin-left: 2rem;
 }

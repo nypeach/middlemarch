@@ -9,7 +9,6 @@ import electroniccapital from './images/analytics-dkb.svg';
 import businesssvc from './images/securities-mkt-dkb.svg';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
-import './Popover.css';
 import { OverlayTrigger, Popover, PopoverBody, PopoverHeader} from 'react-bootstrap';
 
 const IndustryFocusPopover = () => {
