@@ -18,7 +18,7 @@ const OurTeam = () => {
 
   console.log(images);
   return (
-    <section className="team team-section">
+    <section id="ourteam" className="team team-section">
       <div className="team-main">
         <div className="team-header">
           <h2 className="heading-primary-dk" style={{ color: "white" }}>Our Team</h2>

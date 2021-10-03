@@ -21,7 +21,7 @@ const OurTeamCard = (props) => {
         <div className="row">
           <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
             <div className="pe-md-0">
-              <img className="w-100 border-radius-md" src={props.image} alt={`${props.name}`} onClick={team1OpenToggle} />
+              <img className="w-100 border-radius-md team-member" src={props.image} alt={`${props.name}`} onClick={team1OpenToggle} />
             </div>
           </div>
           <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
@@ -30,10 +30,10 @@ const OurTeamCard = (props) => {
               <h3 className="team-card-title">{props.title}</h3>
               <p className="mb-4 mt-1 team-card-text">{props.quote}</p>
               <div className="mb-4 mt-1 team-card-icon">
-                <i class="fab fa-facebook-square 7x"></i>&nbsp;&nbsp;
-                <i class="fab fa-linkedin"></i>&nbsp;&nbsp;
-                <i class="fab fa-twitter-square"></i>&nbsp;&nbsp;
-                <i class="fas fa-envelope-square"></i>
+                <i class="fab fa-facebook-square 7x" style={{cursor: "pointer"}}></i>&nbsp;&nbsp;
+                <i class="fab fa-linkedin" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
+                <i class="fab fa-twitter-square" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
+                <i class="fas fa-envelope-square" style={{ cursor: "pointer" }}></i>
               </div>
             </div>
           </div>

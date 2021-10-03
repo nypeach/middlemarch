@@ -19,7 +19,7 @@ const Hamburger = (props) => {
           <div id="offcanvasRightLabel" className="offcanvas-right-label">OUR FIRM</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchant Banking</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Capital</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">OUR TEAM</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" data-bs-dismiss="offcanvas" onclick="document.getElementById('ourteam').scrollIntoView()">OUR TEAM</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">TRANSACTIONS</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">NEWS, ARTICLES, EVENTS</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">CONTACT US</div>

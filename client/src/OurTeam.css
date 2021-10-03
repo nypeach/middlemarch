@@ -36,9 +36,11 @@
   overflow-y: scroll; */
   display:block;
   overflow: auto;
-  background: rgba(255, 255, 255, 0.4)
+  background: rgba(255, 255, 255, 0.4);
 }
-
+.team-member {
+  cursor: pointer;
+}
 
 .team-card-name {
   font-size: 3rem;
@@ -47,6 +49,7 @@
   color: var(--heading-color);
   margin: 1rem 0;
   text-align: center;
+  cursor: pointer;
 }
 .team-card-title {
   font-size: 2rem;
@@ -56,12 +59,14 @@
   margin-bottom: 2rem 0;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .team-card-text {
   line-height: 1.5;
   text-align: center;
   margin-right: 2rem;
+  cursor: pointer;
 }
 
 .team-card-icon {
