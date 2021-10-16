@@ -1,7 +1,7 @@
 import React from 'react';
 import './OurFirm.css';
 import useToggle from './hooks/useToggle';
-import Modal from './Modal';
+import MModal from './MModal';
 import privateCap from './images/angel-investors-ltb.png';
 import merchantBank from './images/stock-exchange-ltb.png';
 import MerchantBank from './MerchantBank';
@@ -25,8 +25,8 @@ const OurFirmTiles = () => {
 
   return (
     <div className="our-firm-tiles">
-      {isMerchOpen ? <Modal isOpen={isMerchOpen} toggle={isMerchOpenToggle} modalComponent={<MerchantBank />} /> : null}
-      {isPrivOpen ? <Modal isOpen={isPrivOpen} toggle={isPrivOpenToggle} modalComponent={<PrivateCapital />} /> : null}
+      {isMerchOpen ? <MModal isOpen={isMerchOpen} toggle={isMerchOpenToggle} modalComponent={<MerchantBank />} /> : null}
+      {isPrivOpen ? <MModal isOpen={isPrivOpen} toggle={isPrivOpenToggle} modalComponent={<PrivateCapital />} /> : null}
 
       <div className="card-group justify-content-center">
         <div className="card justify-content-center border-0" style={{ maxWidth: "35%", marginRight: "6px" }} onClick={isMerchOpenToggle}>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Modal.css';
+import './MModal.css';
 
 const Modal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPortal(
   <React.Fragment>

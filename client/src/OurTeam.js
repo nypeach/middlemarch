@@ -2,6 +2,7 @@ import './OurTeam.css';
 import OurTeamCard from './OurTeamCard';
 import {team} from './data/team.js';
 import { useState } from 'react';
+// import Person from './Person';
 
 function importAll(r) {
   let photos = {};
@@ -36,6 +37,12 @@ const OurTeam = () => {
               image={images[person.photo]}
               person={person}
             />
+            // <Person
+            //   selectedModal={selectedModal}
+            //   setSelectedModal={setSelectedModal}
+            //   image={images[person.photo]}
+            //   person={person}
+            // />
             )}
           </div>
         </div>
