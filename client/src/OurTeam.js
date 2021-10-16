@@ -1,7 +1,7 @@
 import './OurTeam.css';
 import OurTeamCard from './OurTeamCard';
-import {team} from './data/data.js';
-
+import {team} from './data/team.js';
+import { useState } from 'react';
 
 function importAll(r) {
   let photos = {};
@@ -16,6 +16,8 @@ const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|
 
 const OurTeam = () => {
 
+  const [selectedModal, setSelectedModal] = useState(0);
+
   console.log(images);
   return (
     <section id="ourteam" className="team team-section">
@@ -29,10 +31,10 @@ const OurTeam = () => {
           <div className="row g-5 p-5">
           {team.map(person =>
             <OurTeamCard
+              selectedModal={selectedModal}
+              setSelectedModal={setSelectedModal}
               image={images[person.photo]}
-              name={person.name}
-              title={person.title}
-              quote={person.quote}
+              person={person}
             />
             )}
           </div>

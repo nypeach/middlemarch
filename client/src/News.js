@@ -1,6 +1,6 @@
 import './News.css';
 import NewsCard from './NewsCard';
-import { news } from './data/data.js';
+import { news } from './data/news.js';
 
 
 function importAll(r) {

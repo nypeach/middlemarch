@@ -1,6 +1,6 @@
 import './Transactions.css';
 import TransactionCard from './TransactionCard';
-import { transactions } from './data/data.js';
+import { transactions } from './data/transactions.js';
 
 function importAll(r) {
   let photos = {};

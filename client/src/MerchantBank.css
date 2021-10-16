@@ -89,21 +89,21 @@
   z-index: 10;
   padding: 15px;
 }
-.image {
+.image-m {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   transition: all .2sec;
   outline-offset: 1.5rem;
   z-index: 10;
-  border-radius: 2px;
+  /* border-radius: 2px; */
   height: 40%;
   width: 35%;
 }
-.image:hover {
+.image-m:hover {
   outline: 1.5rem solid #1B2C59;
   transform: scale(1.1);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
-  border-radius: 2px;
+  /* border-radius: 2px; */
   height: 40%;
   width: 35%;
 }

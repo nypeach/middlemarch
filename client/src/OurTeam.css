@@ -57,7 +57,7 @@
   display: block;
   color: var(--heading-light);
   margin-bottom: 2rem 0;
-  font-family: "Lato", sans-serif;
+  font-family: var(--main-font);
   text-transform: uppercase;
   cursor: pointer;
 }

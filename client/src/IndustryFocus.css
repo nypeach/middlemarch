@@ -77,13 +77,13 @@ text-align: left;
 }
 .popover-header {
   font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: var(--main-font);
   color: var(--heading-dark);
   text-transform: uppercase;
 }
 .popover-text {
   font-size: 2rem;
-  font-family: "Lato", sans-serif;
+  font-family: var(--main-font);
 }
 
 .ind-focus-0 {
