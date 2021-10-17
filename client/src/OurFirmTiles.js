@@ -12,16 +12,6 @@ import Card from 'react-bootstrap/Card';
 const OurFirmTiles = () => {
   const [isMerchOpen, isMerchOpenToggle] = useToggle(false);
   const [isPrivOpen, isPrivOpenToggle] = useToggle(false);
-  // const merchModalContent = {
-  //   'title': 'Merchant Banking',
-  //   'text': 'Today is the first day of the rest of your life',
-  //   '__html': '<p className="paragraph">Today is the first day of the rest of your life</p>'
-  // }
-  // const privModalContent = {
-  //   'title': 'Private Capital',
-  //   'text': 'Today is the first day of the rest of your life',
-  //   '__html': '<p className="paragraph">Today is the first day of the rest of your life</p>'
-  // }
 
   return (
     <div className="our-firm-tiles">

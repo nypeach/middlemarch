@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './MModal.css';
 
-const Modal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPortal(
+const MModal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPortal(
   <React.Fragment>
     <div className="modal-wrapper">
       <div className="modal-backdrop" aria-modal aria-hidden tabIndex={-1} role="dialog" onClick={toggle} />
@@ -14,4 +14,4 @@ const Modal = ({ isOpen, toggle, modalComponent }) => isOpen ? ReactDOM.createPo
   </React.Fragment>, document.getElementById('modal-root')
 ) : null;
 
-export default Modal;
+export default MModal;

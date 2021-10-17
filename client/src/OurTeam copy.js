@@ -15,13 +15,12 @@ const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|
 
 
 
-const OurTeam = (props) => {
+const OurTeam = () => {
 
   const [selectedModal, setSelectedModal] = useState(0);
 
   console.log(images);
   return (
-    <div ref={props.ourTeamRef}>
     <section id="ourteam" className="team team-section">
       <div className="team-main">
         <div className="team-header">
@@ -49,7 +48,6 @@ const OurTeam = (props) => {
         </div>
       </div>
     </section>
-    </div>
   )
 }
 

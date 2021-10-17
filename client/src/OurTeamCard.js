@@ -13,7 +13,6 @@ const OurTeamCard = (props) => {
       <Modal
         show={isOpen}
         onHide={closeModal}
-        centered
         dialogClassName="modal-90w"
         aria-labelledby="individual-team-member"
       >
