@@ -16,12 +16,18 @@ const OurTeamCard = (props) => {
         dialogClassName="modal-90w"
         aria-labelledby="individual-team-member"
       >
-        <Modal.Header closeButton>
+        {/* <Modal.Header closeButton>
           <Modal.Title id={props.person.id}>
             {props.person.name} | {props.person.title}
-            {/* <i class="fas fa-envelope-square team-card-icon" style={{ fontSize: "4rem" }}></i> */}
+          </Modal.Title>
+        </Modal.Header> */}
+        <i className="far fa-times-circle fa-3x" onClick={closeModal} style={{ position: "absolute" }}></i>
+        <Modal.Header>
+          <Modal.Title id={props.person.id}>
+            {props.person.name} | {props.person.title}
           </Modal.Title>
         </Modal.Header>
+
         <Modal.Body>
           <div style={{ textAlign: "left", marginTop: "16px"}}>
             <img style={{ float: "left", marginRight: "24px" }} className="w-25 border-radius-md" src={props.image} alt={props.person.name} />

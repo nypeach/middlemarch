@@ -2,7 +2,6 @@ import './OurTeam.css';
 import OurTeamCard from './OurTeamCard';
 import {team} from './data/team.js';
 import { useState } from 'react';
-// import Person from './Person';
 
 function importAll(r) {
   let photos = {};
@@ -21,8 +20,8 @@ const OurTeam = (props) => {
 
   console.log(images);
   return (
-    <div ref={props.ourTeamRef}>
-    <section id="ourteam" className="team team-section">
+
+    <section id="ourteam" className="team team-section" >
       <div className="team-main">
         <div className="team-header">
           <h2 className="heading-primary-dk" style={{ color: "white" }}>Our Team</h2>
@@ -38,18 +37,11 @@ const OurTeam = (props) => {
               image={images[person.photo]}
               person={person}
             />
-            // <Person
-            //   selectedModal={selectedModal}
-            //   setSelectedModal={setSelectedModal}
-            //   image={images[person.photo]}
-            //   person={person}
-            // />
             )}
           </div>
         </div>
       </div>
     </section>
-    </div>
   )
 }
 
