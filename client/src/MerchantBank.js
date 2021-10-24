@@ -13,7 +13,9 @@ const MerchantBank = (props) => {
         </div>
         {/* ============================================================================ */}
 
-
+        <button className="read-more-reverse" style={{ fontSize: "2rem" }} onClick={props.onClickOurFirm}>
+          Return to Our Firm
+        </button>
       </div>
     </section>
   )

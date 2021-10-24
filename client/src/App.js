@@ -91,13 +91,10 @@ function App() {
       />
       <div ref={landingRef}><Landing /></div>
       <div ref={ourFirmRef}>
-        <OurFirm
-        onClickMerchBank={() => setGotoMerchBank(true)}
-        onClickPrivCap={() => setGotoPrivCap(true)}
-        />
+        <OurFirm onClickMerchBank={() => setGotoMerchBank(true)} onClickPrivCap={() => setGotoPrivCap(true)} />
       </div>
-      <div ref={merchBankRef}><MerchantBank /></div>
-      <div ref={privCapRef}><PrivateCapital /></div>
+      <div ref={merchBankRef}><MerchantBank onClickOurFirm={() => setGotoOurFirm(true)}/></div>
+      <div ref={privCapRef}><PrivateCapital onClickOurFirm={() => setGotoOurFirm(true)}/></div>
       <div ref={ourTeamRef}><OurTeam /></div>
       <div ref={ourInvestorsRef}><OurInvestors /></div>
       <div ref={transactionsRef}><Transactions /></div>

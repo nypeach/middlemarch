@@ -30,3 +30,12 @@
   margin-right: 8rem;
   text-align: justify;
 }
+.return-to-our-firm {
+  font-size: 2rem;
+  color: var(--heading-dark);
+  cursor: pointer;
+}
+.return-to-our-firm:hover {
+  color: (--white-text);
+  background-color: var(--heading-dark);
+}
