@@ -5,9 +5,9 @@ import OurFirm from './OurFirm';
 import MerchantBank from './MerchantBank';
 import PrivateCapital from './PrivateCapital';
 import OurTeam from './OurTeam';
-import IndustryFocus from './IndustryFocus';
-import News from './News';
+import OurInvestors from './OurInvestors';
 import Transactions from './Transactions';
+import News from './News';
 import Footer from './Footer';
 
 
@@ -24,6 +24,14 @@ function App() {
   const privCapRef = useRef(null);
   const [gotoOurTeam, setGotoOurTeam] = useState(false);
   const ourTeamRef = useRef(null);
+  const [gotoOurInvestors, setGotoOurInvestors] = useState(false);
+  const ourInvestorsRef = useRef(null);
+  const [gotoTransactions, setGotoTransactions] = useState(false);
+  const transactionsRef = useRef(null);
+  const [gotoNews, setGotoNews] = useState(false);
+  const newsRef = useRef(null);
+  const [gotoContact, setGotoContact] = useState(false);
+  const contactRef = useRef(null);
 
 
 
@@ -48,8 +56,24 @@ function App() {
       ourTeamRef.current.scrollIntoView();
       setGotoOurTeam(false);
     }
+    if (gotoOurInvestors && ourInvestorsRef.current) {
+      ourInvestorsRef.current.scrollIntoView();
+      setGotoOurInvestors(false);
+    }
+    if (gotoTransactions && transactionsRef.current) {
+      transactionsRef.current.scrollIntoView();
+      setGotoTransactions(false);
+    }
+    if (gotoNews && newsRef.current) {
+      newsRef.current.scrollIntoView();
+      setGotoNews(false);
+    }
+    if (gotoContact && contactRef.current) {
+      contactRef.current.scrollIntoView();
+      setGotoContact(false);
+    }
 
-  }, [gotoLanding, gotoOurFirm, gotoMerchBank, gotoPrivCap, gotoOurTeam]);
+  }, [gotoLanding, gotoOurFirm, gotoMerchBank, gotoPrivCap, gotoOurTeam, gotoOurInvestors, gotoTransactions, gotoNews, gotoContact]);
 
   return (
     <div>
@@ -59,6 +83,10 @@ function App() {
       onClickMerchBank={() => setGotoMerchBank(true)}
       onClickPrivCap={() => setGotoPrivCap(true)}
       onClickOurTeam={() => setGotoOurTeam(true)}
+      onClickOurInvestors={() => setGotoOurInvestors(true)}
+      onClickTransactions={() => setGotoTransactions(true)}
+      onClickNews={() => setGotoNews(true)}
+      onClickContact={() => setGotoContact(true)}
 
       />
       <div ref={landingRef}><Landing /></div>
@@ -71,10 +99,10 @@ function App() {
       <div ref={merchBankRef}><MerchantBank /></div>
       <div ref={privCapRef}><PrivateCapital /></div>
       <div ref={ourTeamRef}><OurTeam /></div>
-      <IndustryFocus />
-      <Transactions />
-      <News />
-      <Footer />
+      <div ref={ourInvestorsRef}><OurInvestors /></div>
+      <div ref={transactionsRef}><Transactions /></div>
+      <div ref={newsRef}><News /></div>
+      <div ref={contactRef}><Footer /></div>
 
     </div>
   )

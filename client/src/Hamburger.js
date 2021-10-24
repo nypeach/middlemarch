@@ -35,11 +35,10 @@ const Hamburger = (props) => {
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickPrivCap()}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Capital</div>
           {/* <Nav.Link href="#" onClick={() => onClickOurTeam()}>OUR TEAM</Nav.Link> */}
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurTeam()}>OUR TEAM</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">INDUSTRY FOCUS</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">TRANSACTIONS</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">NEWS, ARTICLES, EVENTS</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">INVESTORS</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">CONTACT US</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurInvestors()}>OUR INVESTORS</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickTransactions()}>TRANSACTIONS</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickNews()}>NEWS, ARTICLES, EVENTS</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickContact()}>CONTACT US</div>
         </div>
       </div>
     </>

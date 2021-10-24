@@ -1,0 +1,25 @@
+.our-investors {
+  display:block;
+  overflow: auto;
+  /* background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/coins.png);
+  background-size: cover;
+  background-position: top; */
+       min-height: 100vh;
+       padding-bottom: 24px;
+}
+
+.our-investors-section {
+  text-align: center;
+  display:block;
+  overflow: auto;
+}
+.our-investors-main {
+  display:block;
+  overflow: auto;
+  margin-bottom: 16px;
+}
+
+.our-investors-header {
+  height: 10vh;
+  text-align: center;
+}
