@@ -18,8 +18,14 @@
   overflow: auto;
   margin-bottom: 16px;
 }
-
 .merchant-bank-header {
   height: 10vh;
   text-align: center;
+}
+.merchant-bank-content {
+  margin: 2rem 15rem;
+  min-height: 80vh;
+  display:block;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.4);
 }
