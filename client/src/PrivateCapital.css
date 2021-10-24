@@ -1,25 +1,25 @@
-.merchant-bank {
+.private-capital {
   display:block;
   overflow: auto;
-  background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/coins.png);
+  /* background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/coins.png);
   background-size: cover;
-  background-position: top;
+  background-position: top; */
        min-height: 100vh;
        padding-bottom: 24px;
 }
 
-.merchant-bank-section {
+.private-capital-section {
   text-align: center;
   display:block;
   overflow: auto;
 }
-.merchant-bank-main {
+.private-capital-main {
   display:block;
   overflow: auto;
   margin-bottom: 16px;
 }
 
-.merchant-bank-header {
+.private-capital-header {
   height: 10vh;
   text-align: center;
 }

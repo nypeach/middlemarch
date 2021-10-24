@@ -2,7 +2,7 @@
   position:fixed;
   top: 2%;
   right: 1%;
-  color: var(--heading-color);
+  color: var(--heading-dark);
   cursor: pointer;
   z-index: 1003;
 }
@@ -48,7 +48,7 @@
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--heading-dark);
   margin: 0;
   text-align: center;
 }

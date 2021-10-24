@@ -46,7 +46,7 @@
   font-size: 3rem;
   font-weight: 700;
   display: block;
-  color: var(--heading-color);
+  color: var(--heading-dark);
   margin: 1rem 0;
   text-align: center;
   cursor: pointer;
@@ -92,7 +92,7 @@ p.team-modal {
   font-size: 2.25rem;
   text-align: justify;
   margin-bottom: 2rem;
-  color: var(--heading-color)
+  color: var(--heading-dark)
 }
 
 .modal-90w {

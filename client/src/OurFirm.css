@@ -2,19 +2,18 @@
   height: 100vh;
   text-align: center;
   padding: 1.5rem;
-  overflow: scroll;
 }
 
 .our-firm-tiles {
   margin: 2rem 0 0 0;
-  height: 50vh;
+  height: 60vh;
   cursor: pointer;
   overflow: scroll;
   border: none;
 }
 
 .our-firm-tiles-card {
-  height: 50vh;
+  height: 40vh;
 }
 
 .our-firm-tiles-img {

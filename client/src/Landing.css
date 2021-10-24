@@ -5,7 +5,7 @@
   background-position: top;
 }
 .landing-primary {
-  color: #fff;
+  color: var(--white-text);
   text-transform: uppercase;
   backface-visibility: visible;
   margin-bottom: 6rem;

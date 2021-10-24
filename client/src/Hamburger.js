@@ -31,8 +31,8 @@ const Hamburger = (props) => {
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickLanding()}>HOME</div>
           {/* <div id="offcanvasRightLabel" className="offcanvas-right-label">OUR FIRM</div> */}
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurFirm()}>OUR FIRM</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchant Banking</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Capital</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickMerchBank()}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchant Banking</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickPrivCap()}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Capital</div>
           {/* <Nav.Link href="#" onClick={() => onClickOurTeam()}>OUR TEAM</Nav.Link> */}
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurTeam()}>OUR TEAM</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label">INDUSTRY FOCUS</div>

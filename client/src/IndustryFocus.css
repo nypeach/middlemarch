@@ -185,6 +185,6 @@ text-align: left;
 }
 .focus {
   color: #1E2C56;
-  background-image: -webkit-linear-gradient(#77C7EF 10%, #1E2C56 100%);
-  background-image: linear-gradient(#77C7EF 10%, #1E2C56 100%);
+  background-image: -webkit-linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
+  background-image: linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
 }
