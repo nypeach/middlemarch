@@ -21,15 +21,15 @@ const OurTeamCard = (props) => {
             {props.person.name} | {props.person.title}
           </Modal.Title>
         </Modal.Header> */}
-        <i className="far fa-times-circle fa-3x" onClick={closeModal} style={{ position: "absolute" }}></i>
+        <i className="far fa-times-circle fa-3x team-modal-close" onClick={closeModal}></i>
         <Modal.Header>
           <Modal.Title id={props.person.id}>
-            {props.person.name} | {props.person.title}
+            <p className="team-modal-header"> {props.person.name} | {props.person.title}</p>
           </Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
-          <div style={{ textAlign: "left", marginTop: "16px"}}>
+          <div style={{ textAlign: "left", margin: "16px"}}>
             <img style={{ float: "left", marginRight: "24px" }} className="w-25 border-radius-md" src={props.image} alt={props.person.name} />
             <ul className="no-bullets">
               {props.person.paragraphs.map((fact, i) => (
@@ -40,7 +40,7 @@ const OurTeamCard = (props) => {
         </Modal.Body>
       </Modal>
       <div className="card card-profile overflow-hidden border-0">
-        <div className="row">
+        <div className="row" onClick={openModal}>
           <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
             <div className="pe-md-0">
               <img className="w-100 border-radius-md team-member" src={props.image} alt={`${props.person.name}`} onClick={openModal} />

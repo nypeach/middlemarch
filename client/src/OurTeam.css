@@ -83,15 +83,24 @@
 
 .card-profile {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.6);
-  /* cursor: pointer; */
+  cursor: pointer;
   border:0;
 }
 
-
+.team-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+.team-modal-header {
+  font-size: 3rem;
+  color: var(--heading-dark)
+}
 p.team-modal {
   font-size: 2.25rem;
   text-align: justify;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--heading-dark)
 }
 
