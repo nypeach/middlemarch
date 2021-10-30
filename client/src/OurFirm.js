@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import privateCap from './images/ourFirm/private_capital-2-lt.png';
-import merchantBank from './images/ourFirm/merchant_banking-3-lt.png';
+import merchantBank from './images/ourFirm/financial_services-lt.png';
 
 const OurFirm = (props) => {
   return (
