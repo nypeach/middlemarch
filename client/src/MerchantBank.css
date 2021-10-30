@@ -53,7 +53,7 @@
   display: inline-block;
   color: var(--heading-dark);
   font-family: var(--main-font);
-  margin: 2rem;
+  margin-top: 2rem 2rem 1rem 2rem;
 }
 .mb-text-1 {
   font-size: 2.5rem;
@@ -67,10 +67,15 @@
   line-height: 1.25;
   margin-bottom: 2rem;
 }
+.mb-hover:hover {
+  background-color: var(--heading-medium);
+  cursor: pointer;
+}
 .mb-images-1, .mb-images-2, .mb-images-3 {
   height: auto;
   object-fit: contain;
   cursor: pointer;
+  margin-top: 2rem
 }
 .mb-images-1{
   width: 10%;
@@ -95,3 +100,36 @@
   color: var(--heading-medium);
   font-family: var(--main-font);
 }
+
+/* ====================================================================================== */
+/* MODAL CSS */
+.mb-modal-close {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+.mb-modal-header {
+  font-size: 3rem;
+  color: var(--heading-dark)
+}
+p.mb-modal {
+  font-size: 2.25rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: var(--heading-dark)
+}
+
+.modal-90w {
+  top: 6%;
+  height: 90vh;
+  min-width: 90vw;
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  /* border: var(--background-grad-dk) solid 1px; */
+  overflow: auto;
+}
+/* .modal-content {
+  height: 85vh;
+  min-width: 85vw;
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+} */

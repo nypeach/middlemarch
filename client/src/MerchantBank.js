@@ -6,10 +6,15 @@ import Image from 'react-bootstrap/Image';
 import finServices from './images/merchBank/fintech-2-lt.png';
 import busServices from './images/merchBank/business_svc-lt.png';
 import impInvesting from './images/merchBank/impact_investing-lt.png';
-
+import { useState } from 'react';
+import FinancialServices from './FinancialServices';
+import BusinessServices from './BusinessServices';
+import ImpactInvesting from './ImpactInvesting';
 
 const MerchantBank = (props) => {
-
+  const [finServShow, setFinServShow] = useState(false);
+  const [busServShow, setBusServShow] = useState(false);
+  const [impInvestShow, setImpInvestShow] = useState(false);
 
   return (
 
@@ -21,6 +26,11 @@ const MerchantBank = (props) => {
         {/* ============================================================================ */}
 
         <div className="merchant-bank-content">
+          <FinancialServices show={finServShow} onHide={() => setFinServShow(false)} dialogClassName="modal-90w"/>
+          <BusinessServices show={busServShow} onHide={() => setBusServShow(false)} dialogClassName="modal-90w" />
+          <ImpactInvesting show={impInvestShow} onHide={() => setImpInvestShow(false)} dialogClassName="modal-90w"/>
+
+
           <Container fluid className="mb-container">
             <Row className="mb-row">
               <Col sm={12}>
@@ -34,31 +44,42 @@ const MerchantBank = (props) => {
               <Col sm={6} className="mb-col">
                 <Row className="mb-col-row">
                   <div><h2 className="mb-heading-1">Industry Focus</h2></div>
-                  <div>
-                    <Image className="mb-images-1" src={finServices} alt="Financial Services" onClick='{props.onClickMerchBank}' />
-                  </div>
-                  <div><h2 className="mb-heading-2">Financial Services</h2></div>
-                  <div className="mb-text-2">
-                    Technology-Enabled Financial Services and Related Software Businesses
-                  </div>
                 </Row>
+
+
+
                 <Row className="mb-col-row">
-                  <div>
-                    <Image className="mb-images-2" src={busServices} alt="Business Services" onClick='{props.onClickMerchBank}' />
+
+                  <div className="mb-hover" onClick={() => setFinServShow(true)}>
+                    <div>
+                      <Image className="mb-images-1" src={finServices} alt="Financial Services" />
+                    </div>
+                    <div><h2 className="mb-heading-2">Financial Services</h2></div>
+                    <div className="mb-text-2">
+                      Technology-Enabled Financial Services and Related Software Businesses
+                    </div>
                   </div>
-                  <div><h2 className="mb-heading-2">Business Services</h2></div>
-                  <div className="mb-text-2">
-                    Business Services that Exploit Technology, Outsourcing, and Innovative Business Models
+
+                  <div className="mb-hover" onClick={() => setBusServShow(true)}>
+                    <div>
+                      <Image className="mb-images-2" src={busServices} alt="Business Services" />
+                    </div>
+                    <div><h2 className="mb-heading-2">Business Services</h2></div>
+                    <div className="mb-text-2">
+                      Business Services that Exploit Technology, Outsourcing, and Innovative Business Models
+                    </div>
                   </div>
-                </Row>
-                <Row className="mb-col-row">
-                  <div>
-                    <Image className="mb-images-3" src={impInvesting} alt="Impact Investing" onClick='{props.onClickMerchBank}' />
+
+                  <div className="mb-hover" onClick={() => setImpInvestShow(true)}>
+                    <div>
+                      <Image className="mb-images-3" src={impInvesting} alt="Impact Investing" />
+                    </div>
+                    <div><h2 className="mb-heading-2">Impact Investing</h2></div>
+                    <div className="mb-text-2">
+                      High-Growth, High-Profit Margin Businesses that Support Positive Environmental, Social, and Governance Ojectives
+                    </div>
                   </div>
-                  <div><h2 className="mb-heading-2">Impact Investing</h2></div>
-                  <div className="mb-text-2">
-                    High-Growth, High-Profit Margin Businesses that Support Positive Environmental, Social, and Governance Ojectives
-                  </div>
+
                 </Row>
               </Col>
 
@@ -67,25 +88,25 @@ const MerchantBank = (props) => {
 
               <Col sm={6} className="mb-col">
                 <Row className="mb-col-row">
-                  <div><h2 className="mb-heading-1">Merchant Banking Services</h2></div>
+                  <div><h2 className="mb-heading-1" style={{ marginBottom: "2.5rem" }}>Merchant Banking Services</h2></div>
                   <ul className="no-bullets">
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; Equity Capital Raises</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Equity Capital Raises</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; Debt Capital Raises</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Debt Capital Raises</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; Structured Security Issuance</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Structured Security Issuance</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; Buyouts and Recapitalizations</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Buyouts and Recapitalizations</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; M &amp; A Advisory</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; M &amp; A Advisory</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class ="far fa-check-square"></i> &nbsp; Private Capital Investment</h2>
+                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Private Capital Investment</h2>
                     </li>
                   </ul>
                 </Row>
