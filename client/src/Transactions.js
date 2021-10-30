@@ -31,11 +31,11 @@ const Transactions = () => {
                 <TransactionCard
                   image={images[txn.Logo]}
                   name={txn.Name}
-                  division={txn.Division}
-                  industry={txn.Industry}
+                  description={txn.Description}
+                  investor={txn.Investor}
                   type={txn.Type}
                   amount={txn.Amount}
-                  date={txn.Date}
+                  year={txn.Year}
                 />
               </div>
             )}

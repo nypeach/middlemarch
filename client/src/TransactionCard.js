@@ -20,9 +20,9 @@ const TransactionCard = (props) => {
                       <h4 className="txn-amount">$ {props.amount}</h4>
                     </div>
                     :
-                    <div className= "txn-logo">
-                    {/* <img className="img-fluid" src={props.image} alt={props.image} /> */}
-                      <Image src={props.image} alt={props.image} style={{height: "75%"}} />
+                    <div className="txn-logo">
+                      {/* <img className="img-fluid" src={props.image} alt={props.image} /> */}
+                      <Image src={props.image} alt={props.image} />
                       <h4 className="card-title">Amount Raised</h4>
                       <h4 className="txn-amount">$ {props.amount}</h4>
                     </div>
@@ -43,10 +43,24 @@ const TransactionCard = (props) => {
                   $ {props.amount}
                   {props.date}
                 </div> */}
-                  <h4 className="card-title">{props.industry}</h4>
-                  <h4 className="card-title">{props.type}</h4>
-                  <h4 className="card-title">$ {props.amount}</h4>
-                  <h4 className="card-title">{props.date}</h4>
+                  <div className="card-back">
+                    <div className="back-title">Type</div>
+                    <div className="back-text">{props.type}</div>
+
+                    {props.year !== '' ?
+                      <div>
+                        <div className="back-title">Year</div>
+                        <div className="back-text">{props.year}</div>
+                      </div>
+                      :
+                      null
+                    }
+
+                    <div className="back-title">Description</div>
+                    <div className="back-text">{props.description}</div>
+                    <div className="back-title">Investor</div>
+                    <div className="back-text">{props.investor}</div>
+                  </div>
                 </div>
               </div>
             </div>
