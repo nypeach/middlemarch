@@ -19,14 +19,14 @@ const Transactions = () => {
     <section className="txn txn-section">
       <div className="txn-main">
         <div className="txn-header">
-          <h2 className="heading-primary-dk" style={{ color: "white" }}>TRANSACTIONS</h2>
+          <h2 className="heading-primary-dk">TRANSACTIONS</h2>
         </div>
         {/* ============================================================================ */}
         <div className="txn-card-div">
           <div className="row gx-5 row-cols-auto justify-content-center">
             {/* TRANSACTION CARD START */}
 
-            {transactions.sort((a, b) => (a.year > b.year) ? -1 : 1).map(txn =>
+            {transactions.sort((a, b) => (a.order > b.order) ? -1 : 1).map(txn =>
               <div>
                 <TransactionCard
                   image={images[txn.Logo]}
