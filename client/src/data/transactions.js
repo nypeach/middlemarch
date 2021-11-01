@@ -4,7 +4,7 @@ var transactions =
   [
     {
       'Logo': 'veransa-300w.jpg',
-      'Name': '',
+      'Name': 'Veransa',
       'Description': 'Yard waste recycling business',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -15,7 +15,7 @@ var transactions =
     },
     {
       'Logo': 'skykick-300w.jpg',
-      'Name': '',
+      'Name': 'Skykick',
       'Description': 'Cloud automation SaaS company',
       'MM': 'MM',
       'Type': 'Debt and Equity Raise',
@@ -26,7 +26,7 @@ var transactions =
     },
     {
       'Logo': 'elevate-300w.jpg',
-      'Name': '',
+      'Name': 'Elevate',
       'Description': 'Global outsourced legal services company.',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -37,7 +37,7 @@ var transactions =
     },
     {
       'Logo': 'mutuo-300w.jpg',
-      'Name': '',
+      'Name': 'Mutuo Financiera',
       'Description': 'Commercial Auto Leasing Company.',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -48,7 +48,7 @@ var transactions =
     },
     {
       'Logo': 'channel-300w.jpg',
-      'Name': '',
+      'Name': 'Channel Partners Capital',
       'Description': 'Small business lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -59,7 +59,7 @@ var transactions =
     },
     {
       'Logo': 'Photonic-300w.jpg',
-      'Name': '',
+      'Name': 'Photonic Capital',
       'Description': 'Lease-to-own LED lighting company.',
       'MM': 'MM',
       'Type': 'Debt and Equity Raise',
@@ -70,7 +70,7 @@ var transactions =
     },
     {
       'Logo': 'logo.jpeg',
-      'Name': '',
+      'Name': 'Project Dynamo',
       'Description': 'Energy equipment reseller.',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -81,7 +81,7 @@ var transactions =
     },
     {
       'Logo': 'FlexShopper-300w.jpg',
-      'Name': '',
+      'Name': 'FlexShopper',
       'Description': 'Lease-to-own finance company.',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -92,8 +92,8 @@ var transactions =
     },
     {
       'Logo': 'cream-300w.jpg',
-      'Name': '',
-      'Description': 'Online consumer lender',
+      'Name': 'Cream Finance',
+      'Description': 'Online Consumer Lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '20,000,000',
@@ -103,7 +103,7 @@ var transactions =
     },
     {
       'Logo': 'CapFusion-300w.jpg',
-      'Name': '',
+      'Name': 'Capfusion',
       'Description': 'Small business lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -114,7 +114,7 @@ var transactions =
     },
     {
       'Logo': 'logo.jpeg',
-      'Name': '',
+      'Name': 'Online Consumer Lender',
       'Description': 'Short-term consumer lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -125,7 +125,7 @@ var transactions =
     },
     {
       'Logo': 'FlexShopper-300w.jpg',
-      'Name': '',
+      'Name': 'Flexshopper',
       'Description': 'Lease-to-own finance company.',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -136,7 +136,7 @@ var transactions =
     },
     {
       'Logo': 'FlexShopper-300w.jpg',
-      'Name': '',
+      'Name': 'Flexshopper',
       'Description': 'Lease-to-own finance company',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -147,7 +147,7 @@ var transactions =
     },
     {
       'Logo': 'Privlo-300w.jpg',
-      'Name': '',
+      'Name': 'Privlo',
       'Description': 'Non-conforming mortgage lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -158,7 +158,7 @@ var transactions =
     },
     {
       'Logo': 'logo.jpeg',
-      'Name': '',
+      'Name': 'Online Consumer Lender',
       'Description': 'Online installment lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -169,7 +169,7 @@ var transactions =
     },
     {
       'Logo': 'BenchSymbol-300w.jpg',
-      'Name': '',
+      'Name': 'Bench',
       'Description': 'Outsourced accounting services',
       'MM': 'MM',
       'Type': 'Equity Investment',
@@ -180,7 +180,7 @@ var transactions =
     },
     {
       'Logo': 'logo.jpeg',
-      'Name': '',
+      'Name': 'Online Consumer Lender',
       'Description': 'Online consumer lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
@@ -191,7 +191,7 @@ var transactions =
     },
     {
       'Logo': 'logo.jpeg',
-      'Name': '',
+      'Name': 'Online Consumer Lender',
       'Description': 'Online consumer lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
@@ -202,7 +202,7 @@ var transactions =
     },
     {
       'Logo': 'DriveFactor-300w.jpg',
-      'Name': '',
+      'Name': 'Drive Factor',
       'Description': 'Insurance telematics for autos',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -213,7 +213,7 @@ var transactions =
     },
     {
       'Logo': 'BenchSymbol-300w.jpg',
-      'Name': '',
+      'Name': 'Bench',
       'Description': 'Outsourced accounting services',
       'MM': 'PRIOR',
       'Type': 'Equity Investment',
@@ -224,7 +224,7 @@ var transactions =
     },
     {
       'Logo': 'NexisCard-300w.jpg',
-      'Name': '',
+      'Name': 'Prepaid Ventures',
       'Description': 'Pre-paid debit card processor',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -235,7 +235,7 @@ var transactions =
     },
     {
       'Logo': 'CreditMax-300w.jpg',
-      'Name': '',
+      'Name': 'CreditMax',
       'Description': 'Charged-off credit trading platform',
       'MM': 'PRIOR',
       'Type': 'Debt Raise',
@@ -246,7 +246,7 @@ var transactions =
     },
     {
       'Logo': 'CreditMax-300w.jpg',
-      'Name': '',
+      'Name': 'CreditMax',
       'Description': 'Charged-off credit trading platform',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -257,7 +257,7 @@ var transactions =
     },
     {
       'Logo': 'AstorInvestment-300w.jpg',
-      'Name': '',
+      'Name': 'Astor Investment Management',
       'Description': 'Actively Managed ETF Issuer',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
@@ -268,7 +268,7 @@ var transactions =
     },
     {
       'Logo': 'Equiduct-300w.jpg',
-      'Name': '',
+      'Name': 'Equiduct',
       'Description': 'European Equity Exchange',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -279,7 +279,7 @@ var transactions =
     },
     {
       'Logo': 'Pico-300w.jpg',
-      'Name': '',
+      'Name': 'Pico Trading',
       'Description': 'Capital Markets Technology',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -290,7 +290,7 @@ var transactions =
     },
     {
       'Logo': 'UrbanFinancial-300w.jpg',
-      'Name': '',
+      'Name': 'Urban Financial Group',
       'Description': 'Reverse mortgage lender',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
@@ -301,7 +301,7 @@ var transactions =
     },
     {
       'Logo': 'Knight-300w.jpg',
-      'Name': '',
+      'Name': 'Knight Capital',
       'Description': 'Retail FX Trading',
       'MM': 'PRIOR',
       'Type': 'Sale',
@@ -312,7 +312,7 @@ var transactions =
     },
     {
       'Logo': 'Ballista-300w.jpg',
-      'Name': '',
+      'Name': 'Ballista',
       'Description': 'Block Options Trading Platform',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -323,7 +323,7 @@ var transactions =
     },
     {
       'Logo': 'Currenex-300w.jpg',
-      'Name': '',
+      'Name': 'CurrenEx',
       'Description': 'Foreign exchange trading platform',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
@@ -334,7 +334,7 @@ var transactions =
     },
     {
       'Logo': 'CashEdge-300w.jpg',
-      'Name': '',
+      'Name': 'CashEdge',
       'Description': 'SaaS payments and risk management platform',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -345,7 +345,7 @@ var transactions =
     },
     {
       'Logo': 'VelocityExpress-300w.jpg',
-      'Name': '',
+      'Name': 'Velocity Express',
       'Description': 'Time-critical logistics company',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
@@ -356,7 +356,7 @@ var transactions =
     },
     {
       'Logo': 'CheckSmart-300w.jpg',
-      'Name': '',
+      'Name': 'Check Smart',
       'Description': 'Check casher and short-term lender',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
@@ -367,7 +367,7 @@ var transactions =
     },
     {
       'Logo': 'New-300w.jpg',
-      'Name': '',
+      'Name': 'NEW Company',
       'Description': 'Outsourced insurance services company',
       'MM': 'PRIOR',
       'Type': 'Debt Raise',
@@ -378,7 +378,7 @@ var transactions =
     },
     {
       'Logo': 'New-300w.jpg',
-      'Name': '',
+      'Name': 'NEW Company',
       'Description': 'Outsourced insurance services company',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
@@ -389,7 +389,7 @@ var transactions =
     },
     {
       'Logo': 'ResMae-300w.jpg',
-      'Name': '',
+      'Name': 'ResMAE',
       'Description': 'Non-prime mortgage lender',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
