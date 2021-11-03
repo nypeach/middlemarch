@@ -1,28 +1,46 @@
 import { Modal} from 'react-bootstrap';
-import './MerchantBank.css';
+import './ImpactInvesting.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import ImpactInvestingPopover from './ImpactInvestingPopover'
 
 const ImpactInvesting = (props) => {
   return (
     <Modal
+      scrollable={false}
       {...props}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      dialogClassName="modal-90w"
+      aria-labelledby="Impact Investing Modal"
+      DialogClassName="modal-90w"
     >
-      <i className="far fa-times-circle fa-3x mb-modal-close" onClick={props.onHide}></i>
+      <i className="far fa-times-circle fa-3x impinvest-modal-close" onClick={props.onHide}></i>
       <Modal.Header>
         <Modal.Title>
-          <p className="mb-modal-header">Impact Investing</p>
+          <p className="impinvest-modal-header">IMPACT INVESTING</p>
         </Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p className="mb-modal">
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+       <Container fluid>
+         <Row>
+            <Col lg={6}>
+              <ImpactInvestingPopover />
+              </Col>
+            <Col lg={6} className="impinvest-div">
+              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+              <div className="impinvest-text">Impact investing, for Middlemarch, involves businesses that create measurable economic improvements to our environment and our society.</div>
+              <div className="impinvest-text">Middlemarch Partners’ impact investing efforts focus on environmental services as well as business that generate strong profits while addressing social and governance objectives as well.</div>
+            </Col>
+         </Row>
+       </Container>
+
+
+
+
+
+
+
       </Modal.Body>
     </Modal>
   );

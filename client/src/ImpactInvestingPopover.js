@@ -1,67 +1,67 @@
 import './FinancialServices.css';
 import middlemarch from './images/icon_only-transparent.svg';
-import mktservices from './images/businessServices/marketing_services-dk.svg';
-import aiBigData from './images/businessServices/fintech-2-dk.svg';
-import regCompliance from './images/businessServices/regulatory_compliance_solutions-dk.svg';
-import trainingEd from './images/businessServices/training_and_education-dk.svg';
-import transportLog from './images/businessServices/transportation-2-dk.svg';
-import busProcess from './images/businessServices/business_process_outsourcing-bk.svg';
+import altEnergy from './images/impactInvesting/alternative_energy-dk.svg';
+import transportation from './images/impactInvesting/transportation-dk.svg';
+import ecology from './images/impactInvesting/inpact_investment-dk.svg';
+import waste from './images/impactInvesting/waste_to_recycle-dk.svg';
+import social from './images/impactInvesting/equality-dk.svg';
+import diversity from './images/impactInvesting/diversity-dk.svg';
 import { OverlayTrigger, Popover } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
 
-const BusinessServicesPopover = () => {
+const ImpactInvestingPopover = () => {
 
   const focus1 = (
     <Popover id="focus1" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Marketing Services</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Alternative Energy</Popover.Header>
       <Popover.Body className="popover-text">
-        Using data to more effectively identify ,acquire, and monetize customers.
+        Support energy production alternatives to fossil fuels including solar, wind, and biologic processes.
       </Popover.Body>
     </Popover>
   );
 
   const focus2 = (
     <Popover id="focus2" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Artificial Intelligence, Big Data and Analytics</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Transportation</Popover.Header>
       <Popover.Body className="popover-text">
-        Vertical-focused software that enables clients to make better decisions and measure results.
+        Deploying capital in electric transportation modes that address societal transportation needs while minimizing environmental impacts.
       </Popover.Body>
     </Popover>
   );
 
   const focus3 = (
     <Popover id="focus3" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Regulatory and Compliance Solutions</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Ecology Friendly Agriculture</Popover.Header>
       <Popover.Body className="popover-text">
-        Addressing reporting and compliance requirements by leveraging outsourcing, technology, and data.
+        Investing in agriculture that has economic, environmental, and social benefits.
       </Popover.Body>
     </Popover>
   );
 
   const focus4 = (
     <Popover id="focus4" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Training and Education Services</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Waste to Recycling</Popover.Header>
       <Popover.Body className="popover-text">
-        Industry specific software that enables businesses and organizations to more efficiently transfer and retain knowledge across the organization.
+        Investing in technology and process to convert waste into energy and other saleable products that recycle waste and capture carbon.
       </Popover.Body>
     </Popover>
   );
 
   const focus5 = (
     <Popover id="focus5" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Transportation and Logistics</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Socially Responsible Investment Solutions</Popover.Header>
       <Popover.Body className="popover-text">
-        Utilizing outsourced business models, new modes of transport to deliver more cheaply and more effectively.
+        Businesses solely focused on the support and monitoring of successful implementations of ESG policies and procedures across organizations.
       </Popover.Body>
     </Popover>
   );
 
   const focus6 = (
     <Popover id="focus6" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Business Processing Outsourcing</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Diversity Advancement</Popover.Header>
       <Popover.Body className="popover-text">
-        Leveraging technology and outsourcing to unlock cost and service advantages vs. incumbent providers.
+        Companies that care about the advancement of women, people of color and other minorities.
       </Popover.Body>
     </Popover>
   );
@@ -78,7 +78,7 @@ const BusinessServicesPopover = () => {
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={mktservices} alt="specialty finance" />
+            <Image className="focus-img" src={altEnergy} alt="specialty finance" />
           </button>
         </OverlayTrigger>
       </div>
@@ -86,7 +86,7 @@ const BusinessServicesPopover = () => {
       <div className="item2">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={aiBigData} alt="transaction processing" />
+            <Image className="focus-img" src={transportation} alt="transaction processing" />
           </button>
         </OverlayTrigger>
       </div>
@@ -94,7 +94,7 @@ const BusinessServicesPopover = () => {
       <div className="item3">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={regCompliance} alt="electronic cap" />
+            <Image className="focus-img" src={ecology} alt="electronic cap" />
           </button>
         </OverlayTrigger>
       </div>
@@ -102,7 +102,7 @@ const BusinessServicesPopover = () => {
       <div className="item4">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={trainingEd} alt="business services" />
+            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={waste} alt="business services" />
           </button>
         </OverlayTrigger>
       </div>
@@ -110,7 +110,7 @@ const BusinessServicesPopover = () => {
       <div className="item5">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus5}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={busProcess} alt="asset management" />
+            <Image className="focus-img" src={social} alt="asset management" />
           </button>
         </OverlayTrigger>
       </div>
@@ -118,7 +118,7 @@ const BusinessServicesPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={transportLog} alt="fin tech" />
+            <Image className="focus-img" src={diversity} alt="fin tech" />
           </button>
         </OverlayTrigger>
 
@@ -129,4 +129,4 @@ const BusinessServicesPopover = () => {
 
 }
 
-export default BusinessServicesPopover;
+export default ImpactInvestingPopover;
