@@ -1,11 +1,11 @@
 import './FinancialServices.css';
 import middlemarch from './images/icon_only-transparent.svg';
-import txnprocess from './images/financialServices/transaction_processing-dk.svg';
-import fintech from './images/financialServices/fintech-dk.svg';
-import assetmgmt from './images/financialServices/asset_management-dk.svg';
-import alternativefinance from './images/financialServices/alternative_finance-dk.svg';
-import capitalmkts from './images/financialServices/capital_markets-dk.svg';
-import insurance from './images/financialServices/insurance-dk.svg';
+import mktservices from './images/businessServices/marketing_services-dk.svg';
+import aiBigData from './images/businessServices/fintech-2-dk.svg';
+import regCompliance from './images/businessServices/regulatory_compliance_solutions-dk.svg';
+import trainingEd from './images/businessServices/training_and_education-dk.svg';
+import transportLog from './images/businessServices/transportation-2-dk.svg';
+import busProcess from './images/businessServices/business_process_outsourcing-bk.svg';
 import { OverlayTrigger, Popover } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
@@ -14,54 +14,54 @@ const IndustryFocusPopover = () => {
 
   const focus1 = (
     <Popover id="focus1" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Alternative Finance</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Marketing Services</Popover.Header>
       <Popover.Body className="popover-text">
-        Lenders to both consumers and businesses, leveraging technology to gain advantage in cost, speed, and profitability.
+        Using data to more effectively identify ,acquire, and monetize customers.
       </Popover.Body>
     </Popover>
   );
 
   const focus2 = (
     <Popover id="focus2" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Transaction Processing</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Artificial Intelligence, Big Data and Analytics</Popover.Header>
       <Popover.Body className="popover-text">
-        Innovators using technology to drive down costs and distribution to reach broader client set.
+        Vertical-focused software that enables clients to make better decisions and measure results.
       </Popover.Body>
     </Popover>
   );
 
   const focus3 = (
     <Popover id="focus3" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Capital Markets</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Regulatory and Compliance Solutions</Popover.Header>
       <Popover.Body className="popover-text">
-        Innovative solutions and software helping banks, trading firms and exchanges become more nimble and efficient.
+        Addressing reporting and compliance requirements by leveraging outsourcing, technology, and data.
       </Popover.Body>
     </Popover>
   );
 
   const focus4 = (
     <Popover id="focus4" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Insurance</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Training and Education Services</Popover.Header>
       <Popover.Body className="popover-text">
-        Market dislocations and technology enable new entrants to deliver insurance and related services more effectively.
+        Industry specific software that enables businesses and organizations to more efficiently transfer and retain knowledge across the organization.
       </Popover.Body>
     </Popover>
   );
 
   const focus5 = (
     <Popover id="focus5" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Asset Management</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Transportation and Logistics</Popover.Header>
       <Popover.Body className="popover-text">
-        Realigning value chains to reach broader investor audiences with unique investment offerings more profitably and efficiently.
+        Utilizing outsourced business models, new modes of transport to deliver more cheaply and more effectively.
       </Popover.Body>
     </Popover>
   );
 
   const focus6 = (
     <Popover id="focus6" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Fin Tech</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Business Processing Outsourcing</Popover.Header>
       <Popover.Body className="popover-text">
-        Using technology to reshape how financial services are delivered. Focus on both tech-enabled financial services and the associated software platforms that serve the financial services industry across a variety of sub-sectors.
+        Leveraging technology and outsourcing to unlock cost and service advantages vs. incumbent providers.
       </Popover.Body>
     </Popover>
   );
@@ -78,7 +78,7 @@ const IndustryFocusPopover = () => {
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={alternativefinance} alt="specialty finance" />
+            <Image className="focus-img" src={mktservices} alt="specialty finance" />
           </button>
         </OverlayTrigger>
       </div>
@@ -86,7 +86,7 @@ const IndustryFocusPopover = () => {
       <div className="item2">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={txnprocess} alt="transaction processing" />
+            <Image className="focus-img" src={aiBigData} alt="transaction processing" />
           </button>
         </OverlayTrigger>
       </div>
@@ -94,7 +94,7 @@ const IndustryFocusPopover = () => {
       <div className="item3">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={capitalmkts} alt="electronic cap" />
+            <Image className="focus-img" src={regCompliance} alt="electronic cap" />
           </button>
         </OverlayTrigger>
       </div>
@@ -102,7 +102,7 @@ const IndustryFocusPopover = () => {
       <div className="item4">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={insurance} alt="business services" />
+            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={trainingEd} alt="business services" />
           </button>
         </OverlayTrigger>
       </div>
@@ -110,7 +110,7 @@ const IndustryFocusPopover = () => {
       <div className="item5">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus5}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={assetmgmt} alt="asset management" />
+            <Image className="focus-img" src={busProcess} alt="asset management" />
           </button>
         </OverlayTrigger>
       </div>
@@ -118,7 +118,7 @@ const IndustryFocusPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={fintech} alt="fin tech" />
+            <Image className="focus-img" src={transportLog} alt="fin tech" />
           </button>
         </OverlayTrigger>
 

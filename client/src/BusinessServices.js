@@ -1,28 +1,46 @@
 import { Modal} from 'react-bootstrap';
-import './MerchantBank.css';
+import './BusinessServices.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import BusinessServicesPopover from './BusinessServicesPopover'
 
 const BusinessServices = (props) => {
   return (
     <Modal
+      scrollable={false}
       {...props}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      dialogClassName="modal-90w"
+      aria-labelledby="Business Services Modal"
+      DialogClassName="modal-90w"
     >
-      <i className="far fa-times-circle fa-3x mb-modal-close" onClick={props.onHide}></i>
+      <i className="far fa-times-circle fa-3x busserv-modal-close" onClick={props.onHide}></i>
       <Modal.Header>
         <Modal.Title>
-          <p className="mb-modal-header"> Business Services</p>
+          <p className="busserv-modal-header">BUSINESS SERVICES AND SOFTWARE</p>
         </Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p className="mb-modal">
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+       <Container fluid>
+         <Row>
+            <Col lg={6}>
+              <BusinessServicesPopover />
+              </Col>
+            <Col lg={6} className="busserv-div">
+              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+              <div className="busserv-text">Middlemarch has facilitated multiple public and private transactions in business services, both as bankers and as private equity investors.</div>
+              <div className="busserv-text">The firm has focused on fast-growing business services companies that are exploiting market dislocations or have developed differentiated service offerings.</div>
+            </Col>
+         </Row>
+       </Container>
+
+
+
+
+
+
+
       </Modal.Body>
     </Modal>
   );
