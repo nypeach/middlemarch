@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './IndustryFocus.css';
 import middlemarch from './images/icon_only-transparent.svg';
 import txnprocess from './images/txn-processing-dkb.svg';
@@ -7,9 +6,7 @@ import assetmgmt from './images/asset-mgmt-dkb.svg';
 import specialtyfinance from './images/debt-resolution-dkb.svg';
 import electroniccapital from './images/analytics-dkb.svg';
 import businesssvc from './images/securities-mkt-dkb.svg';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { OverlayTrigger, Popover, PopoverBody, PopoverHeader} from 'react-bootstrap';
+import { OverlayTrigger, Popover} from 'react-bootstrap';
 
 const IndustryFocusPopover = () => {
 

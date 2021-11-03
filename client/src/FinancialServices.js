@@ -1,28 +1,45 @@
 import { Modal} from 'react-bootstrap';
-import './MerchantBank.css';
+import './FinancialServices.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import FinancialServicesPopover from './FinancialServicesPopover'
 
 const FinancialServices = (props) => {
   return (
     <Modal
+      scrollable={false}
       {...props}
       size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      dialogClassName="modal-90w"
+      aria-labelledby="Financial Services Modal"
+      DialogClassName="modal-90w"
     >
-      <i className="far fa-times-circle fa-3x mb-modal-close" onClick={props.onHide}></i>
+      <i className="far fa-times-circle fa-3x finserv-modal-close" onClick={props.onHide}></i>
       <Modal.Header>
         <Modal.Title>
-          <p className="mb-modal-header"> Financial Services</p>
+          <p className="finserv-modal-header">FINANCIAL SERVICES</p>
         </Modal.Title>
       </Modal.Header>
 
       <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p className="mb-modal">
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
+       <Container fluid>
+         <Row>
+            <Col lg={6}>
+              <FinancialServicesPopover />
+              </Col>
+            <Col lg={6} className="finserv-div">
+              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+              <div className="finserv-text">Middlemarch has deep domain expertise in financial services, where its principals have served as investment bankers, private equity investors, and fintech business operators for the last 30 years.</div>
+            </Col>
+         </Row>
+       </Container>
+
+
+
+
+
+
+
       </Modal.Body>
     </Modal>
   );

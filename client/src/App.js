@@ -13,6 +13,7 @@ import Footer from './Footer';
 
 
 
+
 function App() {
   const [gotoLanding, setGotoLanding] = useState(false);
   const landingRef = useRef(null);
@@ -100,7 +101,6 @@ function App() {
       <div ref={newsRef}><News /></div>
       <div ref={ourInvestorsRef}><OurInvestors /></div>
       <div ref={contactRef}><Footer /></div>
-
     </div>
   )
 }

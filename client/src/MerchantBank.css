@@ -53,7 +53,7 @@
   display: inline-block;
   color: var(--heading-dark);
   font-family: var(--main-font);
-  margin-top: 2rem 2rem 1rem 2rem;
+  margin: 2rem 2rem 1rem 2rem;
 }
 .mb-text-1 {
   font-size: 2.5rem;
@@ -122,14 +122,15 @@ p.mb-modal {
 
 .modal-90w {
   top: 6%;
-  height: 90vh;
-  min-width: 90vw;
+  height: 85vh;
+  min-width: 85vw;
   box-shadow: 7px 7px 7px var(--background-grad-dk);
   /* border: var(--background-grad-dk) solid 1px; */
   overflow: auto;
 }
-/* .modal-content {
+.modal-content {
   height: 85vh;
   min-width: 85vw;
   box-shadow: 7px 7px 7px var(--background-grad-dk);
-} */
+  /* border: var(--background-grad-dk) solid 1px; */
+}
