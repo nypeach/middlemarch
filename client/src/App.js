@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Hamburger from './Hamburger';
 import Landing from './Landing';
 import OurFirm from './OurFirm';
-import MerchantBank from './MerchantBank';
+import IndFocMerchantBank from './IndFocMerchantBank';
 import PrivateCapital from './PrivateCapital';
 import OurTeam from './OurTeam';
 import OurInvestors from './OurInvestors';
@@ -94,7 +94,7 @@ function App() {
       <div ref={ourFirmRef}>
         <OurFirm onClickMerchBank={() => setGotoMerchBank(true)} onClickPrivCap={() => setGotoPrivCap(true)} />
       </div>
-      <div ref={merchBankRef}><MerchantBank onClickOurFirm={() => setGotoOurFirm(true)}/></div>
+      <div ref={merchBankRef}><IndFocMerchantBank onClickOurFirm={() => setGotoOurFirm(true)}/></div>
       <div ref={privCapRef}><PrivateCapital onClickOurFirm={() => setGotoOurFirm(true)}/></div>
       <div ref={ourTeamRef}><OurTeam /></div>
       <div ref={transactionsRef}><Transactions /></div>

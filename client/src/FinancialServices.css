@@ -110,6 +110,8 @@
 .popover-container {
   box-shadow: 0 2px 2px rgba(27, 44, 89, .4);
   border: .5px solid rgba(27, 44, 89, .4);
+  max-width: 40rem;
+  width: auto;
 }
 .popover-header {
   font-size: 2rem;

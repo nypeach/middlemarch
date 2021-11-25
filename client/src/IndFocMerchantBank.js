@@ -1,4 +1,4 @@
-import './MerchantBank.css';
+import './IndFocMerchantBank.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +11,7 @@ import FinancialServices from './FinancialServices';
 import BusinessServices from './BusinessServices';
 import ImpactInvesting from './ImpactInvesting';
 
-const MerchantBank = (props) => {
+const IndFocMerchantBank = (props) => {
   const [finServShow, setFinServShow] = useState(false);
   const [busServShow, setBusServShow] = useState(false);
   const [impInvestShow, setImpInvestShow] = useState(false);
@@ -21,7 +21,7 @@ const MerchantBank = (props) => {
     <section id="merchant-bank" className="merchant-bank merchant-bank-section" >
       <div className="merchant-bank-main">
         <div className="merchant-bank-header">
-          <h2 className="heading-primary-dk" style={{ color: "white" }}>Industry Focused Merchant Banking</h2>
+          <h2 className="heading-primary-dk" style={{ color: "white" }}>Industry-Focused Merchant Banking</h2>
         </div>
         {/* ============================================================================ */}
 
@@ -130,4 +130,4 @@ const MerchantBank = (props) => {
   )
 }
 
-export default MerchantBank;
+export default IndFocMerchantBank;

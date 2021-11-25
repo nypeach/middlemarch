@@ -12,6 +12,7 @@ import Image from 'react-bootstrap/Image';
 
 const IndustryFocusPopover = () => {
 
+
   const focus1 = (
     <Popover id="focus1" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Alternative Finance</Popover.Header>
