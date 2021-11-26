@@ -23,6 +23,54 @@
   height: 10vh;
   text-align: center;
 }
+.private-capital-img-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-all {
+  position: absolute;
+  width: 7.25vw;
+  height: 7.25vw;
+  text-align: center;
+}
+.img-top {
+  top: 2.5%;
+  left: 42.5%;
+  font-size: 1.75rem;
+}
+.img-right {
+  top: 38.5%;
+  left: 67.5%;
+  font-size: 1.75rem;
+}
+.img-bottom {
+  top: 75%;
+  left: 42.5%;
+  font-size: 1.75rem;
+}
+.img-center {
+  top: 39%;
+  left: 42.5%;
+  font-size: 2.25rem;
+}
+.img-left {
+  top: 38.5%;
+  left: 17.5%;
+  font-size: 1.75rem;
+}
+.img-text {
+  color: var(--white-text);
+  font-family: var(--main-font);
+  line-height: 1.40;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .private-capital-text{
   font-size: 2.5rem;
 

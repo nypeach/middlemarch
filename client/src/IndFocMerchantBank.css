@@ -35,17 +35,25 @@
 }
 .mb-row {
   margin: 0 1.5rem;
-
 }
 
 .mb-li {
   text-align: left;
   line-height: 7.5rem;
-  margin: 0rem 14rem 0rem 20rem;
+  margin: 0rem 5rem 0rem 5rem;
 }
 
 .mb-col-row {
   margin: 0 1.5rem 0 1.5rem;
+}
+
+.mb-heading-0 {
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline-block;
+  color: var(--heading-dark);
+  font-family: var(--main-font);
+  margin: 2rem 0rem 1rem 0rem;
 }
 .mb-heading-1 {
   font-size: 3rem;
@@ -58,7 +66,7 @@
 .mb-text-1 {
   font-size: 2.5rem;
   text-align: justify;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 1rem auto;
   line-height: 1.25;
 }
 .mb-text-2 {

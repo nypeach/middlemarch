@@ -88,8 +88,11 @@ const IndFocMerchantBank = (props) => {
 
               <Col sm={6} className="mb-col">
                 <Row className="mb-col-row">
-                  <div><h2 className="mb-heading-1" style={{ marginBottom: "2.5rem" }}>Merchant Banking Services</h2></div>
+                  {/* <div><h2 className="mb-heading-1" style={{ marginBottom: "2.5rem", marginLeft:"-2rem" }}>Merchant Banking Services</h2></div> */}
                   <ul className="no-bullets">
+                    <li className="mb-li">
+                      <h2 className="mb-heading-0">Merchant Banking Services</h2>
+                    </li>
                     <li className="mb-li">
                       <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Equity Capital Raises</h2>
                     </li>

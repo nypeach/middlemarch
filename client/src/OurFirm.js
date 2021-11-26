@@ -18,7 +18,7 @@ const OurFirm = (props) => {
 
             <div className="our-firm-text">Middlemarch focuses on financial services, business services, and impact investing. Its Partners have concentrated on these sectors for their entire careers in roles as investment bankers, private equity investors, and operating executives.</div>
 
-            <div className="our-firm-text">The firm advises and invests across all stages of company growth, establishing long-term relationships that endure beyond the initial transaction.</div>
+            <div className="our-firm-text" style={{marginBottom: "4rem"}}>The firm advises and invests across all stages of company growth, establishing long-term relationships that endure beyond the initial transaction.</div>
           </Col>
         </Row>
         <Row>
