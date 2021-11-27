@@ -40,6 +40,23 @@ const OurTeam = (props) => {
             )}
           </div>
         </div>
+        <div className="team-header">
+          <h2 className="heading-primary-dk" style={{ color: "white" }}>Our Affiliates</h2>
+        </div>
+        {/* ============================================================================ */}
+
+        <div className="team-card-div">
+          <div className="row g-5 p-5">
+            {team.map(person =>
+              <OurTeamCard
+                selectedModal={selectedModal}
+                setSelectedModal={setSelectedModal}
+                image={images[person.photo]}
+                person={person}
+              />
+            )}
+          </div>
+        </div>
       </div>
     </section>
   )
