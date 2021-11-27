@@ -50,11 +50,9 @@ const OurTeamCard = (props) => {
             <div className="card-body">
               <h2 className="team-card-name">{props.person.name}</h2>
               <h3 className="team-card-title">{props.person.title}</h3>
-              <p className="mb-4 mt-1 team-card-text">{props.person.quote}</p>
               <div className="mb-4 mt-1 team-card-icon">
-                <i class="fab fa-facebook-square 7x" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
+                <i class="fas fa-phone" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
                 <i class="fab fa-linkedin" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
-                <i class="fab fa-twitter-square" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
                 <i class="fas fa-envelope-square" style={{ cursor: "pointer" }}></i>
               </div>
             </div>

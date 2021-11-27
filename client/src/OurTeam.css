@@ -116,6 +116,7 @@ p.team-modal {
   height: 85vh;
   min-width: 85vw;
   box-shadow: 7px 7px 7px var(--background-grad-dk);
+  overflow: auto;
   /* border: var(--background-grad-dk) solid 1px; */
 }
 
