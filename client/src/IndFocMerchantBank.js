@@ -43,44 +43,45 @@ const IndFocMerchantBank = (props) => {
 
               <Col sm={6} className="mb-col">
                 <Row className="mb-col-row">
-                  <div><h2 className="mb-heading-1">Industry Focus</h2></div>
+                  <div><h2 className="mb-heading-1" style={{marginBottom: "2.5rem"}}>Industry Focus</h2></div>
                 </Row>
 
-
-
-                <Row className="mb-col-row">
-
-                  <div className="mb-hover" onClick={() => setFinServShow(true)}>
-                    <div>
-                      <Image className="mb-images-1" src={finServices} alt="Financial Services" />
-                    </div>
+                <Row className="mb-hover" style={{alignItems: "center"}} onClick={() => setFinServShow(true)}>
+                  <Col xs={3} md={3}>
+                    <Image className="mb-images-1" src={finServices} alt="Financial Services" />
+                  </Col>
+                  <Col xs={9} md={9}>
                     <div><h2 className="mb-heading-2">Financial Services</h2></div>
                     <div className="mb-text-2">
                       Technology-Enabled Financial Services and Related Software Businesses
                     </div>
-                  </div>
+                  </Col>
+                </Row>
 
-                  <div className="mb-hover" onClick={() => setBusServShow(true)}>
-                    <div>
-                      <Image className="mb-images-2" src={busServices} alt="Business Services" />
-                    </div>
+                <Row className="mb-hover" style={{ alignItems: "center" }} onClick={() => setBusServShow(true)}>
+                  <Col xs={3} md={3}>
+                    <Image className="mb-images-2" src={busServices} alt="Business Services" />
+                  </Col>
+                  <Col xs={9} md={9}>
                     <div><h2 className="mb-heading-2">Business Services</h2></div>
                     <div className="mb-text-2">
                       Business Services that Exploit Technology, Outsourcing, and Innovative Business Models
                     </div>
-                  </div>
+                  </Col>
+                </Row>
 
-                  <div className="mb-hover" onClick={() => setImpInvestShow(true)}>
-                    <div>
-                      <Image className="mb-images-3" src={impInvesting} alt="Impact Investing" />
-                    </div>
+                <Row className="mb-hover" style={{ alignItems: "center" }} onClick={() => setImpInvestShow(true)}>
+                  <Col xs={3} md={3}>
+                    <Image className="mb-images-3" src={impInvesting} alt="Impact Investing" />
+                  </Col>
+                  <Col xs={9} md={9}>
                     <div><h2 className="mb-heading-2">Impact Investing</h2></div>
                     <div className="mb-text-2">
                       High-Growth, High-Profit Margin Businesses that Support Positive Environmental, Social, and Governance Ojectives
                     </div>
-                  </div>
-
+                  </Col>
                 </Row>
+
               </Col>
 
 

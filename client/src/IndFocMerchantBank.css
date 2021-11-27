@@ -44,7 +44,8 @@
 }
 
 .mb-col-row {
-  margin: 0 1.5rem 0 1.5rem;
+  align-items: center;
+  text-align: left;
 }
 
 .mb-heading-0 {
@@ -61,7 +62,8 @@
   display: inline-block;
   color: var(--heading-dark);
   font-family: var(--main-font);
-  margin: 2rem 2rem 1rem 2rem;
+  margin: 2rem 0rem 1rem 0rem;
+  /* margin: 2rem 2rem 1rem 2rem; */
 }
 .mb-text-1 {
   font-size: 2.5rem;
@@ -71,10 +73,17 @@
 }
 .mb-text-2 {
   font-size: 2rem;
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.25;
-  margin-bottom: 2rem;
-  color: var(--white-text)
+  /* margin: 1.5rem 0; */
+  /* color: var(--white-text) */
+}
+.mb-hover {
+  text-align: left;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  height: 15vh;
 }
 .mb-hover:hover {
   background-color: var(--heading-medium);
@@ -84,23 +93,17 @@
   height: auto;
   object-fit: contain;
   cursor: pointer;
-  margin-top: 2rem
+  margin: 2rem 0;
+  width: 80%;
 }
-.mb-images-1{
-  width: 10%;
-}
-.mb-images-2 {
-  width: 11%;
-}
-.mb-images-3 {
-  width: 11.5%;
-}
+
 .mb-heading-2 {
   font-size: 2.25rem;
   font-weight: 700;
   display: inline-block;
   color: var(--heading-dark);
   font-family: var(--main-font);
+  margin-bottom: 1rem;
 }
 .mb-heading-3 {
   font-size: 2.5rem;
