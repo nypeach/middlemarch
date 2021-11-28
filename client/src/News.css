@@ -1,6 +1,14 @@
 .news {
   min-height: 100vh;
+  display:block;
+  overflow: auto;
+  background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/nytimes.jpeg);
+  background-size: cover;
+  background-position: top;
+       min-height: 100vh;
+       padding-bottom: 24px;
 }
+
 
 .news-section {
   text-align: center;

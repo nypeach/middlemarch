@@ -20,7 +20,7 @@ const News = () => {
     <section className="news news-section">
       <div className="news-main">
         <div className="news-header">
-          <h2 className="heading-primary-dk">NEWS, ARTICLES &amp; EVENTS</h2>
+          <h2 className="heading-primary-dk" style={{ color: "white" }}>NEWS, ARTICLES &amp; EVENTS</h2>
         </div>
         {/* ============================================================================ */}
         <div className="news-card-div">
@@ -40,28 +40,7 @@ const News = () => {
               </div>
             )}
 
-            {/* <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard />
-            <NewsCard /> */}
 
-
-            {/* {transactions.sort((a, b) => (a.year > b.year) ? -1 : 1).map(txn =>
-              <div>
-                <TransactionCard
-                  image={images[txn.Logo]}
-                  name={txn.Name}
-                  division={txn.Division}
-                  industry={txn.Industry}
-                  type={txn.Type}
-                  amount={txn.Amount}
-                  date={txn.Date}
-                />
-              </div>
-            )} */}
 
           </div>
         </div>

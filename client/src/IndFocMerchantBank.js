@@ -33,7 +33,7 @@ const IndFocMerchantBank = (props) => {
 
           <Container fluid className="mb-container">
             <Row className="mb-row">
-              <Col sm={12}>
+              <Col>
                 <div className="mb-text-1">
                   Middlemarch Partners focuses on industries that can sustain high-growth and generate high margins.
                   The firm leverages the experience of its Principals who have served as advisors, investors, and operators in the sectors where Middlemarch Partners is active as a merchant bank</div>
@@ -43,7 +43,7 @@ const IndFocMerchantBank = (props) => {
 
               <Col sm={6} className="mb-col">
                 <Row className="mb-col-row">
-                  <div><h2 className="mb-heading-1" style={{marginBottom: "2.5rem"}}>Industry Focus</h2></div>
+                  <div><h2 className="mb-heading-1">Industry Focus</h2></div>
                 </Row>
 
                 <Row className="mb-hover" style={{alignItems: "center"}} onClick={() => setFinServShow(true)}>
@@ -87,7 +87,7 @@ const IndFocMerchantBank = (props) => {
 
 
 
-              <Col sm={6} className="mb-col">
+              <Col sm={6} className="mb-col-r">
                 <Row className="mb-col-row">
                   {/* <div><h2 className="mb-heading-1" style={{ marginBottom: "2.5rem", marginLeft:"-2rem" }}>Merchant Banking Services</h2></div> */}
                   <ul className="no-bullets">

@@ -51,11 +51,12 @@
   text-align: center;
   cursor: pointer;
 }
+
 .team-card-title {
-  font-size: 2rem;
+  font-size: 2.45rem;
   font-weight: 700;
   display: block;
-  color: var(--heading-light);
+  color: var(--heading-medium);
   margin-bottom: 2rem 0;
   font-family: var(--main-font);
   text-transform: uppercase;
@@ -98,10 +99,17 @@
   color: var(--heading-dark)
 }
 p.team-modal {
-  font-size: 2.25rem;
+  font-size: 2.15rem;
   text-align: justify;
-  margin-bottom: 1rem;
-  color: var(--heading-dark)
+  margin-bottom: 1.5rem;
+  color: var(--heading-dark);
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 1100px) {
+  p.team-modal {
+    font-size: 2.45rem;
+  }
 }
 
 .modal-90w {
@@ -126,3 +134,30 @@ p.team-modal {
   box-shadow: 7px 7px 7px var(--background-grad-dk);
   border: var(--background-grad-dk) solid 1px;
 } */
+
+/* ========== TOOLTIP ============= */
+.fa-phone{
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+.fa-phone .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--heading-dark);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.fa-phone:hover .tooltiptext {
+  visibility: visible;
+  font-family: var(--main-font);
+}
