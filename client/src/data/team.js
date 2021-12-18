@@ -42,7 +42,7 @@ var team = [
     'photo': 'AlexKim.jpeg',
     'expertise': 'Natural resources, electronic financial services, transaction processing, SaaS businesses, and technology-enabled business services.',
     'paragraphs': [
-      'Mr. Kim is a partner at Middlemarch Partners and has over 20 years of experience advising, investing, consulting, and managing high-growth companies in technology, resources and financial services. At Middlemarch, Mr. Kim lead’s the firm’s efforts in Asia with a focus on sourcing both companies seeking merchant banking advisory and investments and investors for Middlemarch clients. Mr. Kim is also a partner and co-founder of SkyPath Capital Partners, a strategic consulting and advisory group based in Hong Kong and Singapore.',
+      'Mr. Kim is a partner at Middlemarch Partners and has over 20 years of experience advising, investing, consulting, and managing high-growth companies in technology, resources and financial services. At Middlemarch, Mr. Kim lead’s the firm’s efforts in Asia with a focus on sourcing both companies seeking merchant banking advisory and investments and investors for Middlemarch clients. Mr. Kim is also a partner and co-founder of SkyPath Capital Partners, a strategic consulting and advisory group based in Hong Kong and Singapore. ',
       'Previously, Mr. Kim’s professional experiences include leading numerous strategic consulting projects at McKinsey & Company in Asia, Europe, United States and Middle East as well as at McKinsey Global Institute, which is McKinsey’s think tank.',
       'Mr. Kim also served as an executive at Eversant Corporation, the non-regulated acquisition and investment arm of a public energy company, where Mr. Kim focused on renewable and green tech opportunities, and at 101 Fab, a venture funded software company focused on business intelligence, knowledge capture and automation of the semiconductor industry. Earlier in his career, Mr. Kim worked as an investment professional at First Analysis Venture Capital, a US-based venture capital firm that focused on software, business services and environmental services investments. Mr. Kim began his career as an investment banking analyst at Donaldson, Lufkin & Jenrette.',
       'Mr. Kim received an MBA from Kellogg School of Management, Northwestern University, and graduated with a bachelor of science degree with distinction from McIntire School of Commerce, University of Virginia. He holds a Series 7 FINRA registration.'
@@ -75,13 +75,29 @@ var team = [
     'photo': 'AlexMack.jpeg',
     'expertise': 'Regulatory compliance and financial controls.',
     'paragraphs': [
-      'Mr. Mack is the Chief Financial Officer and Chief Compliance Officer of Middlemarch Partners. He is responsible for the Firm’s financial position and reporting, as well as the Firm’s compliance with securities regulations. He has spent the past decade helping Broker Dealers with their financial and compliance responsibilities.',
+      'Mr. Mack is the CFO and CCO of Middlemarch Partners. He is responsible for the Firm’s financial position and reporting, as well as the Firm’s compliance with securities regulations. He has spent the past decade helping Broker Dealers with their financial and compliance responsibilities.',
       'Since 2005, Mr. Mack has helped over a dozen private placement investment banks fulfill their financial and compliance obligations. He began his career as a systems analyst and operations consultant with companies such as Liz Claiborne, Calvin Klein, Price Waterhouse, Sony Music and Random House.',
       'Mr. Mack received a Masters of Science in Management from The Sloan School of Business at MIT and a B.A. from Cornell University. He holds the Series 7, 24, 27, and 63 FINRA registrations.'
     ]
   },
   {
     'id': 6,
+    'name': 'David Tanzer',
+    'title': 'MCP Investment Partner',
+    'email': 'mailto:dtanzer@middlemarchllc.com',
+    'phone': '917-692-6702',
+    'linkedin': 'https://www.linkedin.com/in/david-tanzer-43259a',
+    'photo': 'DavidTanzer.jpeg',
+    'expertise': 'FFinancial services, e-commerce, impact investing, healthcare, media, and executive management',
+    'paragraphs': [
+      'David Tanzer is a Partner of Middlemarch Capital Partners where he oversees the co-investment in Veransa. He has spent his 35 year career as a venture capital investor, a CEO of multiple private-equity-sponsored companies, and as a board member of fast-growing technology-enabled ventures.',
+      'Currently, Mr. Tanzer also operates Mercury FundingCo, LLC where he sources, develops, and provides funding to investments across a diverse range of sectors. As part of his efforts, he has led a $28M equity funding in Humanigen, Inc. (NASDAQ: HGEN) to help fund the Phase III trial of its anti-human GM-CSF monoclonal antibody medication Lenzilumab. He also led a $7.5M seed round for ecommerce personalization provider XGen.ai, where Mr. Tanzer serves as Executive Chairman. He has also made early-stage investments in companies involved with payment processing, cloud storage, ecommerce, B2B software, mental health, and NFTs.',
+      'Over the course of his career, Mr. Tanzer has been a strategic operating and business development executive specializing in transforming and accelerating the growth of media, direct marketing, healthcare services and education companies using the latest digital technology and innovative marketing partnerships.  Mr. Tanzer has a diverse professional experience, including roles as CEO or President of eight companies, in industries including healthcare information, interactive commerce, digital advertising, educational technology, magazines and home security. He has served on ten company boards and consulted to numerous private equity firms and corporate clients.',
+      'Mr. Tanzer graduated Harvard College, magna cum laude in Economics, and Harvard Business School, where he was a George F. Baker Scholar.'
+    ]
+  },
+  {
+    'id': 7,
     'name': 'Ira Greenberg',
     'title': 'MCP Investment Partner',
     'email': 'mailto:igreenberg@middlemarchllc.com',
@@ -93,54 +109,22 @@ var team = [
       ''
     ]
   },
-  {
-    'id': 7,
-    'name': 'David Tanzer',
-    'title': 'MCP Investment Partner',
-    'email': 'mailto:dtanzer@middlemarchllc.com',
-    'phone': '917-692-6702',
-    'linkedin': 'https://www.linkedin.com/in/david-tanzer-43259a',
-    'photo': 'DavidTanzer.jpeg',
-    'expertise': 'Financial services, e-commerce, impact investing, healthcare, media, and executive management.',
-    'paragraphs': [
-      'David Tanzer is a Partner of Middlemarch Capital Partners where he oversees the co-investment in Veransa. He has spent his 35 year career as a venture capital investor, a CEO of multiple private-equity-sponsored companies, and as a board member of fast-growing technology-enabled ventures.',
-      'Currently, Mr. Tanzer also operates Mercury FundingCo, LLC where he sources, develops, and provides funding to investments across a diverse range of sectors. As part of his efforts, he has led a $28M equity funding in Humanigen, Inc. (NASDAQ: HGEN) to help fund the Phase III trial of its anti-human GM-CSF monoclonal antibody medication Lenzilumab. He also led a $7.5M seed round for ecommerce personalization provider XGen.ai, where Mr. Tanzer serves as Executive Chairman. He has also made early-stage investments in companies involved with payment processing, cloud storage, ecommerce, B2B software, mental health, and NFTs.',
-      'Over the course of his career, Mr. Tanzer has been a strategic operating and business development executive specializing in transforming and accelerating the growth of media, direct marketing, healthcare services and education companies using the latest digital technology and innovative marketing partnerships.  Mr. Tanzer has a diverse professional experience, including roles as CEO or President of eight companies, in industries including healthcare information, interactive commerce, digital advertising, educational technology, magazines and home security. He has served on ten company boards and consulted to numerous private equity firms and corporate clients.',
-     'Mr. Tanzer graduated Harvard College, magna cum laude in Economics, and Harvard Business School, where he was a George F. Baker Scholar.'
-    ]
-  },
+
+  // {
+  //   'id': 8,
+  //   'name': 'Gerard Griffin',
+  //   'title': '',
+  //   'email': 'mailto:',
+  //   'phone': '',
+  //   'linkedin': '',
+  //   'photo': 'team0.jpeg',
+  //   'expertise': '',
+  //   'paragraphs': [
+  //     ''
+  //   ]
+  // },
   {
     'id': 8,
-    'name': 'Gerard Griffin',
-    'title': '',
-    'email': 'mailto:',
-    'phone': '',
-    'linkedin': '',
-    'photo': 'team0.jpeg',
-    'expertise': '',
-    'paragraphs': [
-      ''
-    ]
-  },
-  {
-    'id': 9,
-    'name': 'Peter Cieszko',
-    'title': 'Partner',
-    'email': 'mailto:pcieszko@convergency-partners.com',
-    'phone': '917-756-7345',
-    'linkedin': 'https://www.linkedin.com/in/peter-cieszko',
-    'photo': 'PeterCieszko.jpeg',
-    'expertise': 'Asset management, investment management, product innovation, business development, and distribution strategies.',
-    'paragraphs': [
-      'Peter Cieszko recently retired as the Head of Strategic Development for American Century Investments, where he greatly contributed to the growth of the organization across all client channels through existing and new strategic partnerships.',
-      'Mr. Cieszko leverages his extensive industry relationships to deliver value to clients and the firm. He has developed relationships with professional buyers, wirehouses, regional and independent advisors, RIAs, banks and insurance companies.',
-      'Mr. Cieszko came to American Century Investments from Fidelity Investments Institutional Services Company, where he served as President of the business unit that provides investment management services to financial institutions. Prior to Fidelity, he was President and Chief Executive Officer of Evergreen Investments, the investment management arm of Wachovia/WellsFargo. At Evergreen he also served as President of Global Distribution, where he was responsible for the firm’s distribution, product and long-term growth strategies.',
-      'Mr. Cieszko joined Evergreen from Legg Mason, where he was Head of U.S. Distribution and also served as Head of the U.S. retail and high-net worth businesses of Legg Mason’s predecessor firm Citigroup Asset Management. Throughout his 35-year financial services career, Mr. Cieszko has held various senior leadership positions with Nuveen Investments, Montgomery Asset Management, E.F. Hutton & Company and Merrill Lynch.',
-      'Mr.Cieszko graduated from Villanova University with a bachelor’s degree in business administration. He serves on the board of directors of the Insured Retirement Institute (IRI), Invest in Others Charitable Foundation, as well as various boards and leadership positions within Catholic Charities.'
-    ]
-  },
-  {
-    'id': 10,
     'name': 'Frank Porcelli',
     'title': 'Partner',
     'email': 'mailto:fporcelli@convergency-partners.com',
@@ -155,7 +139,22 @@ var team = [
     ]
   },
   {
-    'id': 11,
+    'id': 9,
+    'name': 'Paul Hatch',
+    'title': 'Partner',
+    'email': 'mailto:phatch@convergency-partners.com',
+    'phone': '512-355-1500 ',
+    'linkedin': 'https://www.linkedin.com/in/paul-hatch-580a22a',
+    'photo': 'PaulHatch.jpeg',
+    'expertise': 'Wealth management, asset management, fintech, and executive management.',
+    'paragraphs': [
+      'Paul Hatch began his career as an officer in the US Navy, after having graduated from the US Naval Academy in Annapolis. He served aboard the USS Coontz for three years and spent the remainder of his time in the Navy as a Political Military analyst responsible for briefing the President, Vice President and various other senior legislators on the situation in the Middle East.',
+      'Following his service, Mr. Hatch joined EF Hutton as a financial advisor and began a 25+ year career at the firm that would morph to become Shearson Lehman Hutton, Smith Barney, and eventually Morgan Stanley Wealth Management. Along the way, he continued to rise through the organization, holding and mastering virtually every field management role and eventually becoming National Sales Manager. He was then promoted to the Head of all Products and Services, which included the advisory industry’s leading platform. While in that capacity, Paul led the development of Smith Barney Advisor which raised over $20B in its first 18 months. He also negotiated the purchase of Legg Mason’s UMA business. He also launched the Greystone Consulting Group at Morgan Stanley.',
+      'In 2009, Mr. Hatch was named the head of all Global Products for the newly formed Morgan Stanley Smith Barney Wealth Management. During this time, he was recognized as the Most Influential person in the Mutual Fund Industry by mfwire.com. He then took on the role of Vice Chairman for Morgan Stanley Global Wealth Management. Following his time at Morgan Stanley, Paul was appointed to the Board of Focus Financial, the leading provider of capital to the Independent Advisory business. Paul Hatch moved to UBS in 2014 where he was Group Managing Director, and head of Investment Products and Services for the Americas.'
+    ]
+  },
+  {
+    'id': 10,
     'name': 'Jeff Miller',
     'title': 'Partner',
     'email': 'mailto: jmiller@convergency-partners.com',
@@ -167,6 +166,23 @@ var team = [
       'Jeff Miller has had a 30-year career spanning law, wealth management, asset management, consulting, outsourcing, and wealth tech. His career started as a lawyer in Washington DC, where he specialized in ERISA fiduciary responsibility. He left the law and joined wealth management firm Shearson Lehman Hutton, where he became Head of Retirement Plan Services and part of the firm’s Consulting Services Group. He was part of the team that launched the industry’s first wrap fee mutual fund program, and was responsible for the industry’s first advisory service for 401k plan participants.',
       'Mr. Miller joined Putnam investments in the mid-1990s where he launched its 401k business for Advisors and its variable annuity and sub-advisory businesses, ultimately driving Putnam to become the industry leader at that time in both advisor-sold 401k and variable annuity asset management. He was recruited by PE investors to turn-around and sell a troubled fintech firm that they owned. He then joined Mercer as President of its Global Outsourcing business, President of Mercer Trust, and Executive Committee member, driving the business unit from $450M in revenues to nearly $900M while in this role.',
       'Following that, Mr. Miller joined UBS as the head of Advice and Platforms, which included all fee- based products and tech, mutual funds, ETFs, financial planning, discretionary model management, manager research, and retirement accounts.  After leaving UBS, he worked on a number of early stage wealthtech firms as an investor, board member, and operator, including Capital Preferences and Truelytics. He also joined the board of SharesPost, the leading marketplace for private share transactions.  As part of the recently announced merger with Forge Global, Mr. Miller will remain as both an advisor and shareholder of the combined company.'
+    ]
+  },
+  {
+    'id': 11,
+    'name': 'Peter Cieszko',
+    'title': 'Partner',
+    'email': 'mailto:pcieszko@convergency-partners.com',
+    'phone': '917-756-7345',
+    'linkedin': 'https://www.linkedin.com/in/peter-cieszko',
+    'photo': 'PeterCieszko.jpeg',
+    'expertise': 'Asset management, investment management, product innovation, business development, and distribution strategies.',
+    'paragraphs': [
+      'Peter Cieszko recently retired as the Head of Strategic Development for American Century Investments, where he greatly contributed to the growth of the organization across all client channels through existing and new strategic partnerships.',
+      'Mr. Cieszko leverages his extensive industry relationships to deliver value to clients and the firm. He has developed relationships with professional buyers, wirehouses, regional and independent advisors, RIAs, banks and insurance companies.',
+      'Mr. Cieszko came to American Century Investments from Fidelity Investments Institutional Services Company, where he served as President of the business unit that provides investment management services to financial institutions. Prior to Fidelity, he was President and Chief Executive Officer of Evergreen Investments, the investment management arm of Wachovia/WellsFargo. At Evergreen he also served as President of Global Distribution, where he was responsible for the firm’s distribution, product and long-term growth strategies.',
+      'Mr. Cieszko joined Evergreen from Legg Mason, where he was Head of U.S. Distribution and also served as Head of the U.S. retail and high-net worth businesses of Legg Mason’s predecessor firm Citigroup Asset Management. Throughout his 35-year financial services career, Mr. Cieszko has held various senior leadership positions with Nuveen Investments, Montgomery Asset Management, E.F. Hutton & Company and Merrill Lynch.',
+      'Mr. Cieszko graduated from Villanova University with a bachelor’s degree in business administration. He serves on the board of directors of the Insured Retirement Institute (IRI), Invest in Others Charitable Foundation, as well as various boards and leadership positions within Catholic Charities.'
     ]
   },
   {
@@ -185,23 +201,9 @@ var team = [
       'Dave Schrohe holds a Masters of Business Administration from the Wharton School and a Bachelor of Arts from the University of Pennsylvania.'
     ]
   },
+
   {
     'id': 13,
-    'name': 'Paul Hatch',
-    'title': 'Partner',
-    'email': 'mailto:phatch@convergency-partners.com',
-    'phone': '512-355-1500 ',
-    'linkedin': 'https://www.linkedin.com/in/paul-hatch-580a22a',
-    'photo': 'PaulHatch.jpeg',
-    'expertise': 'Wealth management, asset management, fintech, and executive management.',
-    'paragraphs': [
-      'Paul Hatch began his career as an officer in the US Navy, after having graduated from the US Naval Academy in Annapolis. He served aboard the USS Coontz for three years and spent the remainder of his time in the Navy as a Political Military analyst responsible for briefing the President, Vice President and various other senior legislators on the situation in the Middle East.',
-      'Following his service, Mr. Hatch joined EF Hutton as a financial advisor and began a 25+ year career at the firm that would morph to become Shearson Lehman Hutton, Smith Barney, and eventually Morgan Stanley Wealth Management. Along the way, he continued to rise through the organization, holding and mastering virtually every field management role and eventually becoming National Sales Manager. He was then promoted to the Head of all Products and Services, which included the advisory industry’s leading platform. While in that capacity, Paul led the development of Smith Barney Advisor which raised over $20B in its first 18 months. He also negotiated the purchase of Legg Mason’s UMA business. He also launched the Greystone Consulting Group at Morgan Stanley.',
-      'In 2009, Mr. Hatch was named the head of all Global Products for the newly formed Morgan Stanley Smith Barney Wealth Management. During this time, he was recognized as the Most Influential person in the Mutual Fund Industry by mfwire.com. He then took on the role of Vice Chairman for Morgan Stanley Global Wealth Management. Following his time at Morgan Stanley, Paul was appointed to the Board of Focus Financial, the leading provider of capital to the Independent Advisory business. Paul Hatch moved to UBS in 2014 where he was Group Managing Director, and head of Investment Products and Services for the Americas.'
-    ]
-  },
-  {
-    'id': 14,
     'name': 'Eric Hoerdemann',
     'title': 'Partner',
     'email': 'mailto:ehoerdemann@convergency-partners.com',

@@ -12,9 +12,17 @@ import Image from 'react-bootstrap/Image';
 
 const IndustryFocusPopover = () => {
 
-
   const focus1 = (
     <Popover id="focus1" className="popover-container">
+      <Popover.Header as="h3" className="popover-header">Fin Tech</Popover.Header>
+      <Popover.Body className="popover-text">
+        Using technology to reshape how financial services are delivered. Focus on both tech-enabled financial services and the associated software platforms that serve the financial services industry across a variety of sub-sectors.
+      </Popover.Body>
+    </Popover>
+  );
+
+  const focus2 = (
+    <Popover id="focus2" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Alternative Finance</Popover.Header>
       <Popover.Body className="popover-text">
         Lenders to both consumers and businesses, leveraging technology to gain advantage in cost, speed, and profitability.
@@ -22,29 +30,20 @@ const IndustryFocusPopover = () => {
     </Popover>
   );
 
-  const focus2 = (
-    <Popover id="focus2" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Transaction Processing</Popover.Header>
-      <Popover.Body className="popover-text">
-        Innovators using technology to drive down costs and distribution to reach broader client set.
-      </Popover.Body>
-    </Popover>
-  );
-
   const focus3 = (
     <Popover id="focus3" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Capital Markets</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Transaction Processing</Popover.Header>
       <Popover.Body className="popover-text">
-        Innovative solutions and software helping banks, trading firms and exchanges become more nimble and efficient.
+        Innovators using technology to drive down costs and extend distribution to reach a broader client set.
       </Popover.Body>
     </Popover>
   );
 
   const focus4 = (
     <Popover id="focus4" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Insurance</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Capital Markets</Popover.Header>
       <Popover.Body className="popover-text">
-        Market dislocations and technology enable new entrants to deliver insurance and related services more effectively.
+        Innovative solutions and software helping banks, trading firms, and exchanges become more nimble and efficient.
       </Popover.Body>
     </Popover>
   );
@@ -60,12 +59,16 @@ const IndustryFocusPopover = () => {
 
   const focus6 = (
     <Popover id="focus6" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Fin Tech</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Insurance</Popover.Header>
       <Popover.Body className="popover-text">
-        Using technology to reshape how financial services are delivered. Focus on both tech-enabled financial services and the associated software platforms that serve the financial services industry across a variety of sub-sectors.
+        Market dislocations and technology enable new entrants to deliver insurance and related services more effectively.
       </Popover.Body>
     </Popover>
   );
+
+
+
+
   return (
 
     <div className="grid-container">
@@ -79,7 +82,7 @@ const IndustryFocusPopover = () => {
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={alternativefinance} alt="specialty finance" />
+            <Image className="focus-img" src={fintech} alt="fin tech" />
           </button>
         </OverlayTrigger>
       </div>
@@ -87,7 +90,7 @@ const IndustryFocusPopover = () => {
       <div className="item2">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={txnprocess} alt="transaction processing" />
+            <Image className="focus-img" src={alternativefinance} alt="specialty finance" />
           </button>
         </OverlayTrigger>
       </div>
@@ -95,7 +98,7 @@ const IndustryFocusPopover = () => {
       <div className="item3">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={capitalmkts} alt="electronic cap" />
+            <Image className="focus-img" src={txnprocess} alt="transaction processing" />
           </button>
         </OverlayTrigger>
       </div>
@@ -103,7 +106,7 @@ const IndustryFocusPopover = () => {
       <div className="item4">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={insurance} alt="business services" />
+            <Image className="focus-img" src={capitalmkts} alt="electronic cap" />
           </button>
         </OverlayTrigger>
       </div>
@@ -119,11 +122,12 @@ const IndustryFocusPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={fintech} alt="fin tech" />
+            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={insurance} alt="business services" />
           </button>
         </OverlayTrigger>
-
       </div>
+
+
     </div>
 
   )

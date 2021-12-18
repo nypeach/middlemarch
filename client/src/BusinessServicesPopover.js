@@ -16,7 +16,7 @@ const BusinessServicesPopover = () => {
     <Popover id="focus1" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Marketing Services</Popover.Header>
       <Popover.Body className="popover-text">
-        Using data to more effectively identify ,acquire, and monetize customers.
+        Using data to more effectively identify, acquire, and monetize customers.
       </Popover.Body>
     </Popover>
   );
@@ -43,7 +43,7 @@ const BusinessServicesPopover = () => {
     <Popover id="focus4" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Training and Education Services</Popover.Header>
       <Popover.Body className="popover-text">
-        Industry specific software that enables businesses and organizations to more efficiently transfer and retain knowledge across the organization.
+        Industry-specific software that enables businesses and organizations to more efficiently transfer and retain knowledge across the organization.
       </Popover.Body>
     </Popover>
   );
@@ -52,7 +52,7 @@ const BusinessServicesPopover = () => {
     <Popover id="focus5" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Transportation and Logistics</Popover.Header>
       <Popover.Body className="popover-text">
-        Utilizing outsourced business models, new modes of transport to deliver more cheaply and more effectively.
+        Utilizing outsourced business models and new modes of transport to deliver more cheaply and more effectively.
       </Popover.Body>
     </Popover>
   );
@@ -78,7 +78,7 @@ const BusinessServicesPopover = () => {
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={mktservices} alt="specialty finance" />
+            <Image className="focus-img" src={mktservices} alt="Marketing Services" />
           </button>
         </OverlayTrigger>
       </div>
@@ -86,7 +86,7 @@ const BusinessServicesPopover = () => {
       <div className="item2">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={aiBigData} alt="transaction processing" />
+            <Image className="focus-img" src={aiBigData} alt="Artificial Intelligence, Big Data and Analytics" />
           </button>
         </OverlayTrigger>
       </div>
@@ -94,7 +94,7 @@ const BusinessServicesPopover = () => {
       <div className="item3">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={regCompliance} alt="electronic cap" />
+            <Image className="focus-img" src={regCompliance} alt="Regulatory and Compliance Solutions" />
           </button>
         </OverlayTrigger>
       </div>
@@ -102,7 +102,7 @@ const BusinessServicesPopover = () => {
       <div className="item4">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={trainingEd} alt="business services" />
+            <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={trainingEd} alt="Training and Education Services" />
           </button>
         </OverlayTrigger>
       </div>
@@ -110,7 +110,7 @@ const BusinessServicesPopover = () => {
       <div className="item5">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus5}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={busProcess} alt="asset management" />
+            <Image className="focus-img" src={transportLog} alt="Transportation and Logistics" />
           </button>
         </OverlayTrigger>
       </div>
@@ -118,7 +118,7 @@ const BusinessServicesPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={transportLog} alt="fin tech" />
+            <Image className="focus-img" src={busProcess} alt="Business Processing Outsourcing" />
           </button>
         </OverlayTrigger>
 

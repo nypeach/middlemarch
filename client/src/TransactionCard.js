@@ -14,17 +14,27 @@ const TransactionCard = (props) => {
                 <div className="card-body text-center">
                   {/* <div className="txn-division"><h3>{props.division}</h3></div> */}
                   {props.image === '/static/media/logo.efdedb94.jpeg' ?
-                    <div className="txn-nologo">
+                    // <div className="txn-nologo">
+                      <div>
+                        <div className="txn-nologo">
                       {props.name}
+                      </div>
+                      <div className="test1">
                       <h4 className="card-title">Amount Raised</h4>
                       <h4 className="txn-amount">$ {props.amount}</h4>
+                      </div>
                     </div>
                     :
-                    <div className="txn-logo">
+                    // <div className="txn-logo">
+                      <div>
                       {/* <img className="img-fluid" src={props.image} alt={props.image} /> */}
+                      <div className="txn-logo">
                       <Image src={props.image} alt={props.image} />
+                      </div>
+                      <div className="test1">
                       <h4 className="card-title">Amount Raised</h4>
                       <h4 className="txn-amount">$ {props.amount}</h4>
+                      </div>
                     </div>
                   }
                 </div>

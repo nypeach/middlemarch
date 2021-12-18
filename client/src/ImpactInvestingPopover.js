@@ -12,20 +12,20 @@ import Image from 'react-bootstrap/Image';
 
 const ImpactInvestingPopover = () => {
 
-  const focus1 = (
+  const focus1= (
     <Popover id="focus1" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Alternative Energy</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Waste to Recycling</Popover.Header>
       <Popover.Body className="popover-text">
-        Support energy production alternatives to fossil fuels including solar, wind, and biologic processes.
+        Investing in technology and processes to convert waste into energy and other saleable products that recycle waste and capture carbon.
       </Popover.Body>
     </Popover>
   );
 
   const focus2 = (
     <Popover id="focus2" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Transportation</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Alternative Energy</Popover.Header>
       <Popover.Body className="popover-text">
-        Deploying capital in electric transportation modes that address societal transportation needs while minimizing environmental impacts.
+        Support energy production alternatives to fossil fuels, including solar, wind, and biologic processes.
       </Popover.Body>
     </Popover>
   );
@@ -41,9 +41,9 @@ const ImpactInvestingPopover = () => {
 
   const focus4 = (
     <Popover id="focus4" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Waste to Recycling</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Transportation</Popover.Header>
       <Popover.Body className="popover-text">
-        Investing in technology and process to convert waste into energy and other saleable products that recycle waste and capture carbon.
+        Deploying capital in electric transportation modes that address societal transportation needs while minimizing environmental impacts.
       </Popover.Body>
     </Popover>
   );
@@ -61,7 +61,7 @@ const ImpactInvestingPopover = () => {
     <Popover id="focus6" className="popover-container">
       <Popover.Header as="h3" className="popover-header">Diversity Advancement</Popover.Header>
       <Popover.Body className="popover-text">
-        Companies that care about the advancement of women, people of color and other minorities.
+        Companies that care about the advancement of women, people of color, and special interest groups.
       </Popover.Body>
     </Popover>
   );
@@ -78,7 +78,7 @@ const ImpactInvestingPopover = () => {
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={altEnergy} alt="specialty finance" />
+            <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={waste} alt="business services" />
           </button>
         </OverlayTrigger>
       </div>
@@ -86,7 +86,7 @@ const ImpactInvestingPopover = () => {
       <div className="item2">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={transportation} alt="transaction processing" />
+            <Image className="focus-img" src={altEnergy} alt="specialty finance" />
           </button>
         </OverlayTrigger>
       </div>
@@ -102,7 +102,7 @@ const ImpactInvestingPopover = () => {
       <div className="item4">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={waste} alt="business services" />
+            <Image className="focus-img" src={transportation} alt="transaction processing" />
           </button>
         </OverlayTrigger>
       </div>

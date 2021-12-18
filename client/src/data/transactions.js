@@ -5,29 +5,29 @@ var transactions =
     {
       'Logo': 'veransa-300w.jpg',
       'Name': 'Veransa',
-      'Description': 'Yard waste recycling business',
+      'Description': 'Yard Waste Recycling Business',
       'MM': 'MM',
       'Type': 'Equity Raise',
-      'Amount': '275,000,000',
+      'Amount': '30,000,000',
       'Year': 2021,
-      'Investor': 'RFE Investments; Middlemarch Capital Partners',
+      'Investor': 'RFE Investments and Middlemarch Capital Partners',
       'Order': 1
     },
     {
       'Logo': 'skykick-300w.jpg',
       'Name': 'Skykick',
-      'Description': 'Cloud automation SaaS company',
+      'Description': 'Cloud Automation SAAS Company',
       'MM': 'MM',
       'Type': 'Debt and Equity Raise',
       'Amount': '130,000,000',
       'Year': 2021,
-      'Investor': 'Morgan Stanley, Trebuchet Capital',
+      'Investor': 'Morgan Stanley and Trebuchet Capital',
       'Order': 2
     },
     {
       'Logo': 'elevate-300w.jpg',
       'Name': 'Elevate',
-      'Description': 'Global outsourced legal services company.',
+      'Description': 'Global Outsourced Legal Services Company',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '25,000,000',
@@ -38,7 +38,7 @@ var transactions =
     {
       'Logo': 'mutuo-300w.jpg',
       'Name': 'Mutuo Financiera',
-      'Description': 'Commercial Auto Leasing Company.',
+      'Description': 'Commercial Auto Leasing Company',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '100,000,000',
@@ -49,7 +49,7 @@ var transactions =
     {
       'Logo': 'channel-300w.jpg',
       'Name': 'Channel Partners Capital',
-      'Description': 'Small business lender',
+      'Description': 'Small Business Lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '45,000,000',
@@ -60,7 +60,7 @@ var transactions =
     {
       'Logo': 'Photonic-300w.jpg',
       'Name': 'Photonic Capital',
-      'Description': 'Lease-to-own LED lighting company.',
+      'Description': 'Lease-To-Own Led Lighting Company',
       'MM': 'MM',
       'Type': 'Debt and Equity Raise',
       'Amount': '100,000,000',
@@ -71,7 +71,7 @@ var transactions =
     {
       'Logo': 'logo.jpeg',
       'Name': 'Project Dynamo',
-      'Description': 'Energy equipment reseller.',
+      'Description': 'Energy Equipment Reseller',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '10,000,000',
@@ -82,7 +82,7 @@ var transactions =
     {
       'Logo': 'FlexShopper-300w.jpg',
       'Name': 'FlexShopper',
-      'Description': 'Lease-to-own finance company.',
+      'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '22,000,000',
@@ -104,7 +104,7 @@ var transactions =
     {
       'Logo': 'CapFusion-300w.jpg',
       'Name': 'Capfusion',
-      'Description': 'Small business lender',
+      'Description': 'Small Business Lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '60,000,000',
@@ -115,7 +115,7 @@ var transactions =
     {
       'Logo': 'logo.jpeg',
       'Name': 'Online Consumer Lender',
-      'Description': 'Short-term consumer lender',
+      'Description': 'Short-Term Consumer Lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '17,500,000',
@@ -126,7 +126,7 @@ var transactions =
     {
       'Logo': 'FlexShopper-300w.jpg',
       'Name': 'Flexshopper',
-      'Description': 'Lease-to-own finance company.',
+      'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '100,000,000',
@@ -137,18 +137,18 @@ var transactions =
     {
       'Logo': 'FlexShopper-300w.jpg',
       'Name': 'Flexshopper',
-      'Description': 'Lease-to-own finance company',
+      'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '9,350,000',
       'Year': 2015,
-      'Investor': 'Waterfall Asset Management, Middlemarch Partners',
+      'Investor': 'Waterfall Asset Management and Middlemarch Partners',
       'Order': 13
     },
     {
       'Logo': 'Privlo-300w.jpg',
       'Name': 'Privlo',
-      'Description': 'Non-conforming mortgage lender',
+      'Description': 'Non-Conforming Mortgage Lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '350,000,000',
@@ -159,29 +159,29 @@ var transactions =
     {
       'Logo': 'logo.jpeg',
       'Name': 'Online Consumer Lender',
-      'Description': 'Online installment lender',
+      'Description': 'Online Installment Lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '25,000,000',
       'Year': 2014,
-      'Investor': 'undisclosed',
+      'Investor': 'Undisclosed',
       'Order': 15
     },
     {
       'Logo': 'BenchSymbol-300w.jpg',
       'Name': 'Bench',
-      'Description': 'Outsourced accounting services',
+      'Description': 'Outsourced Accounting Services',
       'MM': 'MM',
       'Type': 'Equity Investment',
       'Amount': '8,000,000',
       'Year': 2012,
-      'Investor': 'Altos Ventures, Middlemarch Partners',
+      'Investor': 'Altos Ventures and Middlemarch Partners',
       'Order': 16
     },
     {
       'Logo': 'logo.jpeg',
       'Name': 'Online Consumer Lender',
-      'Description': 'Online consumer lender',
+      'Description': 'Online Consumer Lender',
       'MM': 'MM',
       'Type': 'Debt Raise',
       'Amount': '20,000,000',
@@ -192,7 +192,7 @@ var transactions =
     {
       'Logo': 'logo.jpeg',
       'Name': 'Online Consumer Lender',
-      'Description': 'Online consumer lender',
+      'Description': 'Online Consumer Lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
       'Amount': '80,000,000',
@@ -203,7 +203,7 @@ var transactions =
     {
       'Logo': 'DriveFactor-300w.jpg',
       'Name': 'Drive Factor',
-      'Description': 'Insurance telematics for autos',
+      'Description': 'Insurance Telematics For Autos',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '2,500,000',
@@ -214,51 +214,51 @@ var transactions =
     {
       'Logo': 'BenchSymbol-300w.jpg',
       'Name': 'Bench',
-      'Description': 'Outsourced accounting services',
+      'Description': 'Outsourced Accounting Services',
       'MM': 'PRIOR',
       'Type': 'Equity Investment',
       'Amount': '2,000,000',
       'Year': '',
-      'Investor': 'undisclosed, Middlemarch principals',
+      'Investor': 'Undisclosed and Middlemarch Principals',
       'Order': 20
     },
     {
       'Logo': 'NexisCard-300w.jpg',
       'Name': 'Prepaid Ventures',
-      'Description': 'Pre-paid debit card processor',
+      'Description': 'Pre-Paid Debit Card Processor',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '1,000,000',
       'Year': '',
-      'Investor': 'Individual investors, Middlemarch principals',
+      'Investor': 'Individual Investors and Middlemarch Principals',
       'Order': 21
     },
     {
       'Logo': 'CreditMax-300w.jpg',
       'Name': 'CreditMax',
-      'Description': 'Charged-off credit trading platform',
+      'Description': 'Charged-Off Credit Trading Platform',
       'MM': 'PRIOR',
       'Type': 'Debt Raise',
       'Amount': '5,500,000',
       'Year': '',
-      'Investor': 'Metropolitan Partners, Partner Re',
+      'Investor': 'Metropolitan Partners and Partner Re',
       'Order': 22
     },
     {
       'Logo': 'CreditMax-300w.jpg',
       'Name': 'CreditMax',
-      'Description': 'Charged-off credit trading platform',
+      'Description': 'Charged-Off Credit Trading Platform',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '2,500,000',
       'Year': '',
-      'Investor': 'PartnerRe, Metropolitan Partners, Middlemarch principals',
+      'Investor': 'Partnerre, Metropolitan Partners, and Middlemarch Principals',
       'Order': 23
     },
     {
       'Logo': 'AstorInvestment-300w.jpg',
       'Name': 'Astor Investment Management',
-      'Description': 'Actively Managed ETF Issuer',
+      'Description': 'Actively Managed Etf Issuer',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
       'Amount': '20,000,000',
@@ -291,7 +291,7 @@ var transactions =
     {
       'Logo': 'UrbanFinancial-300w.jpg',
       'Name': 'Urban Financial Group',
-      'Description': 'Reverse mortgage lender',
+      'Description': 'Reverse Mortgage Lender',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
       'Amount': '25,000,000',
@@ -302,7 +302,7 @@ var transactions =
     {
       'Logo': 'Knight-300w.jpg',
       'Name': 'Knight Capital',
-      'Description': 'Retail FX Trading',
+      'Description': 'Retail Fx Trading',
       'MM': 'PRIOR',
       'Type': 'Sale',
       'Amount': 'Undisclosed',
@@ -324,7 +324,7 @@ var transactions =
     {
       'Logo': 'Currenex-300w.jpg',
       'Name': 'CurrenEx',
-      'Description': 'Foreign exchange trading platform',
+      'Description': 'Foreign Exchange Trading Platform',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
       'Amount': '564,000,000',
@@ -335,18 +335,18 @@ var transactions =
     {
       'Logo': 'CashEdge-300w.jpg',
       'Name': 'CashEdge',
-      'Description': 'SaaS payments and risk management platform',
+      'Description': 'Saas Payments and Risk Management Platform',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '32,000,000',
       'Year': '',
-      'Investor': 'Susquehanna Growth Equity, RBC',
+      'Investor': 'Susquehanna Growth Equity and RBC',
       'Order': 31
     },
     {
       'Logo': 'VelocityExpress-300w.jpg',
       'Name': 'Velocity Express',
-      'Description': 'Time-critical logistics company',
+      'Description': 'Time-Critical Logistics Company',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '40,000,000',
@@ -357,7 +357,7 @@ var transactions =
     {
       'Logo': 'CheckSmart-300w.jpg',
       'Name': 'Check Smart',
-      'Description': 'Check casher and short-term lender',
+      'Description': 'Check Casher and Short-Term Lender',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
       'Amount': '180,000,000',
@@ -368,7 +368,7 @@ var transactions =
     {
       'Logo': 'New-300w.jpg',
       'Name': 'NEW Company',
-      'Description': 'Outsourced insurance services company',
+      'Description': 'Outsourced Insurance Services Company',
       'MM': 'PRIOR',
       'Type': 'Debt Raise',
       'Amount': '380,000,000',
@@ -379,23 +379,23 @@ var transactions =
     {
       'Logo': 'New-300w.jpg',
       'Name': 'NEW Company',
-      'Description': 'Outsourced insurance services company',
+      'Description': 'Outsourced Insurance Services Company',
       'MM': 'PRIOR',
       'Type': 'Acquisition',
       'Amount': '271,000,000',
       'Year': '',
-      'Investor': 'TH Lee Putnam Ventures',
+      'Investor': 'Th Lee Putnam Ventures',
       'Order': 35
     },
     {
       'Logo': 'ResMae-300w.jpg',
       'Name': 'ResMAE',
-      'Description': 'Non-prime mortgage lender',
+      'Description': 'Non-Prime Mortgage Lender',
       'MM': 'PRIOR',
       'Type': 'Equity Raise',
       'Amount': '25,000,000',
       'Year': '',
-      'Investor': 'TH Lee Putnam Ventures',
+      'Investor': 'Th Lee Putnam Ventures',
       'Order': 36
     }
   ]

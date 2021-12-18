@@ -14,11 +14,11 @@ const OurFirm = (props) => {
       <Container fluid style={{ padding: "0", margin: "0" }}>
         <Row>
           <Col sm={12}>
-            <div className="our-firm-text">Middlemarch Partners is a merchant banking firm that provides the capital raising and M&amp;A advisory services of an investment bank and the investment capabilities of a private equity investor.</div>
+            <div className="our-firm-text">Middlemarch Partners is a merchant bank that provides the capital raising and M&amp;A advisory services of an investment bank and the investment capabilities of a private debt and equity investor.</div>
 
-            <div className="our-firm-text">Middlemarch focuses on financial services, business services, and impact investing. Its Partners have concentrated on these sectors for their entire careers in roles as investment bankers, private equity investors, and operating executives.</div>
+            <div className="our-firm-text">Middlemarch focuses on tech-enabled financial services, business services, and impact investing.  Its Partners have concentrated on these sectors for their entire careers in roles as investment bankers, private equity investors, and operating executives.</div>
 
-            <div className="our-firm-text" style={{marginBottom: "4rem"}}>The firm advises and invests across all stages of company growth, establishing long-term relationships that endure beyond the initial transaction.</div>
+            <div className="our-firm-text" style={{ marginBottom: "4rem" }}>The firm advises and invests across all stages of company growth. Middlemarch brings sector-specific insight, strategic guidance, and capital to its clients without diverting its clients’ focus from managing their operating businesses.  The firm seeks to work closely with and invest in companies that are committed to long-term, sustainable success.</div>
           </Col>
         </Row>
         <Row>
