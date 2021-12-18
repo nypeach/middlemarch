@@ -143,7 +143,7 @@ p.team-modal {
 }
 .fa-phone .tooltiptext {
   visibility: hidden;
-  width: 150px;
+  width: 200px;
   background-color: var(--heading-dark);
   color: #fff;
   text-align: center;

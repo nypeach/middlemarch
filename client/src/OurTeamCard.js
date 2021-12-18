@@ -6,10 +6,6 @@ const OurTeamCard = (props) => {
   const isOpen = props.selectedModal === props.person.id;
   const openModal = () => props.setSelectedModal(props.person.id);
   const closeModal = () => props.setSelectedModal(0);
-  const handleClick = () => {
-    window.open("http://twitter.com/saigowthamr");
-  }
-
 
   return (
 
