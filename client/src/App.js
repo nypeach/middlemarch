@@ -11,9 +11,6 @@ import News from './News';
 import Footer from './Footer';
 
 
-
-
-
 function App() {
   const [gotoLanding, setGotoLanding] = useState(false);
   const landingRef = useRef(null);

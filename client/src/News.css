@@ -2,13 +2,12 @@
   min-height: 100vh;
   display:block;
   overflow: auto;
-  background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/nytimes.jpeg);
+  background-image: linear-gradient(to right bottom,var(--background-grad-dk), var(--background-grad-dk)), url(./images/coins.png);
   background-size: cover;
   background-position: top;
        min-height: 100vh;
        padding-bottom: 24px;
 }
-
 
 .news-section {
   text-align: center;
@@ -25,43 +24,46 @@
   /* margin-top: -5rem; */
   height: 10vh;
   text-align: center;
+  color:var(--white-text)
 }
-
-.news-card-div {
-  margin: 2rem 10rem;
+.news-content {
+  margin: 2rem 15rem;
+  min-height: 80vh;
   display:block;
   overflow: auto;
+  background: var(--white-text);
+}
+.news-card {
+  position: absolute;
+  height: 80%;
+  border: black solid 1pt;
 }
 
-.news-card-image {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
+.news-img {
+  height: 150px;
+  object-fit: contain;
 }
-.news-card-title {
-  margin-top: 12px;
-    font-size: 3rem;
-    line-height: 1.375;
-    /* font-weight: 600; */
-    color: var(--heading-dark);
-    text-align: left;
+
+.news-title {
+  position: absolute;
+  display: block;
+  height: 15%;
 }
-.news-card-text {
+
+.card, .border-none {
+  border: none;
+}
+.news-li {
+  margin-left: 3rem;
+  margin-right: 3rem;
   font-size: 2.25rem;
-  text-align: left;
-  margin-top: 12px;
-  font-weight: 500;
-  color:gray;
+  color: var(--heading-medium);
 }
-
-.text-info {
-  color: var(--heading-light)!important;
-  margin-top: 12px;
-  cursor: pointer;
+a {
+  text-decoration: none !important;
+  color: var(--heading-medium);
 }
-.icon-move-right i {
-    transition: all .2s cubic-bezier(.34,1.61,.7,1.3);
-    text-decoration: none;
-}
-.icon-move-right:focus i, .icon-move-right:hover i{
-  transform:translateX(5px)
+a:hover {
+  background-color: var(--heading-dark);
+  color: var(--white-text)
 }
