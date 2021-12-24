@@ -40,7 +40,7 @@
 }
 
 .news-img {
-  height: 18rem;
+  height: 14rem;
   object-fit: contain;
 }
 
@@ -54,11 +54,13 @@
   border: none;
 }
 .news-li {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  font-size: 2.25rem;
+  /* margin-left: 2rem; */
+  /* margin-right: 2rem; */
+  font-size: 2rem;
   color: var(--heading-medium);
   text-align: left;
+  position: relative;
+  display: inline-block;
 }
 a {
   text-decoration: none !important;
@@ -67,4 +69,44 @@ a {
 a:hover {
   background-color: var(--heading-dark);
   color: var(--white-text)
+}
+
+/* ========== TOOLTIP ============= */
+.news-div{
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+.news-div .news-tooltiptext {
+  visibility: hidden;
+  width: 30vw;
+  background-color: var(--heading-dark);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-align: left;
+  padding: .75rem;
+  min-height: 12vh;
+}
+
+.tt-news, .tt-events {
+/* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: -13rem;
+  z-index: 1;
+}
+.tt-events {
+/* Position the tooltip text - see examples below! */
+  left: -10rem;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.news-div:hover .news-tooltiptext {
+  visibility: visible;
+  font-family: var(--main-font);
 }

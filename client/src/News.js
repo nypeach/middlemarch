@@ -33,20 +33,29 @@ const News = () => {
         </div>
         {/* ============================================================================ */}
         <div className="news-content">
-          <Container style={{ marginTop: "7rem" }}>
-            <Row md={1} lg={3} className="g-4">
+          <Container fluid style={{ margin: "5rem 3rem 3rem 0rem" }}>
+            <Row md={1} lg={3} g-0>
 
               <Col>
-                <Card border="none">
-                  <Card.Img className="news-img" variant="top" src={news} />
+                <Card border="none" style={{ marginLeft: "2rem" }}>
                   <Card.Body>
+                    <Card.Img className="news-img" variant="top" src={news} />
                     <Card.Title><h2 class="heading-secondary-dk">News</h2></Card.Title>
                     <Card.Text>
                       <div className="news-li">
                         <ul className="no-bullets">
                           {newsarticles.map(item =>
-                            item.Type === "NEWS" && item.Sort < 5 ?
-                              <li style={{ marginBottom: "2rem" }}><a href={newspdfs[item.Link]} target="_blank" rel="noreferrer">{item.Title}</a></li>
+                            item.Type === "NEWS" && item.Sort < 1.07 ?
+                              <li style={{ marginBottom: "2rem" }}>
+                                <div className="news-div" style={{ cursor: "pointer" }} >
+
+                                <a href={newspdfs[item.Link]} target="_blank" rel="noreferrer">
+                                    <span class="news-tooltiptext tt-news">{item.Summary}</span>
+                                  {item.Title}
+                                </a>
+
+                                </div>
+                              </li>
                               :
                               null
                           )}
@@ -62,16 +71,24 @@ const News = () => {
 
               <Col>
                 <Card border="none">
-                  <Card.Img className="news-img" variant="top" src={articles} />
                   <Card.Body>
+                    <Card.Img className="news-img" variant="top" src={articles} />
                     <Card.Title><h2 class="heading-secondary-dk">Articles</h2></Card.Title>
                     <Card.Text>
 
                       <div className="news-li">
                         <ul className="no-bullets">
                           {newsarticles.map(item =>
-                            item.Type === "ARTICLES" && item.Sort < 5 ?
-                              <li style={{ marginBottom: "2rem" }}><a href={articlespdfs[item.Link]} target="_blank" rel="noreferrer">{item.Title}</a></li>
+                            item.Type === "ARTICLES" && item.Sort < 2.07 ?
+                              <li style={{ marginBottom: "2rem" }}>
+                                <div className="news-div" style={{ cursor: "pointer" }} >
+
+                                <a href={articlespdfs[item.Link]} target="_blank" rel="noreferrer">
+                                    <span class="news-tooltiptext tt-news">{item.Summary}</span>
+                                  {item.Title}
+                                </a>
+                                </div>
+                              </li>
                               :
                               null
                           )}
@@ -87,17 +104,27 @@ const News = () => {
               </Col>
 
               <Col>
-                <Card border="none">
-                  <Card.Img className="news-img" variant="top" src={events} />
+                <Card border="none" style={{ marginRight: "2rem" }}>
+
                   <Card.Body>
+                    <Card.Img className="news-img" variant="top" src={events} />
                     <Card.Title><h2 class="heading-secondary-dk">Events</h2></Card.Title>
                     <Card.Text>
 
                       <div className="news-li">
                         <ul className="no-bullets">
                           {newsarticles.map(item =>
-                            item.Type === "EVENTS" && item.Sort < 5 ?
-                              <li style={{ marginBottom: "2rem" }}><a href={item.Link} target="_blank" rel="noreferrer">{item.Title}</a></li>
+                            item.Type === "EVENTS" && item.Sort < 3.07 ?
+                              <li style={{ marginBottom: "2rem" }}>
+                                <div className="news-div" style={{ cursor: "pointer" }} >
+                                  {/* <span class="news-tooltiptext" style={{ fontFamily: "var(--main-font)", fontWeight: "400", fontSize: "1.5rem" }}>{item.Summary}</span> */}
+                                <a href={item.Link} target="_blank" rel="noreferrer">
+                                    <span class="news-tooltiptext tt-events">{item.Summary}</span>
+                                  {item.Title}
+
+                                </a>
+                                </div>
+                              </li>
                               :
                               null
                           )}
