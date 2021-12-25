@@ -16,7 +16,7 @@ var newsarticles = [
   {
     'Type': 'NEWS',
     'Sort': 1.03,
-    'Title': 'Elevate Secures $25M Equity Investment',
+    'Title': 'Elevate Secures $25M of Equity',
     'Link': 'Elevate PR - Elevate Secures 25M Investment from Kayne Partners - 2019-06-17.pdf',
     'Summary': 'Elevate Services secures $25M equity commitment from Kayne Anderson Partners to fuel growth in legal services for corporations and law firms.'
   },
@@ -25,19 +25,19 @@ var newsarticles = [
     'Sort': 1.04,
     'Title': 'Creamfinace Raises 21M Euros',
     'Link': 'Creamfinance FINRA Approved MM Advises Creamfinance on 21 million Equity Raise.pdf',
-    'Summary': `Creamfinance raised 21M Euros from Capitec Bank of South Africa to support the expansion of Cream's consumer lending programs in Europe and South America`
+    'Summary': `Creamfinance raised 21M Euros from Capitec Bank of South Africa to support the expansion of Cream's consumer lending programs in Europe and South America.`
 },
   {
     'Type': 'NEWS',
     'Sort': 1.05,
-    'Title': 'Channel Partners Raises $45M of Equity',
+    'Title': 'Channel Ptrs. Raises $45M of Equity',
     'Link': 'MM CPC Press Release 2018 06 14_Final.pdf',
     'Summary': 'Channel Partners Capital raised $45M of equty from Elliott Capital Management to support the expansion of its SME lending programs.'
   },
   {
     'Type': 'NEWS',
     'Sort': 1.06,
-    'Title': 'Mutuo Financiero Raises $100M Debt Facility',
+    'Title': 'Mutuo Raises $100M Debt Facility',
     'Link': 'Mutuo Press Release -2021 12 19.pdf',
     'Summary': 'Mutuo Financiero secures $100M debt commitment from Crayhill Capital to support expansion of its Mexico-based auto lease finance business.'
   },
@@ -79,21 +79,21 @@ var newsarticles = [
   {
     'Type': 'ARTICLES',
     'Sort': 2.01,
-    'Title': 'Investments in Yard Waste Recycling ',
+    'Title': 'Investing in Yard Waste Recycling ',
     'Link': 'MMP ESG Article  2021 12 14.pdf',
     'Summary': 'Yard waste recycling represents an attractive sector for impact investing. Middlemarch identifies key insights about investing in this sector.'
   },
   {
     'Type': 'ARTICLES',
     'Sort': 2.02,
-    'Title': 'Securing Growth Capital in the Covid-19 Era',
+    'Title': 'Securing Capital in the Covid-19 Era',
     'Link': 'Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf',
     'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
   },
   {
     'Type': 'ARTICLES',
     'Sort': 2.03,
-    'Title': 'Reception of Public Fintech Companies Impacts the Entire Industry',
+    'Title': 'Market Reception of Public Fintechs',
     'Link': 'MM article.pdf',
     'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
   },
@@ -107,14 +107,14 @@ var newsarticles = [
   {
     'Type': 'ARTICLES',
     'Sort': 2.05,
-    'Title': 'Evaluating and Managing Cyber Risk for investors',
+    'Title': 'Evaluating and Managing Cyber Risk ',
     'Link': 'Evaluating and Managing Cyber Risk for Investors MM.pdf',
     'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
   },
   {
     'Type': 'ARTICLES',
     'Sort': 2.06,
-    'Title': 'Customer Acqusition Strategies in Financial Services',
+    'Title': 'Customer Acqusition in Fin. Services',
     'Link': 'TheAlternativeLendingReport_Middlemarch.pdf',
     'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
   },
@@ -135,7 +135,7 @@ var newsarticles = [
   {
     'Type': 'EVENTS',
     'Sort': 3.03,
-    'Title': 'Opal Marketplace Lending Conf (Dec 8-10, 2021)',
+    'Title': 'Opal Lending Conf. (Dec 8-10, 2021)',
     'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2021/',
     'Summary': 'Middlemarch is participating on the venture capital panel as well as hosting a fireside chat about customer acquisition costs at the Makretplace Lending Conference.'
   },

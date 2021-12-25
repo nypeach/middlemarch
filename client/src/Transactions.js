@@ -26,7 +26,7 @@ const Transactions = () => {
           <div className="row gx-5 row-cols-auto justify-content-center">
             {/* TRANSACTION CARD START */}
 
-            {transactions.sort((a, b) => (a.order > b.order) ? -1 : 1).map(txn =>
+            {transactions.sort((a, b) => (a.Order > b.Order) ? 1 : -1).map(txn =>
               <div>
                 <TransactionCard
                   image={images[txn.Logo]}

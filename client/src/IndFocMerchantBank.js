@@ -36,7 +36,7 @@ const IndFocMerchantBank = (props) => {
               <Col>
                 <div className="mb-text-1">
                   Middlemarch Partners focuses on industries that can sustain high-growth and generate high margins.
-                  The firm leverages the experience of its Principals who have served as advisors, investors, and operators in the sectors where Middlemarch Partners is active as a merchant bank.</div>
+                  The firm leverages the experience of its Partners who have served as advisors, investors, and operators in the sectors where Middlemarch Partners is active as a merchant bank.</div>
               </Col>
             </Row>
             <Row className="mb-row mb-override">
