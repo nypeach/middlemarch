@@ -21,6 +21,7 @@ const OurInvestors = (props) => {
   const [values, setValues] = useState({ name: '', email: '', phone: '' })
   const [showBecome, setShowBecome] = useState(false);
   const [showPartner, setShowPartner] = useState(false);
+  // const recipients = ["jodimsilverman@gmail.com", "jodi@sbbsinc.com"];
 
   const handleInputChange = e => {
     const { name, value } = e.target
