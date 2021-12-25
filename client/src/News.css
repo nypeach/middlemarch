@@ -62,7 +62,13 @@
   position: relative;
   display: inline-block;
 }
-a {
+@media screen and (min-width:1200px) {
+       .news-li {
+         margin-left: 6rem;
+       } /* And even larger */
+  }
+
+    a {
   text-decoration: none !important;
   color: var(--heading-medium);
 }
