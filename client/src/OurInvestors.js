@@ -54,24 +54,26 @@ const OurInvestors = (props) => {
             </div>
             <Form className="investor-form-box">
               <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+                <Form.Label style={{ fontSize: "1.5rem" }}>Email address</Form.Label>
                 <Form.Control
                 name="partnerName"
                 value={values.partnerName}
                 type="email"
                 placeholder="Email   (We'll never share your email with anyone else.)"
                 onChange={handleInputChange}
+                style={{fontSize: "1.5rem"}}
                 />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+                <Form.Label style={{ fontSize: "1.5rem" }}>Password</Form.Label>
                 <Form.Control
                 name="partnerPwd"
                 value={values.partnerPwd}
                 type="password"
                 placeholder="Password"
-                  onChange={handleInputChange}
+                onChange={handleInputChange}
+                style={{ fontSize: "1.5rem" }}
                 />
               </Form.Group>
 
@@ -120,39 +122,42 @@ const OurInvestors = (props) => {
           {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
 
 
-          <div className="investor-form-become" style={{ marginTop: "4rem" }}>
+          <div className="investor-form-become" style={{ marginTop: "2.5rem" }}>
             Become a Middlemarch Capital Partner
           </div>
           <Form className="investor-form-box">
             <Form.Group className="mb-3" controlId="investorName">
-              <Form.Label>Name</Form.Label>
+                <Form.Label style={{ fontSize: "1.5rem" }}>Name</Form.Label>
               <Form.Control
                 name="name"
                 value={values.name}
                 type="text"
                 placeholder="Enter First and Last Name"
                 onChange={handleInputChange}
+                style={{ fontSize: "1.5rem" }}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="investorEmail">
-              <Form.Label>Email address</Form.Label>
+                <Form.Label style={{ fontSize: "1.5rem" }}>Email address</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
                 value={values.email}
                 placeholder="Email   (We'll never share your email with anyone else.)"
                 onChange={handleInputChange}
+                style={{ fontSize: "1.5rem" }}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="investorTelephone">
-              <Form.Label>Telephone</Form.Label>
+                <Form.Label style={{ fontSize: "1.5rem" }}>Telephone</Form.Label>
               <Form.Control
                 type="text"
                 name="phone"
                 value={values.phone}
                 placeholder="Telephone"
                 onChange={handleInputChange}
+                style={{ fontSize: "1.5rem" }}
               />
             </Form.Group>
 
