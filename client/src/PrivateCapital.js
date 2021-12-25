@@ -21,11 +21,11 @@ const PrivateCapital = (props) => {
           <Row style={{padding: "3rem", alignItems: "center"}}>
             <Col xs={6} className="private-capital-img-container">
             <Image style={{maxWidth: "70%"}} src={privCapCustom} />
-              <div class="img-all img-top"><div className="img-text">Merchant Bank Sourced Deals</div></div>
-              <div class="img-all img-right"><div className="img-text">Deep Domain Expertise</div></div>
-              <div class="img-all img-bottom"><div className="img-text">Active Advisor Orientation</div></div>
-              <div class="img-all img-center"><div className="img-text">Middlemarch Capital Partners</div></div>
-              <div class="img-all img-left"><div className="img-text">Co-Investor/ Lead Investor</div></div>
+              <div className="img-all img-top"><div className="img-text">Merchant Bank Sourced Deals</div></div>
+              <div className="img-all img-right"><div className="img-text">Deep Domain Expertise</div></div>
+              <div className="img-all img-bottom"><div className="img-text">Active Advisor Orientation</div></div>
+              <div className="img-all img-center"><div className="img-text">Middlemarch Capital Partners</div></div>
+              <div className="img-all img-left"><div className="img-text">Co-Investor/ Lead Investor</div></div>
             </Col>
             <Col xs={6}>
               <div className="private-capital-text">The principals of Middlemarch Capital Partners, the firm’s investment arm, can either co-invest alongside top-tier sponsors in deals sourced as merchant bankers or lead investments in companies whose characteristics and capital needs are particularly well matched to Middlemarch’s skills and interests.</div>

@@ -5,9 +5,6 @@ import articles from './images/news/articles-lt.png';
 import events from './images/news/events-lt.png';
 import news from './images/news/news-lt.png';
 import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function importAll(r) {
   let pdfs = {};
@@ -25,9 +22,6 @@ const NewsModal = (props) => {
   const modalImage = props.modalType === 'NEWS' ? news : props.modalType === 'ARTICLES' ? articles : events;
   const [summary, setSummary] = useState('');
 
-
-
-  console.log('THING', props.thing)
   return (
     <Modal
       scrollable={false}
@@ -39,7 +33,7 @@ const NewsModal = (props) => {
       <i className="far fa-times-circle fa-3x news-modal-close" onClick={props.onHide}></i>
       <Modal.Header>
         <Modal.Title>
-             <div class="news-container">
+             <div className="news-container">
               <div style={{ alignSelf: "center" }}><img className="news-modal-image" alt={props.modalType} src={modalImage} /></div>
               <div className="news-modal-header">{props.modalType}</div>
             <div className="news-summary"><em>{summary}</em></div>

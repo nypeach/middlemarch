@@ -1,10 +1,11 @@
 import Image from 'react-bootstrap/Image';
 
 const TransactionCard = (props) => {
-  console.log(props.name)
+  // console.log(props.name)
   return (
     <div className="col">
-      <div className="image-flip" ontouchstart="this.classList.toggle('hover');">
+      <div className="image-flip" >
+        {/* <div className="image-flip" onTouchStart="this.classList.toggle('hover');"> */}
         <div className="mainflip">
 
           {/* CARD FRONT START */}

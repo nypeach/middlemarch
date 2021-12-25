@@ -95,22 +95,22 @@ const IndFocMerchantBank = (props) => {
                       <h2 className="mb-heading-0">Merchant Banking Services</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Equity Capital Raises</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; Equity Capital Raises</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Debt Capital Raises</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; Debt Capital Raises</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Structured Security Issuance</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; Structured Security Issuance</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Buyouts and Recapitalizations</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; Buyouts and Recapitalizations</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; M&amp;A&nbsp;&nbsp;Advisory</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; M&amp;A&nbsp;&nbsp;Advisory</h2>
                     </li>
                     <li className="mb-li">
-                      <h2 className="mb-heading-3"><i class="far fa-check-square"></i> &nbsp; Private Capital Investment</h2>
+                      <h2 className="mb-heading-3"><i className="far fa-check-square"></i> &nbsp; Private Capital Investment</h2>
                     </li>
                   </ul>
                 </Row>

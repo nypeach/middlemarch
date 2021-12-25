@@ -20,14 +20,14 @@ const OurTeamCard = (props) => {
         <Modal.Header>
           <Modal.Title id={props.person.id}>
             <p className="team-modal-header">&nbsp;&nbsp; {props.person.name} | {props.person.title} &nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fas fa-envelope-square" style={{ cursor: "pointer" }} onClick={(e) => {
+              <i className="fas fa-envelope-square" style={{ cursor: "pointer" }} onClick={(e) => {
                 e.preventDefault();
                 window.open(`${props.person.email}`)
               }}></i>&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fas fa-phone" style={{ cursor: "pointer" }} >
-                <span class="tooltiptext" style={{ fontFamily: "var(--main-font)", fontWeight: "500", fontSize: "2.5rem" }}>{props.person.phone}</span>
+              <i className="fas fa-phone" style={{ cursor: "pointer" }} >
+                <span className="tooltiptext" style={{ fontFamily: "var(--main-font)", fontWeight: "500", fontSize: "2.5rem" }}>{props.person.phone}</span>
               </i>&nbsp;&nbsp;&nbsp;&nbsp;
-              <i class="fab fa-linkedin" style={{ cursor: "pointer" }} onClick={(e) => {
+              <i className="fab fa-linkedin" style={{ cursor: "pointer" }} onClick={(e) => {
                 e.preventDefault();
                 window.open(`${props.person.linkedin}`)
               }}></i>
@@ -59,9 +59,9 @@ const OurTeamCard = (props) => {
               <h2 className="team-card-name">{props.person.name}</h2>
               <h3 className="team-card-title">{props.person.title}</h3>
               <div className="mb-4 mt-1 team-card-icon">
-                <i class="fas fa-envelope-square" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
-                <i class="fas fa-phone" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
-                <i class="fab fa-linkedin" style={{ cursor: "pointer" }}></i>
+                <i className="fas fa-envelope-square" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
+                <i className="fas fa-phone" style={{ cursor: "pointer" }}></i>&nbsp;&nbsp;
+                <i className="fab fa-linkedin" style={{ cursor: "pointer" }}></i>
 
               </div>
             </div>

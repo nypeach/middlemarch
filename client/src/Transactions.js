@@ -13,7 +13,7 @@ function importAll(r) {
 const images = importAll(require.context('./images/transactions/', false, /\.(png|jpe?g|svg)$/))
 
 const Transactions = () => {
-  console.log(images)
+  // console.log(images)
   return (
 
     <section className="txn txn-section">
@@ -27,8 +27,9 @@ const Transactions = () => {
             {/* TRANSACTION CARD START */}
 
             {transactions.sort((a, b) => (a.Order > b.Order) ? 1 : -1).map(txn =>
-              <div>
+              <div key={txn.Order}>
                 <TransactionCard
+
                   image={images[txn.Logo]}
                   name={txn.Name}
                   description={txn.Description}

@@ -1,30 +1,16 @@
 import Button from 'react-bootstrap/Button';
 import './Hamburger.css';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { useState } from 'react';
-
-
 
 const Hamburger = (props) => {
-
 
   return (
 
     <>
-
-
-
       <Button variant="flat" size="xxl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span className="navbar-toggler-icon" style={{ width: "100%" }}></span></Button>
-
-
       <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ width: "300px" }}>
         <div className="offcanvas-header">
           GO TO ...
-          <i className="far fa-times-circle" onClick="{toggle}" data-bs-dismiss="offcanvas"></i>
+          <i className="far fa-times-circle" data-bs-dismiss="offcanvas"></i>
           {/* <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> */}
         </div>
         <div className="offcanvas-body">

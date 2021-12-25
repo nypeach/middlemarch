@@ -26,8 +26,8 @@ const News = () => {
   const [modalShow, setModalShow] = useState(false);
   const [modalType, setModalType] = useState(null);
 
-  console.log('NEWS PDF IMAGES', newspdfs)
-  console.log('ARTICLES IMAGES', articlespdfs)
+  // console.log('NEWS PDF IMAGES', newspdfs)
+  // console.log('ARTICLES IMAGES', articlespdfs)
 
   return (
     <section className="news news-section">
@@ -38,32 +38,34 @@ const News = () => {
         {/* ============================================================================ */}
         <div className="news-content">
           <Container fluid style={{ margin: "5rem 3rem 3rem 0rem" }}>
-            <Row md={1} lg={3} g-0>
+            <Row md={1} lg={3}>
+              {/* <Row md={1} lg={3} g-0> */}
 
-              {['NEWS', 'ARTICLES', 'EVENTS'].map((newsType) => (
+              {['NEWS', 'ARTICLES', 'EVENTS'].map((newsType,index) => (
 
-                <Col>
+                <Col key={index}>
                   <Card
                     border="none"
                     style={newsType === 'NEWS' ? { marginLeft: "2rem" } : newsType === 'EVENTS' ? { marginRight: "2rem" } : null}
+
                   >
                     <Card.Body>
                       <Card.Img className="news-img" variant="top" src={newsType === 'NEWS' ? news : newsType === 'ARTICLES' ? articles : events} />
                       <Card.Title>
-                        <h2 class="heading-secondary-dk">{newsType === 'NEWS' ? 'News' : newsType === 'ARTICLES' ? 'Articles' : 'Events'}</h2>
+                        <h2 className="heading-secondary-dk">{newsType === 'NEWS' ? 'News' : newsType === 'ARTICLES' ? 'Articles' : 'Events'}</h2>
                       </Card.Title>
                       <Card.Text>
                         <div className="news-li">
                           <ul className="no-bullets">
                             {newsarticles.map(item =>
                               item.Type === newsType && item.Sort < (newsType === 'NEWS' ? 1.07 : newsType === 'ARTICLES' ? 2.07 : 3.07) ?
-                                <li style={{ marginBottom: "2rem" }}>
+                                <li key={item.Sort} style={{ marginBottom: "2rem" }}>
                                   <div className="news-div" style={{ cursor: "pointer" }} >
                                     <a
                                       href={newsType === 'NEWS' ? newspdfs[item.Link] : newsType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
                                       target="_blank" rel="noreferrer"
                                     >
-                                      <span class={newsType === 'NEWS' || newsType === 'ARTICLES' ? "news-tooltiptext tt-news" : "news-tooltiptext tt-events"}>{item.Summary}</span>
+                                      <span className={newsType === 'NEWS' || newsType === 'ARTICLES' ? "news-tooltiptext tt-news" : "news-tooltiptext tt-events"}>{item.Summary}</span>
                                       {item.Title}
                                     </a>
                                   </div>

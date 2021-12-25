@@ -18,7 +18,7 @@ const OurTeam = (props) => {
 
   const [selectedModal, setSelectedModal] = useState(0);
 
-  console.log(images);
+  // console.log(images);
   return (
 
     <section id="ourteam" className="team team-section" >
@@ -32,6 +32,7 @@ const OurTeam = (props) => {
           <div className="row g-5 p-5">
           {team.map(person =>
             <OurTeamCard
+              key={person.id}
               selectedModal={selectedModal}
               setSelectedModal={setSelectedModal}
               image={images[person.photo]}

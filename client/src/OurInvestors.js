@@ -2,9 +2,39 @@ import './OurInvestors.css';
 import logo from './images/logo.png';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Alert from 'react-bootstrap/Alert';
+import React, { useState } from 'react';
+
+const mailgun = require("mailgun-js");
+const DOMAIN = "sandbox0863dc47f5b74d81a9e982bdf84d5451.mailgun.org";
+const mg = mailgun({ apiKey: "847d5f787736d65a31b5c10e7b787a7a-1831c31e-e3abb263", domain: DOMAIN });
+
+const sendEmail = (mail) => {
+  mg.messages().send(mail, function (error, body) {
+    console.log(body);
+    console.log('THIS FUNCTION EXECUTED', mail);
+  });
+}
 
 const OurInvestors = (props) => {
 
+  const [values, setValues] = useState({ name: '', email: '', phone: '' })
+  const [showBecome, setShowBecome] = useState(false);
+  const [showPartner, setShowPartner] = useState(false);
+
+  const handleInputChange = e => {
+    const { name, value } = e.target
+    setValues({ ...values, [name]: value })
+  }
+
+  const data = {
+    from: "Jodi Silverman <jodimsilverman@gmail.com>",
+    to: "jodimsilverman@gmail.com",
+    subject: "Someone Wants to Become a Middlemarch Capital Partner!",
+    text: `NEW CAPITAL PARTNER REQUEST>> NAME: ${values.name} | EMAIL: ${values.email} | PHONE: ${values.phone}`,
+    html: `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW CAPITAL PARTNER REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.name}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.email}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.phone}</div> </div>`
+
+  };
 
   return (
 
@@ -32,29 +62,85 @@ const OurInvestors = (props) => {
                 <Form.Control type="password" placeholder="Password" />
               </Form.Group>
 
-              <Button size="md" variant="primary" type="submit">
+              <Button size="md" variant="primary" type="submit" onClick={(e) => { e.preventDefault(); setShowPartner(true);}}>
                 SUBMIT
               </Button>
             </Form>
-            <div className="investor-form-become" style={{marginTop: "4rem"}}>
+            {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
+            {showPartner ?
+              <Alert
+                variant="danger"
+                onClose={() => setShowPartner(false)}
+                dismissible
+              >
+                <Alert.Heading>INVALID EMAIL OR PASSWORD!</Alert.Heading>
+                <p>
+                  Please contact Middlemarch Partners to reset your account.
+                </p>
+              </Alert>
+              : null}
+            {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
+
+
+            {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
+            {showBecome ?
+              <Alert
+                variant="success"
+                onClose={() => setShowBecome(false)}
+                dismissible
+              >
+                <Alert.Heading>THANK YOU!!</Alert.Heading>
+                <p>
+                  You have successfully sent your request!
+                </p>
+              </Alert>
+              : null}
+            {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
+
+
+            <div className="investor-form-become" style={{ marginTop: "4rem" }}>
               Become a Middlemarch Capital Partner
             </div>
             <Form className="investor-form-box">
-              <Form.Group className="mb-3" controlId="formBasicName">
+              <Form.Group className="mb-3" controlId="investorName">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter First and Last Name" />
+                <Form.Control
+                  name="name"
+                  value={values.name}
+                  type="text"
+                  placeholder="Enter First and Last Name"
+                  onChange={handleInputChange}
+                />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="investorEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Email   (We'll never share your email with anyone else.)" />
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={values.email}
+                  placeholder="Email   (We'll never share your email with anyone else.)"
+                  onChange={handleInputChange}
+                />
               </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicTelephone">
+              <Form.Group className="mb-3" controlId="investorTelephone">
                 <Form.Label>Telephone</Form.Label>
-                <Form.Control type="text" placeholder="Telephone" />
+                <Form.Control
+                  type="text"
+                  name="phone"
+                  value={values.phone}
+                  placeholder="Telephone"
+                  onChange={handleInputChange}
+                />
               </Form.Group>
 
-              <Button size="md" variant="primary" type="submit">
+              <Button size="md" variant="primary" type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  sendEmail(data);
+                  setShowBecome(true);
+                  setValues({ name: '', email: '', phone: '' });
+                }}>
                 SUBMIT
               </Button>
             </Form>
