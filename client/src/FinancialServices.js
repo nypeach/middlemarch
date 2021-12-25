@@ -33,13 +33,6 @@ const FinancialServices = (props) => {
             </Col>
          </Row>
        </Container>
-
-
-
-
-
-
-
       </Modal.Body>
     </Modal>
   );
