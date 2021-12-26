@@ -27,7 +27,9 @@
   position: relative;
   text-align: center;
 }
-
+.private-capital-image {
+  max-width: 70%;
+}
 .img-all {
   position: absolute;
   width: 7.25vw;
