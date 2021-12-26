@@ -109,6 +109,14 @@ a:hover {
 /* Position the tooltip text - see examples below! */
   left: -10rem;
 }
+.tt-modal{
+/* Position the tooltip text - see examples below! */
+  position: fixed;
+  /* left: 10rem; */
+  top: 17rem;
+  z-index: 1;
+
+}
 
 
 /* Show the tooltip text when you mouse over the tooltip container */

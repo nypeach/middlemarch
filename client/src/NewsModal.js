@@ -43,31 +43,30 @@ const NewsModal = (props) => {
 
       <Modal.Body>
         <div className="news-modal-li">
-
           <ul className="no-bullets">
-            <div className="news-modal-text">
-              {newsarticles.map(item =>
-                item.Type === props.modalType ?
-                  <li
-                  style={{ marginBottom: "2rem" }}
-                  onMouseEnter={() => setSummary(item.Summary)}
-                  onMouseLeave={() => setSummary('')}
-                  >
-                    <div style={{ cursor: "pointer" }} >
-                      <a
-                        href={props.modalType === 'NEWS' ? newspdfs[item.Link] :
-                        props.modalType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
-                        target="_blank" rel="noreferrer"
-                      >
-                        {item.Title}
-                      </a>
-                    </div>
-                  </li>
-                  :
-                  null
-              )}
+            <div className="news-modal-text" style={{marginTop: "12rem"}}>
+            {newsarticles.map(item =>
+              item.Type === props.modalType  ?
+                <li key={item.Sort} style={{ marginBottom: "4rem" }}>
+
+                  <div className="news-div" style={{ cursor: "pointer" }} >
+                    <a
+                      href={props.modalType === 'NEWS' ? newspdfs[item.Link] : props.modalType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
+                      target="_blank" rel="noreferrer"
+                    >
+                      {/* <span className={props.modalType === 'NEWS' || props.modalType === 'ARTICLES' ? "news-tooltiptext tt-news" : "news-tooltiptext tt-events"}>{item.Summary}</span> */}
+                      <span className="news-tooltiptext tt-modal" style={{width: "25vw"}}>{item.Summary}</span>
+                      {item.Title}
+                    </a>
+                  </div>
+
+                </li>
+                :
+                null
+            )}
             </div>
           </ul>
+
         </div>
       </Modal.Body>
     </Modal>
