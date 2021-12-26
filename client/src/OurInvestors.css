@@ -22,6 +22,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 60vh;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -36,9 +37,21 @@
          margin: 10rem 40rem;
        } /* And even larger */
   }
+.invest-container {
+  margin: 10rem 25rem;
+  background-image: linear-gradient(to right bottom,var(--landing), var(--landing)), url(./images/coins.png);
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  border: var(--background-grad-dk,0.5) solid .5px;
+}
+@media screen and (min-width:1200px) {
+       .invest-container {
+         margin: 10rem 40rem;
+       } /* And even larger */
+  }
 
 .mm-logo {
   text-align: center;
+  padding: 8rem;
  }
 .mm-logo-box {
   height: var(--logo);
@@ -46,11 +59,12 @@
 .investors-input-box {
   background-color: var(--white-text);
   height: 100%;
+  padding: 0;
 }
 .investor-form-heading, .investor-form-become {
   color: var(--background-grad-dk);
   text-align: center;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   margin-bottom: -2rem;
 }
 .investor-form-heading {
