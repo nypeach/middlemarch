@@ -126,7 +126,7 @@ height: 100%;
 .footer1 {
   grid-area: 2 / 1 / span 2 / span 2;
   /* background-color: pink; */
-  opacity: 70%;
+  /* opacity: 70%; */
   height: 100%;
   margin-right: 20rem;
   font-size: 1.25rem;
@@ -135,7 +135,7 @@ height: 100%;
 .footer2 {
   grid-area: 2 / 2 / span 2 / span 2;
   /* background-color: green; */
-  opacity: 70%;
+  /* opacity: 70%; */
   height: 100%;
   margin-left: 20rem;
   text-align: left;
