@@ -57,7 +57,6 @@ const OurInvestors = (props) => {
               <Col lg={6} className="g-0">
               <div className="investors-input-box">
                   <div className="investor-form-heading" style={{ paddingTop: "1.5rem" }}>
-                  {/* <div className="investor-form-heading" style={{ marginTop: "1.5rem" }}> */}
                   Middlemarch Capital Partners Login
                 </div>
                 <Form className="investor-form-box">
