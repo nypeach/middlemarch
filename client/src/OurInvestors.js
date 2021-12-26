@@ -56,24 +56,24 @@ const OurInvestors = (props) => {
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label style={{ fontSize: "1.5rem" }}>Email address</Form.Label>
                 <Form.Control
-                name="partnerName"
-                value={values.partnerName}
-                type="email"
-                placeholder="Email   (We'll never share your email with anyone else.)"
-                onChange={handleInputChange}
-                style={{fontSize: "1.5rem"}}
+                  name="partnerName"
+                  value={values.partnerName}
+                  type="email"
+                  placeholder="Email   (We'll never share your email with anyone else.)"
+                  onChange={handleInputChange}
+                  style={{ fontSize: "1.5rem" }}
                 />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label style={{ fontSize: "1.5rem" }}>Password</Form.Label>
                 <Form.Control
-                name="partnerPwd"
-                value={values.partnerPwd}
-                type="password"
-                placeholder="Password"
-                onChange={handleInputChange}
-                style={{ fontSize: "1.5rem" }}
+                  name="partnerPwd"
+                  value={values.partnerPwd}
+                  type="password"
+                  placeholder="Password"
+                  onChange={handleInputChange}
+                  style={{ fontSize: "1.5rem" }}
                 />
               </Form.Group>
 
@@ -85,97 +85,97 @@ const OurInvestors = (props) => {
                   e.preventDefault();
                   setShowPartner(true);
                   setValues({ name: '', email: '', phone: '', partnerName: '', partnerPwd: '' });
-              }}
+                }}
               >
-              SUBMIT
-            </Button>
-          </Form>
-          {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
-          {showPartner ?
-            <Alert
-              variant="danger"
-              onClose={() => setShowPartner(false)}
-              dismissible
-            >
-              <Alert.Heading>INVALID EMAIL OR PASSWORD!</Alert.Heading>
-              <p>
-                Please contact Middlemarch Partners to reset your account.
-              </p>
-            </Alert>
-            : null}
-          {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
+                SUBMIT
+              </Button>
+            </Form>
+            {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
+            {showPartner ?
+              <Alert
+                variant="danger"
+                onClose={() => setShowPartner(false)}
+                dismissible
+              >
+                <Alert.Heading>INVALID EMAIL OR PASSWORD!</Alert.Heading>
+                <p>
+                  Please contact Middlemarch Partners to reset your account.
+                </p>
+              </Alert>
+              : null}
+            {/* =========== CONFIRMATION PARTNER LOGIN ============ */}
 
 
-          {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
-          {showBecome ?
-            <Alert
-              variant="success"
-              onClose={() => setShowBecome(false)}
-              dismissible
-            >
-              <Alert.Heading>THANK YOU!!</Alert.Heading>
-              <p>
-                You have successfully sent your request!
-              </p>
-            </Alert>
-            : null}
-          {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
+            {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
+            {showBecome ?
+              <Alert
+                variant="success"
+                onClose={() => setShowBecome(false)}
+                dismissible
+              >
+                <Alert.Heading>THANK YOU!!</Alert.Heading>
+                <p>
+                  You have successfully sent your request!
+                </p>
+              </Alert>
+              : null}
+            {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
 
 
-          <div className="investor-form-become" style={{ marginTop: "2.5rem" }}>
-            Become a Middlemarch Capital Partner
-          </div>
-          <Form className="investor-form-box">
-            <Form.Group className="mb-3" controlId="investorName">
+            <div className="investor-form-become" style={{ marginTop: "2.5rem" }}>
+              Become a Middlemarch Capital Partner
+            </div>
+            <Form className="investor-form-box">
+              <Form.Group className="mb-3" controlId="investorName">
                 <Form.Label style={{ fontSize: "1.5rem" }}>Name</Form.Label>
-              <Form.Control
-                name="name"
-                value={values.name}
-                type="text"
-                placeholder="Enter First and Last Name"
-                onChange={handleInputChange}
-                style={{ fontSize: "1.5rem" }}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="investorEmail">
+                <Form.Control
+                  name="name"
+                  value={values.name}
+                  type="text"
+                  placeholder="Enter First and Last Name"
+                  onChange={handleInputChange}
+                  style={{ fontSize: "1.5rem" }}
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="investorEmail">
                 <Form.Label style={{ fontSize: "1.5rem" }}>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                name="email"
-                value={values.email}
-                placeholder="Email   (We'll never share your email with anyone else.)"
-                onChange={handleInputChange}
-                style={{ fontSize: "1.5rem" }}
-              />
-            </Form.Group>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  value={values.email}
+                  placeholder="Email   (We'll never share your email with anyone else.)"
+                  onChange={handleInputChange}
+                  style={{ fontSize: "1.5rem" }}
+                />
+              </Form.Group>
 
-            <Form.Group className="mb-3" controlId="investorTelephone">
+              <Form.Group className="mb-3" controlId="investorTelephone">
                 <Form.Label style={{ fontSize: "1.5rem" }}>Telephone</Form.Label>
-              <Form.Control
-                type="text"
-                name="phone"
-                value={values.phone}
-                placeholder="Telephone"
-                onChange={handleInputChange}
-                style={{ fontSize: "1.5rem" }}
-              />
-            </Form.Group>
+                <Form.Control
+                  type="text"
+                  name="phone"
+                  value={values.phone}
+                  placeholder="Telephone"
+                  onChange={handleInputChange}
+                  style={{ fontSize: "1.5rem" }}
+                />
+              </Form.Group>
 
-            <Button size="md" variant="primary" type="submit"
-              onClick={(e) => {
-                e.preventDefault();
-                sendEmail(data);
-                setShowBecome(true);
-                setValues({ name: '', email: '', phone: '', partnerName: '', partnerPwd:'' });
-              }}>
-              SUBMIT
-            </Button>
-          </Form>
+              <Button size="md" variant="primary" type="submit"
+                onClick={(e) => {
+                  e.preventDefault();
+                  sendEmail(data);
+                  setShowBecome(true);
+                  setValues({ name: '', email: '', phone: '', partnerName: '', partnerPwd: '' });
+                }}>
+                SUBMIT
+              </Button>
+            </Form>
+          </div>
+
         </div>
 
       </div>
-
-    </div>
     </section >
   )
 }

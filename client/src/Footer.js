@@ -10,31 +10,18 @@ const Footer = () => {
 
         <div className="row">
           <div className="col-lg-5 col-xs-12 about-company">
-            <h2>Middlemarch</h2>
-            <p className="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-            {/* <p><a href=""><i className="fa fa-facebook-square mr-1"></i></a><a href=""><i className="fa fa-linkedin-square"></i></a></p> */}
-          </div>
-          <div className="col-lg-3 col-xs-12 links">
-            <h4 className="mt-lg-0 mt-sm-3">Links</h4>
-            <ul className="m-0 p-0">
-              {/* <li>- <a href="">Lorem ipsum</a></li>
-              <li>- <a href="">Nam mauris velit</a></li>
-              <li>- <a href="">Etiam vitae mauris</a></li>
-              <li>- <a href="">Fusce scelerisque</a></li>
-              <li>- <a href="">Sed faucibus</a></li>
-              <li>- <a href="">Mauris efficitur nulla</a></li> */}
-            </ul>
-          </div>
+          <p className="pr-5 text-white-50">Both Middlemarch Securities LLC and Middlemarch Capital Partners LLC are separate, wholly-owned subsidiaries of Middlemarch Partners LLC.  Securities Offered Through Middlemarch Securities, LLC, Member FINRA, SIPC</p>
+          <div><a href="https://brokercheck.finra.org/firm/summary/283508">BrokerCheck</a></div>
+          <div><a href="https://files.brokercheck.finra.org/crs_283508.pdf">FINRA Form CRS</a></div>
+           </div>
           <div className="col-lg-4 col-xs-12 location">
-            <h4 className="mt-lg-0 mt-sm-4">Location</h4>
-            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-            <p className="mb-0"><i className="fa fa-phone mr-3"></i>(541) 754-3010</p>
-            <p><i className="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+            <p>Material on this website has been prepared as a matter of general information. Middlemarch and its affiliates, employees, and clients may have recently established or disposed of, or may be establishing or disposing of, positions in securities mentioned. (Middlemarch Securities, LLC 2017)</p>
+
           </div>
         </div>
         <div className="row mt-5">
           <div className="col copyright">
-            <p className=""><small className="text-white-50">© 2019. All Rights Reserved.</small></p>
+          <p className=""><small className="text-white-50">©  2021 Copyright Middlemarch Partners LLC. All Rights Reserved.</small></p>
           </div>
         </div>
 

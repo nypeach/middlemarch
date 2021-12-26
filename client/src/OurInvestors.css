@@ -29,7 +29,7 @@
   margin: 10rem 25rem;
   background-image: linear-gradient(to right bottom,var(--landing), var(--landing)), url(./images/coins.png);
   box-shadow: 7px 7px 7px var(--background-grad-dk);
-  border: var(--background-grad-dk) solid 1px;
+  border: var(--background-grad-dk,0.5) solid .5px;
 }
 @media screen and (min-width:1200px) {
        .investors-container {

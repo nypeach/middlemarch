@@ -8,7 +8,8 @@ import OurTeam from './OurTeam';
 import OurInvestors from './OurInvestors';
 import Transactions from './Transactions';
 import News from './News';
-import Footer from './Footer';
+import ContactUs from './ContactUs';
+
 
 
 function App() {
@@ -97,7 +98,7 @@ function App() {
       <div ref={transactionsRef}><Transactions /></div>
       <div ref={newsRef}><News /></div>
       <div ref={ourInvestorsRef}><OurInvestors /></div>
-      <div ref={contactRef}><Footer /></div>
+      <div ref={contactRef}><ContactUs /></div>
     </div>
   )
 }
