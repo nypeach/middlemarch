@@ -31,7 +31,7 @@
 }
 .contact-div {
   margin: 2rem 15rem;
-  height: 80vh;
+  min-height: 80vh;
   display:block;
   overflow: auto;
   background: rgba(255, 255, 255, 0.6);
@@ -159,7 +159,7 @@
 }
 .footer2 {
   height: 100%;
-  margin-left: 20rem;
+  margin-left: 0rem;
   margin-top: 2.75rem;
   text-align: left;
   font-size: 1.25rem;
