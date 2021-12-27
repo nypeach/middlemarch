@@ -58,7 +58,12 @@ const NewsModal = (props) => {
                   >
                     <div className="news-div" style={{ cursor: "pointer" }} >
                       <a
-                        href={props.modalType === 'NEWS' ? newspdfs[item.Link] : props.modalType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
+                        href={
+                          props.modalType === 'NEWS' && item.Link.startsWith('http') ? item.Link :
+                        props.modalType === 'NEWS' && item.Link.startsWith('http') === false ? newspdfs[item.Link] :
+                        props.modalType === 'ARTICLES' && item.Link.startsWith('http') ? item.Link :
+                        props.modalType === 'ARTICLES' && item.Link.startsWith('http') === false ? articlespdfs[item.Link]:
+                        item.Link}
                         target="_blank" rel="noreferrer"
                       >
                         {item.Title}

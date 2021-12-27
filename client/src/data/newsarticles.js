@@ -26,7 +26,7 @@ var newsarticles = [
     'Title': 'Creamfinace Raises 21M Euros',
     'Link': 'Creamfinance FINRA Approved MM Advises Creamfinance on 21 million Equity Raise.pdf',
     'Summary': `Creamfinance raised 21M Euros from Capitec Bank of South Africa to support the expansion of Cream's consumer lending programs in Europe and South America.`
-},
+  },
   {
     'Type': 'NEWS',
     'Sort': 1.05,
@@ -94,15 +94,8 @@ var newsarticles = [
     'Type': 'ARTICLES',
     'Sort': 2.03,
     'Title': 'Market Reception of Public Fintechs',
-    'Link': 'MM article.pdf',
-    'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
-  },
-  {
-    'Type': 'ARTICLES',
-    'Sort': 2.04,
-    'Title': 'Am Opinion Tech Lending',
     'Link': 'AM-opinion-Tech-Lend-080919 sg.pdf',
-    'Summary': ''
+    'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
   },
   {
     'Type': 'ARTICLES',
@@ -117,6 +110,13 @@ var newsarticles = [
     'Title': 'Customer Acqusition in Fin. Services',
     'Link': 'TheAlternativeLendingReport_Middlemarch.pdf',
     'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
+  },
+  {
+    'Type': 'ARTICLES',
+    'Sort': 2.07,
+    'Title': 'Identifying LBO Candidates (Video)',
+    'Link': 'https://www.youtube.com/watch?v=ESsLk1vPGHM&list=PLc_3xizSvjgG56y3I4NQvXSnmFf3uczeu&index=2',
+    'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
   },
   {
     'Type': 'EVENTS',
@@ -141,4 +141,4 @@ var newsarticles = [
   },
 ];
 
-export { newsarticles};
+export { newsarticles };
