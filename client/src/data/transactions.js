@@ -113,7 +113,7 @@ var transactions =
       'Order': 10
     },
     {
-      'Logo': 'capfusion-new.jpg',
+      'Logo': 'CapFusion-300w.jpeg',
       'Name': 'Capfusion',
       'Description': 'Small Business Lender',
       'MM': 'MM',
