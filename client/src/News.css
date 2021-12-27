@@ -115,6 +115,8 @@ a:hover {
   /* left: 10rem; */
   top: 17rem;
   z-index: 1;
+  -webkit-column-span: all;
+         column-span: all;
 
 }
 
