@@ -6,7 +6,7 @@ import events from './images/news/events-lt.png';
 import news from './images/news/news-lt.png';
 import React, { useState, useRef } from 'react';
 import Overlay from 'react-bootstrap/Overlay';
-import Popover from 'react-bootstrap/Popover'
+import Popover from 'react-bootstrap/Popover';
 
 function importAll(r) {
   let pdfs = {};

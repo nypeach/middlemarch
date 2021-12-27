@@ -7,8 +7,10 @@ import articles from './images/news/articles-lt.png';
 import events from './images/news/events-lt.png';
 import news from './images/news/news-lt.png';
 import { newsarticles } from './data/newsarticles.js';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import NewsModal from './NewsModal';
+import Overlay from 'react-bootstrap/Overlay';
+import Popover from 'react-bootstrap/Popover';
 
 function importAll(r) {
   let pdfs = {};
@@ -25,6 +27,11 @@ const News = () => {
 
   const [modalShow, setModalShow] = useState(false);
   const [modalType, setModalType] = useState(null);
+  const [summary, setSummary] = useState('');
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
+
 
   // console.log('NEWS PDF IMAGES', newspdfs)
   // console.log('ARTICLES IMAGES', articlespdfs)
@@ -39,8 +46,6 @@ const News = () => {
         <div className="news-content">
           <Container fluid style={{ margin: "5rem 3rem 3rem 0rem" }}>
             <Row md={1} lg={3}>
-              {/* <Row md={1} lg={3} g-0> */}
-
               {['NEWS', 'ARTICLES', 'EVENTS'].map((newsType,index) => (
 
                 <Col key={index}>
@@ -57,15 +62,19 @@ const News = () => {
                       <Card.Text>
                         <div className="news-li">
                           <ul className="no-bullets">
+                            <div ref={ref}>
                             {newsarticles.map(item =>
                               item.Type === newsType && item.Sort < (newsType === 'NEWS' ? 1.07 : newsType === 'ARTICLES' ? 2.07 : 3.07) ?
-                                <li key={item.Sort} style={{ marginBottom: "2rem" }}>
+                                <li
+                                key={item.Sort}
+                                style={{ marginBottom: "2rem" }}
+                                onMouseEnter={(event) => { setSummary(item.Summary); setShow(true); setTarget(event.target) }}
+                                onMouseLeave={(event) => { setSummary(''); setShow(false); setTarget(null) }}>
                                   <div className="news-div" style={{ cursor: "pointer" }} >
                                     <a
                                       href={newsType === 'NEWS' ? newspdfs[item.Link] : newsType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
                                       target="_blank" rel="noreferrer"
                                     >
-                                      <span className={newsType === 'NEWS' || newsType === 'ARTICLES' ? "news-tooltiptext tt-news" : "news-tooltiptext tt-events"}>{item.Summary}</span>
                                       {item.Title}
                                     </a>
                                   </div>
@@ -73,6 +82,20 @@ const News = () => {
                                 :
                                 null
                             )}
+                              <Overlay
+                                show={show}
+                                target={target}
+                                placement="top"
+                                container={ref}
+                                containerPadding={20}
+                              >
+                                <Popover id="news-modal-popover">
+                                  <Popover.Body className="news-modal-popover-text">
+                                    {summary}
+                                  </Popover.Body>
+                                </Popover>
+                              </Overlay>
+                            </div>
                           </ul>
                           <button className="read-more-link" style={{ fontSize: "2rem" }} onClick={() => { setModalShow(true); setModalType(newsType); }}>
                             Read More ...
