@@ -8,7 +8,7 @@ var transactions =
       'Description': 'Real Estate Development of Sunseeker Resort Charlotte Harbor ',
       'MM': 'MM',
       'Type': 'Debt Raise',
-      'Amount': '135,000,000',
+      'Amount': '350,000,000',
       'Year': 2021,
       'Investor': 'Castlelake LP and PIMCO',
       'Order': 1

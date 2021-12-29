@@ -66,7 +66,7 @@ const OurInvestors = (props) => {
                       name="partnerName"
                       value={values.partnerName}
                       type="email"
-                      placeholder="Email   (We'll never share your email with anyone else.)"
+                      placeholder="Email"
                       onChange={handleInputChange}
                       style={{ fontSize: "1.5rem" }}
                     />
@@ -150,7 +150,7 @@ const OurInvestors = (props) => {
                       type="email"
                       name="email"
                       value={values.email}
-                      placeholder="Email   (We'll never share your email with anyone else.)"
+                      placeholder="Email"
                       onChange={handleInputChange}
                       style={{ fontSize: "1.5rem" }}
                     />

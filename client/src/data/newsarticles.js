@@ -9,7 +9,7 @@ var newsarticles = [
   {
     'Type': 'NEWS',
     'Sort': 1.02,
-    'Title': 'Sunseeker Raises $130M of Debt',
+    'Title': 'Sunseeker Raises $350M of Debt',
     'Link': '',
     'Summary': 'Sunseeker, a division of Alligent Travel Company (NASDAQ: ALGT), has raised $130M of debt to support the development of Sunseeker Resort Charlotte Harbor in Florida.'
   },
@@ -99,21 +99,21 @@ var newsarticles = [
   },
   {
     'Type': 'ARTICLES',
-    'Sort': 2.05,
+    'Sort': 2.04,
     'Title': 'Evaluating and Managing Cyber Risk ',
     'Link': 'Evaluating and Managing Cyber Risk for Investors MM.pdf',
     'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
   },
   {
     'Type': 'ARTICLES',
-    'Sort': 2.06,
+    'Sort': 2.05,
     'Title': 'Customer Acqusition in Fin. Services',
     'Link': 'TheAlternativeLendingReport_Middlemarch.pdf',
     'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
   },
   {
     'Type': 'ARTICLES',
-    'Sort': 2.07,
+    'Sort': 2.06,
     'Title': 'Identifying LBO Candidates (Video)',
     'Link': 'https://www.youtube.com/watch?v=ESsLk1vPGHM&list=PLc_3xizSvjgG56y3I4NQvXSnmFf3uczeu&index=2',
     'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
