@@ -41,8 +41,8 @@ const ContactUs = (props) => {
   };
 
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-  const mapWidth = viewportWidth > 1150 ? "300" : "200";
-  const mapHeight = viewportWidth > 1150 ? "200" : "150";
+  const mapWidth = viewportWidth > 1200 ? "300" : "200";
+  const mapHeight = viewportWidth > 1200 ? "200" : "150";
 
   console.log(data);
   return (
