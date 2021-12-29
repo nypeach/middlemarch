@@ -10,7 +10,7 @@ function importAll(r) {
   )
   return photos;
 }
-const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|svg)$/))
+// const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|svg)$/))
 
 
 
@@ -35,7 +35,7 @@ const OurTeam = (props) => {
               key={person.id}
               selectedModal={selectedModal}
               setSelectedModal={setSelectedModal}
-              image={`/images/team/${person.photo}`}
+              image={person.photo}
               person={person}
             />
             )}
