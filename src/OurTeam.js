@@ -35,7 +35,7 @@ const OurTeam = (props) => {
               key={person.id}
               selectedModal={selectedModal}
               setSelectedModal={setSelectedModal}
-              image={images[person.photo]}
+              image={`/images/team/${person.photo}`}
               person={person}
             />
             )}
