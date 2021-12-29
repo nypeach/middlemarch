@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.fef0d1fd.chunk.css",
-    "main.js": "/middlemarch/static/js/main.e117dcec.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.e117dcec.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.feb02818.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.feb02818.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -100,6 +100,6 @@
     "static/css/2.038361d8.chunk.css",
     "static/js/2.f92def7a.chunk.js",
     "static/css/main.fef0d1fd.chunk.css",
-    "static/js/main.e117dcec.chunk.js"
+    "static/js/main.feb02818.chunk.js"
   ]
 }
