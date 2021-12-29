@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.fef0d1fd.chunk.css",
-    "main.js": "/middlemarch/static/js/main.ca26018b.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.ca26018b.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.90aafb09.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.90aafb09.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -37,6 +37,7 @@
     "static/media/Mutuo Press Release -2021 12 19.pdf": "/middlemarch/static/media/Mutuo Press Release -2021 12 19.62548fd9.pdf",
     "static/media/NexisCard-300w.jpeg": "/middlemarch/static/media/NexisCard-300w.3d23d6a0.jpeg",
     "static/media/Photonic-300w.jpeg": "/middlemarch/static/media/Photonic-300w.3be4a477.jpeg",
+    "static/media/SashaGrutman.4edf3005.jpeg": "/middlemarch/static/media/SashaGrutman.4edf3005.jpeg",
     "static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf": "/middlemarch/static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.818f7cea.pdf",
     "static/media/TheAlternativeLendingReport_Middlemarch.pdf": "/middlemarch/static/media/TheAlternativeLendingReport_Middlemarch.ec9ef1da.pdf",
     "static/media/UrbanFinancial-300w.jpeg": "/middlemarch/static/media/UrbanFinancial-300w.261f2220.jpeg",
@@ -100,6 +101,6 @@
     "static/css/2.038361d8.chunk.css",
     "static/js/2.f92def7a.chunk.js",
     "static/css/main.fef0d1fd.chunk.css",
-    "static/js/main.ca26018b.chunk.js"
+    "static/js/main.90aafb09.chunk.js"
   ]
 }
