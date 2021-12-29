@@ -3,22 +3,11 @@ import OurTeamCard from './OurTeamCard';
 import {team} from './data/team.js';
 import { useState } from 'react';
 
-function importAll(r) {
-  let photos = {};
-  r.keys().map(r).map(o =>
-    photos[o.default.substring(14, o.default.indexOf('.')) + o.default.substring(o.default.lastIndexOf('.'))] = o.default
-  )
-  return photos;
-}
-// const images = importAll(require.context('./images/team/', false, /\.(png|jpe?g|svg)$/))
-
-
 
 const OurTeam = (props) => {
 
   const [selectedModal, setSelectedModal] = useState(0);
 
-  // console.log(images);
   return (
 
     <section id="ourteam" className="team team-section" >
@@ -35,7 +24,6 @@ const OurTeam = (props) => {
               key={person.id}
               selectedModal={selectedModal}
               setSelectedModal={setSelectedModal}
-              image={person.photo}
               person={person}
             />
             )}

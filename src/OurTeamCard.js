@@ -6,7 +6,7 @@ const OurTeamCard = (props) => {
   const isOpen = props.selectedModal === props.person.id;
   const openModal = () => props.setSelectedModal(props.person.id);
   const closeModal = () => props.setSelectedModal(0);
-  console.log('PROPS PERSON PHOTO >>>>>>', `/images/${props.person.photo.toLowerCase()}`)
+
   return (
 
     <div className="col-lg-6 col-12 ml-auto mr-auto">
@@ -37,7 +37,7 @@ const OurTeamCard = (props) => {
 
         <Modal.Body>
           <div style={{ textAlign: "left", margin: "16px" }}>
-            <img style={{ float: "left", marginRight: "24px" }} className="w-25 border-radius-md" src={props.image} alt={props.person.name} />
+            <img style={{ float: "left", marginRight: "24px" }} className="w-25 border-radius-md" src={props.person.photo} alt={props.person.name} />
             <div><p className="team-modal" style={{ color: "var(--heading-medium)"}}><em><strong>Expertise: </strong>{props.person.expertise}</em></p></div>
             <ul className="no-bullets">
               {props.person.paragraphs.map((fact, i) => (
@@ -51,7 +51,7 @@ const OurTeamCard = (props) => {
         <div className="row" onClick={openModal}>
           <div className="col-lg-4 col-md-6 col-12 pe-lg-0">
             <div className="pe-md-0">
-              <img className="w-100 border-radius-md team-member" src={`/images/${props.person.photo.toLowerCase()}`} alt={`${props.person.name}`} onClick={openModal} />
+              <img className="w-100 border-radius-md team-member" src={props.person.photo} alt={`${props.person.name}`} onClick={openModal} />
             </div>
           </div>
           <div className="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">

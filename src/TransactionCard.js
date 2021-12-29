@@ -1,7 +1,7 @@
 import Image from 'react-bootstrap/Image';
 
 const TransactionCard = (props) => {
-  // console.log(props.name)
+  console.log(props.txn.Logo)
   return (
     <div className="col">
       <div className="image-flip" >
@@ -14,7 +14,7 @@ const TransactionCard = (props) => {
               <div className="txn-card-content">
                 <div className="card-body text-center">
                   {/* <div className="txn-division"><h3>{props.division}</h3></div> */}
-                  {props.image === '/static/media/logo.34e6662d.jpeg' ?
+                  {props.txn.Logo === 'nologo' ?
                   //  {props.image === '/static/media/logo.efdedb94.jpeg' ?
                     // <div className="txn-nologo">
                       <div>
@@ -31,7 +31,7 @@ const TransactionCard = (props) => {
                       <div>
                       {/* <img className="img-fluid" src={props.image} alt={props.image} /> */}
                       <div className="txn-logo">
-                      <Image src={props.image} alt={props.image} />
+                      <Image src={props.txn.Logo} alt={props.name} />
                       </div>
                       <div className="test1">
                       <h4 className="card-title">Amount Raised</h4>

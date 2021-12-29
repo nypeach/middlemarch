@@ -1,3 +1,16 @@
+import SashaGrutman from '../images/team/SashaGrutman.jpeg';
+import DemetrisPapademetriou from '../images/team/DemetrisPapademetriou.jpeg';
+import AlexKim from '../images/team/AlexKim.png';
+import OliverRothauser from '../images/team/OliverRothauser.jpeg';
+import AlexMack from '../images/team/AlexMack.jpeg';
+import DavidTanzer from '../images/team/DavidTanzer.jpeg';
+import FrankPorcelli from '../images/team/FrankPorcelli.jpeg';
+import PaulHatch from '../images/team/PaulHatch.jpeg';
+import JeffMiller from '../images/team/JeffMiller.jpeg';
+import PeterCieszko from '../images/team/PeterCieszko.jpeg';
+import DaveSchrohe from '../images/team/DaveSchrohe.jpeg';
+import EricHoerdemann from '../images/team/EricHoerdemann.jpeg';
+
 
 var team = [
   {
@@ -7,7 +20,7 @@ var team = [
     'email': 'mailto:sgrutman@middlemarchllc.com',
     'phone': '212-913-9660 x1',
     'linkedin': 'https://www.linkedin.com/in/sasha-grutman-45a38/',
-    'photo': 'SashaGrutman.jpeg',
+    'photo': SashaGrutman,
     'expertise': 'Specialty finance, electronic financial services, transaction processing, technology-enabled business services, and renewable resources businesses.',
     'paragraphs': [
       'Mr. Grutman is a founder of Middlemarch Partners and co-leads the firm’s merchant banking and investing efforts. He has spent his entire 30-year career investing in and advising high-growth financial services and business services companies that leverage technology to create sustainable advantage.',
@@ -23,7 +36,7 @@ var team = [
     'email': 'mailto:dpapademetriou@middlemarchllc.com',
     'phone': '212-913-9660 x2',
     'linkedin': 'https://www.linkedin.com/in/dpapad',
-    'photo': 'DemetrisPapademetriou.jpeg',
+    'photo': DemetrisPapademetriou,
     'expertise': 'Specialty finance, electronic financial services, transaction processing, and technology-enabled business services.',
     'paragraphs': [
       'Mr. Papademetriou is a founder of Middlemarch Partners and co-leads the firm’s merchant banking and investing efforts. He has spent over 25 years investing, advising, and operating high-growth financial business services companies across the payments, specialty lending, capital markets, and insurance sectors.',
@@ -39,7 +52,7 @@ var team = [
     'email': 'mailto:akim@middlemarchlllc.com',
     'phone': '646-541-6121',
     'linkedin': 'https://www.linkedin.com/in/alex-kim-707245',
-    'photo': 'AlexKim.png',
+    'photo': AlexKim,
     'expertise': 'Natural resources, electronic financial services, transaction processing, SaaS businesses, and technology-enabled business services.',
     'paragraphs': [
       'Mr. Kim is a partner at Middlemarch Partners and has over 20 years of experience advising, investing, consulting, and managing high-growth companies in technology, resources and financial services. At Middlemarch, Mr. Kim lead’s the firm’s efforts in Asia with a focus on sourcing both companies seeking merchant banking advisory and investments and investors for Middlemarch clients. Mr. Kim is also a partner and co-founder of SkyPath Capital Partners, a strategic consulting and advisory group based in Hong Kong and Singapore. ',
@@ -55,7 +68,7 @@ var team = [
     'email': 'mailto:orothauser@middlemarchllc.com',
     'phone': '917-549-4333',
     'linkedin': 'https://www.linkedin.com/in/oliverrothauser',
-    'photo': 'OliverRothauser.jpeg',
+    'photo': OliverRothauser,
     'expertise': 'Impact/ESG, financial services, technology-enabled businesses, and business building and operating experience across three entrepreneurial ventures.',
     'paragraphs': [
       'Mr. Rothauser’s primary focus is advising and investing in Impact and ESG-oriented enterprises.  He also focuses on financial services and early stage ventures in emerging technology.',
@@ -72,7 +85,7 @@ var team = [
     'email': 'mailto:amack@middlemarchllc.com',
     'phone': '917-923-1478',
     'linkedin': 'https://www.linkedin.com/in/alexmackcompliance',
-    'photo': 'AlexMack.jpeg',
+    'photo': AlexMack,
     'expertise': 'Regulatory compliance and financial controls.',
     'paragraphs': [
       'Mr. Mack is the CFO and CCO of Middlemarch Partners. He is responsible for the Firm’s financial position and reporting, as well as the Firm’s compliance with securities regulations. He has spent the past decade helping Broker Dealers with their financial and compliance responsibilities.',
@@ -87,7 +100,7 @@ var team = [
     'email': 'mailto:dtanzer@middlemarchllc.com',
     'phone': '917-692-6702',
     'linkedin': 'https://www.linkedin.com/in/david-tanzer-43259a',
-    'photo': 'DavidTanzer.jpeg',
+    'photo': DavidTanzer,
     'expertise': 'Financial services, e-commerce, impact investing, healthcare, media, and executive management',
     'paragraphs': [
       'David Tanzer is a Partner of Middlemarch Capital Partners where he oversees the co-investment in Veransa. He has spent his 35 year career as a venture capital investor, a CEO of multiple private-equity-sponsored companies, and as a board member of fast-growing technology-enabled ventures.',
@@ -130,7 +143,7 @@ var team = [
     'email': 'mailto:fporcelli@convergency-partners.com',
     'phone': '',
     'linkedin': 'https://www.linkedin.com/in/frank-porcelli-318a3378',
-    'photo': 'FrankPorcelli.jpeg',
+    'photo': FrankPorcelli,
     'expertise': 'Asset management, wealth management, distribution, and executive management.',
     'paragraphs': [
       'Frank Porcelli, recently retired Chairman of BlackRock’s US Wealth Advisory business, has had a distinguished 30+ year career in asset management and wealth management. He is widely known through the industry as an exceptional leader with an open and collaborative leadership style. Mr. Porcelli has an extensive network of contacts throughout the industry and has access to virtually all organizational levels within nearly every major firm.',
@@ -145,7 +158,7 @@ var team = [
     'email': 'mailto:phatch@convergency-partners.com',
     'phone': '512-355-1500 ',
     'linkedin': 'https://www.linkedin.com/in/paul-hatch-580a22a',
-    'photo': 'PaulHatch.jpeg',
+    'photo': PaulHatch,
     'expertise': 'Wealth management, asset management, fintech, and executive management.',
     'paragraphs': [
       'Paul Hatch began his career as an officer in the US Navy, after having graduated from the US Naval Academy in Annapolis. He served aboard the USS Coontz for three years and spent the remainder of his time in the Navy as a Political Military analyst responsible for briefing the President, Vice President and various other senior legislators on the situation in the Middle East.',
@@ -160,7 +173,7 @@ var team = [
     'email': 'mailto: jmiller@convergency-partners.com',
     'phone': '617-834-2262',
     'linkedin': 'https://www.linkedin.com/in/jeffmiller2020',
-    'photo': 'JeffMiller.jpeg',
+    'photo': JeffMiller,
     'expertise': 'Wealth management, asset management, fintech, and executive management.',
     'paragraphs': [
       'Jeff Miller has had a 30-year career spanning law, wealth management, asset management, consulting, outsourcing, and wealth tech. His career started as a lawyer in Washington DC, where he specialized in ERISA fiduciary responsibility. He left the law and joined wealth management firm Shearson Lehman Hutton, where he became Head of Retirement Plan Services and part of the firm’s Consulting Services Group. He was part of the team that launched the industry’s first wrap fee mutual fund program, and was responsible for the industry’s first advisory service for 401k plan participants.',
@@ -175,7 +188,7 @@ var team = [
     'email': 'mailto:pcieszko@convergency-partners.com',
     'phone': '917-756-7345',
     'linkedin': 'https://www.linkedin.com/in/peter-cieszko',
-    'photo': 'PeterCieszko.jpeg',
+    'photo': PeterCieszko,
     'expertise': 'Asset management, investment management, product innovation, business development, and distribution strategies.',
     'paragraphs': [
       'Peter Cieszko recently retired as the Head of Strategic Development for American Century Investments, where he greatly contributed to the growth of the organization across all client channels through existing and new strategic partnerships.',
@@ -192,7 +205,7 @@ var team = [
     'email': 'mailto:dschrohe@convergency-partners.com',
     'phone': '917-453-0555',
     'linkedin': 'https://www.linkedin.com/in/dave-schrohe-3241135',
-    'photo': 'DaveSchrohe.jpeg',
+    'photo': DaveSchrohe,
     'expertise': 'Asset management, wealth management, fintech, and executive management.',
     'paragraphs': [
       'Dave Schrohe has assembled over 25 years of wealth management industry experience in leadership roles at both RIAs and larger institutions. His passion has been to drive growth through an unrivaled focus on the client, a dedication to the development and evolution of advisors and staff, and a commitment to taking advantage of technology and innovation to improve everyone’s experience.',
@@ -209,7 +222,7 @@ var team = [
     'email': 'mailto:ehoerdemann@convergency-partners.com',
     'phone': '267-999-9170',
     'linkedin': 'https://www.linkedin.com/in/eric-hoerdemann-1a36933',
-    'photo': 'EricHoerdemann.jpeg',
+    'photo': EricHoerdemann,
     'expertise': 'Asset management, fintech, and manager selection.',
     'paragraphs': [
       'During his two decade plus career Eric Hoerdemann has reviewed thousands of strategies across all asset classes. A primary focus throughout his career has been identifying early-stage investment talent and building a business around them.  Mr. Hoerdemann was the first institutional capital into a number of highly successful multi-billion dollar teams. He has played an instrumental role in business development and capital raising particularly at the manager’s early lifecycle.  He has a professional and personal passion for technology and built manager due diligence analytical tools used at his prior firms. He also founded an online marketplace in 2000 and advises technology-oriented venture capital firms including Cambium Capital.',

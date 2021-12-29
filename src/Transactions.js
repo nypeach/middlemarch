@@ -2,18 +2,8 @@ import './Transactions.css';
 import TransactionCard from './TransactionCard';
 import { transactions } from './data/transactions.js';
 
-function importAll(r) {
-  let photos = {};
-  r.keys().map(r).map(o =>
-    photos[o.default.substring(14, o.default.indexOf('.')) + o.default.substring(o.default.lastIndexOf('.'))] = o.default
-  )
-  return photos;
-}
-
-const images = importAll(require.context('./images/transactions/', false, /\.(png|jpe?g|svg)$/))
-
 const Transactions = () => {
-  // console.log(images)
+
   return (
 
     <section className="txn txn-section">
@@ -30,7 +20,7 @@ const Transactions = () => {
               <div key={txn.Order}>
                 <TransactionCard
 
-                  image={images[txn.Logo]}
+                  txn={txn}
                   name={txn.Name}
                   description={txn.Description}
                   investor={txn.Investor}

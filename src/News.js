@@ -12,16 +12,6 @@ import NewsModal from './NewsModal';
 import Overlay from 'react-bootstrap/Overlay';
 import Popover from 'react-bootstrap/Popover';
 
-function importAll(r) {
-  let pdfs = {};
-  r.keys().map(r).map(o =>
-    pdfs[o.default.substring(14, o.default.indexOf('.')) + o.default.substring(o.default.lastIndexOf('.'))] = o.default
-  )
-  return pdfs;
-}
-
-const newspdfs = importAll(require.context('./news/news', false, /\.(png|jpe?g|svg|pdf)$/))
-const articlespdfs = importAll(require.context('./news/articles', false, /\.(png|jpe?g|svg|pdf)$/))
 
 const News = () => {
 
@@ -32,9 +22,6 @@ const News = () => {
   const [target, setTarget] = useState(null);
   const ref = useRef(null);
 
-
-  // console.log('NEWS PDF IMAGES', newspdfs)
-  // console.log('ARTICLES IMAGES', articlespdfs)
 
   return (
     <section className="news news-section">
@@ -47,7 +34,6 @@ const News = () => {
           <Container fluid style={{ margin: "5rem 3rem 3rem 0rem" }}>
             <Row md={1} lg={3}>
               {['NEWS', 'ARTICLES', 'EVENTS'].map((newsType,index) => (
-
                 <Col key={index}>
                   <Card
                     border="none"
@@ -72,7 +58,7 @@ const News = () => {
                                 onMouseLeave={(event) => { setSummary(''); setShow(false); setTarget(null) }}>
                                   <div className="news-div" style={{ cursor: "pointer" }} >
                                     <a
-                                      href={newsType === 'NEWS' ? newspdfs[item.Link] : newsType === 'ARTICLES' ? articlespdfs[item.Link] : item.Link}
+                                      href={item.Link}
                                       target="_blank" rel="noreferrer"
                                     >
                                       {item.Title}

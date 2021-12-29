@@ -8,19 +8,6 @@ import React, { useState, useRef } from 'react';
 import Overlay from 'react-bootstrap/Overlay';
 import Popover from 'react-bootstrap/Popover';
 
-function importAll(r) {
-  let pdfs = {};
-  r.keys().map(r).map(o =>
-    pdfs[o.default.substring(14, o.default.indexOf('.')) + o.default.substring(o.default.lastIndexOf('.'))] = o.default
-  )
-  return pdfs;
-}
-
-const newspdfs = importAll(require.context('./news/news', false, /\.(png|jpe?g|svg|pdf)$/))
-const articlespdfs = importAll(require.context('./news/articles', false, /\.(png|jpe?g|svg|pdf)$/))
-
-
-
 const NewsModal = (props) => {
   const modalImage = props.modalType === 'NEWS' ? news : props.modalType === 'ARTICLES' ? articles : events;
   const [summary, setSummary] = useState('');
@@ -58,12 +45,7 @@ const NewsModal = (props) => {
                   >
                     <div className="news-div" style={{ cursor: "pointer" }} >
                       <a
-                        href={
-                          props.modalType === 'NEWS' && item.Link.startsWith('http') ? item.Link :
-                        props.modalType === 'NEWS' && item.Link.startsWith('http') === false ? newspdfs[item.Link] :
-                        props.modalType === 'ARTICLES' && item.Link.startsWith('http') ? item.Link :
-                        props.modalType === 'ARTICLES' && item.Link.startsWith('http') === false ? articlespdfs[item.Link]:
-                        item.Link}
+                        href={item.Link}
                         target="_blank" rel="noreferrer"
                       >
                         {item.Title}

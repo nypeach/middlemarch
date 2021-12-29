@@ -1,9 +1,35 @@
-
+import sunseeker300w from '../images/transactions/sunseeker-300w.jpeg';
+import veransa300w from '../images/transactions/veransa-300w.jpeg';
+import skykick300w from '../images/transactions/skykick-300w.jpeg';
+import elevatenew from '../images/transactions/elevate-new.jpg';
+import mutuo300w from '../images/transactions/mutuo-300w.jpeg';
+import channel300w from '../images/transactions/channel-300w.jpeg';
+import Photonic300w from '../images/transactions/Photonic-300w.jpeg';
+import FlexShopper300w from '../images/transactions/FlexShopper-300w.jpeg';
+import cream300w from '../images/transactions/cream-300w.jpeg';
+import capfusionnew from '../images/transactions/capfusion-new.jpg';
+import privlonew from '../images/transactions/privlo-new.jpg';
+import benchnew from '../images/transactions/bench-new.jpg';
+import DriveFactor300w from '../images/transactions/DriveFactor-300w.jpeg';
+import NexisCard300w from '../images/transactions/NexisCard-300w.jpeg';
+import creditmaxnew from '../images/transactions/creditmax-new.jpg';
+import AstorInvestment300w from '../images/transactions/AstorInvestment-300w.jpeg';
+import equiductnew from '../images/transactions/equiduct-new.jpg';
+import piconew from '../images/transactions/pico-new.jpg';
+import UrbanFinancial300w from '../images/transactions/UrbanFinancial-300w.jpeg';
+import Knight300w from '../images/transactions/Knight-300w.jpeg';
+import Ballista300w from '../images/transactions/Ballista-300w.jpeg';
+import currenexnew from '../images/transactions/currenex-new.jpg';
+import cashedgenew from '../images/transactions/cashedge-new.jpg';
+import velocitynew from '../images/transactions/velocity-new.jpg';
+import CheckSmart300w from '../images/transactions/CheckSmart-300w.jpeg';
+import newnew from '../images/transactions/new-new.jpg';
+import resmaenew from '../images/transactions/resmae-new.jpg';
 
 var transactions =
   [
     {
-      'Logo': 'sunseeker-300w.jpeg',
+      'Logo': sunseeker300w,
       'Name': 'Sunseeker',
       'Description': 'Real Estate Development of Sunseeker Resort Charlotte Harbor ',
       'MM': 'MM',
@@ -14,7 +40,7 @@ var transactions =
       'Order': 1
     },
     {
-      'Logo': 'veransa-300w.jpeg',
+      'Logo': veransa300w,
       'Name': 'Veransa',
       'Description': 'Yard Waste Recycling Business',
       'MM': 'MM',
@@ -25,7 +51,7 @@ var transactions =
       'Order': 2
     },
     {
-      'Logo': 'skykick-300w.jpeg',
+      'Logo': skykick300w,
       'Name': 'Skykick',
       'Description': 'Cloud Automation SAAS Company',
       'MM': 'MM',
@@ -36,7 +62,7 @@ var transactions =
       'Order': 3
     },
     {
-      'Logo': 'elevate-new.jpg',
+      'Logo': elevatenew,
       'Name': 'Elevate',
       'Description': 'Global Outsourced Legal Services Company',
       'MM': 'MM',
@@ -47,7 +73,7 @@ var transactions =
       'Order': 4
     },
     {
-      'Logo': 'mutuo-300w.jpeg',
+      'Logo': mutuo300w,
       'Name': 'Mutuo Financiera',
       'Description': 'Commercial Auto Leasing Company',
       'MM': 'MM',
@@ -58,7 +84,7 @@ var transactions =
       'Order': 5
     },
     {
-      'Logo': 'channel-300w.jpeg',
+      'Logo': channel300w,
       'Name': 'Channel Partners Capital',
       'Description': 'Small Business Lender',
       'MM': 'MM',
@@ -69,7 +95,7 @@ var transactions =
       'Order': 6
     },
     {
-      'Logo': 'Photonic-300w.jpeg',
+      'Logo': Photonic300w,
       'Name': 'Photonic Capital',
       'Description': 'Lease-To-Own Led Lighting Company',
       'MM': 'MM',
@@ -80,7 +106,7 @@ var transactions =
       'Order': 7
     },
     {
-      'Logo': 'logo.jpeg',
+      'Logo': 'nologo',
       'Name': 'Project Dynamo',
       'Description': 'Energy Equipment Reseller',
       'MM': 'MM',
@@ -91,7 +117,7 @@ var transactions =
       'Order': 8
     },
     {
-      'Logo': 'FlexShopper-300w.jpeg',
+      'Logo': FlexShopper300w,
       'Name': 'FlexShopper',
       'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
@@ -102,7 +128,7 @@ var transactions =
       'Order': 9
     },
     {
-      'Logo': 'cream-300w.jpeg',
+      'Logo': cream300w,
       'Name': 'Cream Finance',
       'Description': 'Online Consumer Lender',
       'MM': 'MM',
@@ -113,7 +139,7 @@ var transactions =
       'Order': 10
     },
     {
-      'Logo': 'capfusion-new.jpg',
+      'Logo': capfusionnew,
       'Name': 'Capfusion',
       'Description': 'Small Business Lender',
       'MM': 'MM',
@@ -124,7 +150,7 @@ var transactions =
       'Order': 11
     },
     {
-      'Logo': 'logo.jpeg',
+      'Logo': 'nologo',
       'Name': 'Online Consumer Lender',
       'Description': 'Short-Term Consumer Lender',
       'MM': 'MM',
@@ -135,7 +161,7 @@ var transactions =
       'Order': 12
     },
     {
-      'Logo': 'FlexShopper-300w.jpeg',
+      'Logo': FlexShopper300w,
       'Name': 'Flexshopper',
       'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
@@ -146,7 +172,7 @@ var transactions =
       'Order': 13
     },
     {
-      'Logo': 'FlexShopper-300w.jpeg',
+      'Logo': FlexShopper300w,
       'Name': 'Flexshopper',
       'Description': 'Lease-To-Own Finance Company',
       'MM': 'MM',
@@ -157,7 +183,7 @@ var transactions =
       'Order': 14
     },
     {
-      'Logo': 'privlo-new.jpg',
+      'Logo': privlonew,
       'Name': 'Privlo',
       'Description': 'Non-Conforming Mortgage Lender',
       'MM': 'MM',
@@ -168,7 +194,7 @@ var transactions =
       'Order': 15
     },
     {
-      'Logo': 'logo.jpeg',
+      'Logo': 'nologo',
       'Name': 'Online Consumer Lender',
       'Description': 'Online Installment Lender',
       'MM': 'MM',
@@ -179,7 +205,7 @@ var transactions =
       'Order': 16
     },
     {
-      'Logo': 'bench-new.jpg',
+      'Logo': benchnew,
       'Name': 'Bench',
       'Description': 'Outsourced Accounting Services',
       'MM': 'MM',
@@ -190,7 +216,7 @@ var transactions =
       'Order': 17
     },
     {
-      'Logo': 'logo.jpeg',
+      'Logo': 'nologo',
       'Name': 'Online Consumer Lender',
       'Description': 'Online Consumer Lender',
       'MM': 'MM',
@@ -201,7 +227,7 @@ var transactions =
       'Order': 18
     },
     {
-      'Logo': 'logo.jpeg',
+      'Logo': 'nologo',
       'Name': 'Online Consumer Lender',
       'Description': 'Online Consumer Lender',
       'MM': 'MM',
@@ -212,7 +238,7 @@ var transactions =
       'Order': 19
     },
     {
-      'Logo': 'DriveFactor-300w.jpeg',
+      'Logo': DriveFactor300w,
       'Name': 'Drive Factor',
       'Description': 'Insurance Telematics For Autos',
       'MM': 'PRIOR',
@@ -223,7 +249,7 @@ var transactions =
       'Order': 20
     },
     {
-      'Logo': 'bench-new.jpg',
+      'Logo': benchnew,
       'Name': 'Bench',
       'Description': 'Outsourced Accounting Services',
       'MM': 'PRIOR',
@@ -234,7 +260,7 @@ var transactions =
       'Order': 21
     },
     {
-      'Logo': 'NexisCard-300w.jpeg',
+      'Logo': NexisCard300w,
       'Name': 'Prepaid Ventures',
       'Description': 'Pre-Paid Debit Card Processor',
       'MM': 'PRIOR',
@@ -245,7 +271,7 @@ var transactions =
       'Order': 22
     },
     {
-      'Logo': 'creditmax-new.jpg',
+      'Logo': creditmaxnew,
       'Name': 'CreditMax',
       'Description': 'Charged-Off Credit Trading Platform',
       'MM': 'PRIOR',
@@ -256,7 +282,7 @@ var transactions =
       'Order': 23
     },
     {
-      'Logo': 'creditmax-new.jpg',
+      'Logo': creditmaxnew,
       'Name': 'CreditMax',
       'Description': 'Charged-Off Credit Trading Platform',
       'MM': 'PRIOR',
@@ -267,7 +293,7 @@ var transactions =
       'Order': 24
     },
     {
-      'Logo': 'AstorInvestment-300w.jpeg',
+      'Logo': AstorInvestment300w,
       'Name': 'Astor Investment Management',
       'Description': 'Actively Managed Etf Issuer',
       'MM': 'PRIOR',
@@ -278,7 +304,7 @@ var transactions =
       'Order': 25
     },
     {
-      'Logo': 'equiduct-new.jpg',
+      'Logo': equiductnew,
       'Name': 'Equiduct',
       'Description': 'European Equity Exchange',
       'MM': 'PRIOR',
@@ -289,7 +315,7 @@ var transactions =
       'Order': 26
     },
     {
-      'Logo': 'pico-new.jpg',
+      'Logo': piconew,
       'Name': 'Pico Trading',
       'Description': 'Capital Markets Technology',
       'MM': 'PRIOR',
@@ -300,7 +326,7 @@ var transactions =
       'Order': 27
     },
     {
-      'Logo': 'UrbanFinancial-300w.jpeg',
+      'Logo': UrbanFinancial300w,
       'Name': 'Urban Financial Group',
       'Description': 'Reverse Mortgage Lender',
       'MM': 'PRIOR',
@@ -311,7 +337,7 @@ var transactions =
       'Order': 28
     },
     {
-      'Logo': 'Knight-300w.jpeg',
+      'Logo': Knight300w,
       'Name': 'Knight Capital',
       'Description': 'Retail Fx Trading',
       'MM': 'PRIOR',
@@ -322,7 +348,7 @@ var transactions =
       'Order': 29
     },
     {
-      'Logo': 'Ballista-300w.jpeg',
+      'Logo': Ballista300w,
       'Name': 'Ballista',
       'Description': 'Block Options Trading Platform',
       'MM': 'PRIOR',
@@ -333,7 +359,7 @@ var transactions =
       'Order': 30
     },
     {
-      'Logo': 'currenex-new.jpg',
+      'Logo': currenexnew,
       'Name': 'CurrenEx',
       'Description': 'Foreign Exchange Trading Platform',
       'MM': 'PRIOR',
@@ -344,7 +370,7 @@ var transactions =
       'Order': 31
     },
     {
-      'Logo': 'cashedge-new.jpg',
+      'Logo': cashedgenew,
       'Name': 'CashEdge',
       'Description': 'Saas Payments and Risk Management Platform',
       'MM': 'PRIOR',
@@ -355,7 +381,7 @@ var transactions =
       'Order': 32
     },
     {
-      'Logo': 'velocity-new.jpg',
+      'Logo': velocitynew,
       'Name': 'Velocity Express',
       'Description': 'Time-Critical Logistics Company',
       'MM': 'PRIOR',
@@ -366,7 +392,7 @@ var transactions =
       'Order': 33
     },
     {
-      'Logo': 'CheckSmart-300w.jpeg',
+      'Logo': CheckSmart300w,
       'Name': 'Check Smart',
       'Description': 'Check Casher and Short-Term Lender',
       'MM': 'PRIOR',
@@ -377,7 +403,7 @@ var transactions =
       'Order': 34
     },
     {
-      'Logo': 'new-new.jpg',
+      'Logo': newnew,
       'Name': 'NEW Company',
       'Description': 'Outsourced Insurance Services Company',
       'MM': 'PRIOR',
@@ -388,7 +414,7 @@ var transactions =
       'Order': 35
     },
     {
-      'Logo': 'new-new.jpg',
+      'Logo': newnew,
       'Name': 'NEW Company',
       'Description': 'Outsourced Insurance Services Company',
       'MM': 'PRIOR',
@@ -399,7 +425,7 @@ var transactions =
       'Order': 36
     },
     {
-      'Logo': 'resmae-new.jpg',
+      'Logo': resmaenew,
       'Name': 'ResMAE',
       'Description': 'Non-Prime Mortgage Lender',
       'MM': 'PRIOR',
