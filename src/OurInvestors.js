@@ -47,7 +47,7 @@ const OurInvestors = (props) => {
   bodyParts.htmlmessage = data;
 
   const subject = 'Someone Wants to be a Middlemarch Capital Partner!';
-  const recipient = ['jodimsilverman@gmail.com', 'jodi@sbbsinc.com'];
+  const recipient = ['jodimsilverman@gmail.com', 'sgrutman@middlemarchpartnersllc.com','dpapademetriou@middlemarchllc.com'];
 
   return (
 
