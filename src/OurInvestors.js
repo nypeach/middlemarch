@@ -42,12 +42,12 @@ const OurInvestors = (props) => {
   }
 
   const data =
-    `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW MAILING LIST REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.investorName}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.investorEmail}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.investorPhone}</div> </div>`;
+    `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW CAPITAL PARTNER REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.investorName}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.investorEmail}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.investorPhone}</div> </div>`;
 
   bodyParts.htmlmessage = data;
 
   const subject = 'Someone Wants to be a Middlemarch Capital Partner!';
-  const recipient = ['jodimsilverman@gmail.com', 'sgrutman@middlemarchpartnersllc.com','dpapademetriou@middlemarchllc.com'];
+  const recipient = ['jodimsilverman@gmail.com', 'sgrutman@middlemarchllc.com','dpapademetriou@middlemarchllc.com'];
 
   return (
 

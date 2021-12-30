@@ -47,7 +47,7 @@ const ContactUs = (props) => {
   bodyParts.htmlmessage = data;
 
   const subject = 'Someone Wants to Be on the Middlemarch Mailing List!';
-  const recipient = ['jodimsilverman@gmail.com', 'sgrutman@middlemarchpartnersllc.com', 'dpapademetriou@middlemarchllc.com'];
+  const recipient = ['jodimsilverman@gmail.com', 'sgrutman@middlemarchllc.com', 'dpapademetriou@middlemarchllc.com'];
 
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const mapWidth = viewportWidth > 1200 ? "300" : "200";
