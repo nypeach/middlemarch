@@ -1,7 +1,7 @@
 import Image from 'react-bootstrap/Image';
 
 const TransactionCard = (props) => {
-  console.log(props.txn.Logo)
+  // console.log(props.txn.Logo)
   return (
     <div className="col">
       <div className="image-flip" >

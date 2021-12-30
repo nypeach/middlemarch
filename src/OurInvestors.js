@@ -7,38 +7,47 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import React, { useState } from 'react';
+import Backendless from 'backendless';
 
-const mailgun = require("mailgun-js");
-const DOMAIN = "sandbox0863dc47f5b74d81a9e982bdf84d5451.mailgun.org";
-const mg = mailgun({ apiKey: "847d5f787736d65a31b5c10e7b787a7a-1831c31e-e3abb263", domain: DOMAIN });
+Backendless.initApp('3F6FD799-4DA3-DCEA-FFA6-A9D2380E0C00', 'F5CD099F-5472-4A4A-872E-D4432A045F68')
 
-const sendEmail = (mail) => {
-  mg.messages().send(mail, function (error, body) {
-    console.log(body);
-    console.log('THIS FUNCTION EXECUTED', mail);
-  });
-}
+const bodyParts = new Backendless.Bodyparts()
 
 const OurInvestors = (props) => {
 
-  const [values, setValues] = useState({ name: '', email: '', phone: '', partnerName: '', partnerPwd: '' })
+  const [values, setValues] = useState({ investorName: '', investorEmail: '', investorPhone: '' })
   const [showBecome, setShowBecome] = useState(false);
   const [showPartner, setShowPartner] = useState(false);
-  // const recipients = ["jodimsilverman@gmail.com", "jodi@sbbsinc.com"];
 
   const handleInputChange = e => {
     const { name, value } = e.target
     setValues({ ...values, [name]: value })
   }
 
-  const data = {
-    from: "Jodi Silverman <jodimsilverman@gmail.com>",
-    to: "jodimsilverman@gmail.com",
-    subject: "Someone Wants to Become a Middlemarch Capital Partner!",
-    text: `NEW CAPITAL PARTNER REQUEST>> NAME: ${values.name} | EMAIL: ${values.email} | PHONE: ${values.phone}`,
-    html: `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW CAPITAL PARTNER REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.name}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.email}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.phone}</div> </div>`
+  const onSuccess = status => {
+    // console.log('HTML email has been sent');
+    setValues({ investorName: '', investorEmail: '', investorPhone: '' });
+  }
 
-  };
+  const onError = error => {
+    console.error('Server reported an error: ', error.message)
+    console.error('error code: ', error.code)
+    console.error('http status: ', error.status)
+  }
+
+  const sendEmail = (subject, bodyParts, recipient) => {
+    Backendless.Messaging.sendEmail(subject, bodyParts, recipient)
+      .then(onSuccess)
+      .catch(onError)
+  }
+
+  const data =
+    `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW MAILING LIST REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.investorName}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.investorEmail}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.investorPhone}</div> </div>`;
+
+  bodyParts.htmlmessage = data;
+
+  const subject = 'Someone Wants to be a Middlemarch Capital Partner!';
+  const recipient = ['jodimsilverman@gmail.com', 'jodi@sbbsinc.com'];
 
   return (
 
@@ -91,7 +100,6 @@ const OurInvestors = (props) => {
                     onClick={(e) => {
                       e.preventDefault();
                       setShowPartner(true);
-                      setValues({ name: '', email: '', phone: '', partnerName: '', partnerPwd: '' });
                     }}
                   >
                     SUBMIT
@@ -136,8 +144,8 @@ const OurInvestors = (props) => {
                   <Form.Group className="mb-3" controlId="investorName">
                     <Form.Label style={{ fontSize: "1.5rem" }}>Name</Form.Label>
                     <Form.Control
-                      name="name"
-                      value={values.name}
+                      name="investorName"
+                      value={values.investorName}
                       type="text"
                       placeholder="Enter First and Last Name"
                       onChange={handleInputChange}
@@ -148,8 +156,8 @@ const OurInvestors = (props) => {
                     <Form.Label style={{ fontSize: "1.5rem" }}>Email address</Form.Label>
                     <Form.Control
                       type="email"
-                      name="email"
-                      value={values.email}
+                      name="investorEmail"
+                      value={values.investorEmail}
                       placeholder="Email"
                       onChange={handleInputChange}
                       style={{ fontSize: "1.5rem" }}
@@ -160,8 +168,8 @@ const OurInvestors = (props) => {
                     <Form.Label style={{ fontSize: "1.5rem" }}>Telephone</Form.Label>
                     <Form.Control
                       type="text"
-                      name="phone"
-                      value={values.phone}
+                      name="investorPhone"
+                      value={values.investorPhone}
                       placeholder="Telephone"
                       onChange={handleInputChange}
                       style={{ fontSize: "1.5rem" }}
@@ -171,9 +179,8 @@ const OurInvestors = (props) => {
                   <Button size="md" variant="primary" type="submit"
                     onClick={(e) => {
                       e.preventDefault();
-                      sendEmail(data);
+                      sendEmail(subject, bodyParts, recipient);
                       setShowBecome(true);
-                      setValues({ name: '', email: '', phone: '', partnerName: '', partnerPwd: '' });
                     }}>
                     SUBMIT
                   </Button>

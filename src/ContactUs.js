@@ -5,7 +5,6 @@ import Alert from 'react-bootstrap/Alert';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
 import React, { useState } from 'react';
 import Backendless from 'backendless';
 
@@ -13,13 +12,12 @@ Backendless.initApp('3F6FD799-4DA3-DCEA-FFA6-A9D2380E0C00', 'F5CD099F-5472-4A4A-
 
 const bodyParts = new Backendless.Bodyparts()
 
-
 const ContactUs = (props) => {
 
   const [values, setValues] = useState({ joinname: '', joinemail: '', joinphone: '' })
   const [showBecome, setShowBecome] = useState(false);
   const [showPartner, setShowPartner] = useState(false);
-  // const recipients = ["jodimsilverman@gmail.com", "jodi@sbbsinc.com"];
+
 
   const handleInputChange = e => {
     const { name, value } = e.target
@@ -27,7 +25,7 @@ const ContactUs = (props) => {
   }
 
   const onSuccess = status => {
-    console.log('HTML email has been sent');
+    // console.log('HTML email has been sent');
     setValues({ joinname: '', joinemail: '', joinphone: '' });
   }
 
@@ -38,7 +36,7 @@ const ContactUs = (props) => {
   }
 
   const sendEmail = (subject, bodyParts, recipient) => {
-    Backendless.Messaging.sendEmail(subject, bodyParts, [recipient])
+    Backendless.Messaging.sendEmail(subject, bodyParts, recipient)
       .then(onSuccess)
       .catch(onError)
   }
@@ -49,14 +47,14 @@ const ContactUs = (props) => {
   bodyParts.htmlmessage = data;
 
   const subject = 'Someone Wants to Be on the Middlemarch Mailing List!';
-  const recipient = 'jodimsilverman@gmail.com';
+  const recipient = ['jodimsilverman@gmail.com', 'jodi@sbbsinc.com'];
 
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const mapWidth = viewportWidth > 1200 ? "300" : "200";
   const mapHeight = viewportWidth > 1200 ? "200" : "150";
 
-  console.log('DATA >>>>>>', data);
-  console.log('VALUES >>>>>', values)
+  // console.log('DATA >>>>>>', data);
+  // console.log('VALUES >>>>>', values)
   return (
 
     <section id="contactus" className="contact contact-section" >

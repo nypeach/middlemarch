@@ -7,7 +7,7 @@ const Hamburger = (props) => {
 
     <>
       <Button variant="flat" size="xxl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span className="navbar-toggler-icon" style={{ width: "100%" }}></span></Button>
-      <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ width: "300px" }}>
+      <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ width: "20vw" }}>
         <div className="offcanvas-header">
           GO TO ...
           <i className="far fa-times-circle" data-bs-dismiss="offcanvas"></i>
