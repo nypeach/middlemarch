@@ -7,21 +7,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import React, { useState } from 'react';
+import Backendless from 'backendless';
 
-const mailgun = require("mailgun-js");
-const DOMAIN = "sandbox0863dc47f5b74d81a9e982bdf84d5451.mailgun.org";
-const mg = mailgun({ apiKey: "847d5f787736d65a31b5c10e7b787a7a-1831c31e-e3abb263", domain: DOMAIN });
+Backendless.initApp('3F6FD799-4DA3-DCEA-FFA6-A9D2380E0C00', 'F5CD099F-5472-4A4A-872E-D4432A045F68')
 
-const sendEmail = (mail) => {
-  mg.messages().send(mail, function (error, body) {
-    console.log(body);
-    console.log('THIS FUNCTION EXECUTED', mail);
-  });
-}
+const bodyParts = new Backendless.Bodyparts()
+
 
 const ContactUs = (props) => {
 
-  const [values, setValues] = useState({ name: '', email: '', phone: '' })
+  const [values, setValues] = useState({ joinname: '', joinemail: '', joinphone: '' })
   const [showBecome, setShowBecome] = useState(false);
   const [showPartner, setShowPartner] = useState(false);
   // const recipients = ["jodimsilverman@gmail.com", "jodi@sbbsinc.com"];
@@ -31,20 +26,37 @@ const ContactUs = (props) => {
     setValues({ ...values, [name]: value })
   }
 
-  const data = {
-    from: "Jodi Silverman <jodimsilverman@gmail.com>",
-    to: "jodimsilverman@gmail.com",
-    subject: "Someone Wants to Be on the Middlemarch Mailing List!",
-    text: `NEW MAILING LIST REQUEST>> NAME: ${values.name} | EMAIL: ${values.email} | PHONE: ${values.phone}`,
-    html: `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW MAILING LIST REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.name}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.email}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.phone}</div> </div>`
+  const onSuccess = status => {
+    console.log('HTML email has been sent');
+    setValues({ joinname: '', joinemail: '', joinphone: '' });
+  }
 
-  };
+  const onError = error => {
+    console.error('Server reported an error: ', error.message)
+    console.error('error code: ', error.code)
+    console.error('http status: ', error.status)
+  }
+
+  const sendEmail = (subject, bodyParts, recipient) => {
+    Backendless.Messaging.sendEmail(subject, bodyParts, [recipient])
+      .then(onSuccess)
+      .catch(onError)
+  }
+
+  const data =
+   `<div style="font-size: 16px; font-family:verdana;"><div style="background-color:#1C2C55; margin-top: 16px; width: 300px; color:white;">NEW MAILING LIST REQUEST</div><div style="color:#1C2C55;"><strong>NAME: </strong>${values.joinname}</div><div style="color:#1C2C55;"><strong>EMAIL: </strong>${values.joinemail}</div><div style="color:#1C2C55;"><strong>PHONE: </strong>${values.joinphone}</div> </div>`;
+
+  bodyParts.htmlmessage = data;
+
+  const subject = 'Someone Wants to Be on the Middlemarch Mailing List!';
+  const recipient = 'jodimsilverman@gmail.com';
 
   const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   const mapWidth = viewportWidth > 1200 ? "300" : "200";
   const mapHeight = viewportWidth > 1200 ? "200" : "150";
 
-  console.log(data);
+  console.log('DATA >>>>>>', data);
+  console.log('VALUES >>>>>', values)
   return (
 
     <section id="contactus" className="contact contact-section" >
@@ -150,35 +162,35 @@ const ContactUs = (props) => {
                       {/* =========== CONFIRMATION BECOME A PARTNER ============ */}
 
                       <Form className="contact-form-box">
-                        <Form.Group className="mb-5" controlId="investorName" style={{ marginTop: "-2rem" }}>
+                        <Form.Group className="mb-5" controlId="joinName" style={{ marginTop: "-2rem" }}>
                           <Form.Label>Name</Form.Label>
                           <Form.Control
-                            name="name"
-                            value={values.name}
+                            name="joinname"
+                            value={values.joinname}
                             type="text"
                             placeholder="Enter First and Last Name"
                             onChange={handleInputChange}
                             style={{ fontSize: "1.5rem", marginBottom: "2rem" }}
                           />
                         </Form.Group>
-                        <Form.Group className="mb-5" controlId="investorEmail">
+                        <Form.Group className="mb-5" controlId="joinEmail">
                           <Form.Label>Email Address</Form.Label>
                           <Form.Control
                             type="email"
-                            name="email"
-                            value={values.email}
+                            name="joinemail"
+                            value={values.joinemail}
                             placeholder="Email"
                             onChange={handleInputChange}
                             style={{ fontSize: "1.5rem", marginBottom: "2rem" }}
                           />
                         </Form.Group>
 
-                        <Form.Group className="mb-5" controlId="investorTelephone">
+                        <Form.Group className="mb-5" controlId="joinTelephone">
                           <Form.Label>Telephone</Form.Label>
                           <Form.Control
                             type="text"
-                            name="phone"
-                            value={values.phone}
+                            name="joinphone"
+                            value={values.joinphone}
                             placeholder="Telephone"
                             onChange={handleInputChange}
                             className="contact-phone"
@@ -188,9 +200,9 @@ const ContactUs = (props) => {
                         <Button size="md" variant="primary" type="submit" style={{ marginBottom: "2rem" }}
                           onClick={(e) => {
                             e.preventDefault();
-                            sendEmail(data);
+                            sendEmail(subject, bodyParts, recipient);
                             setShowBecome(true);
-                            setValues({ name: '', email: '', phone: '' });
+
                           }}>
                           SUBMIT
                         </Button>
