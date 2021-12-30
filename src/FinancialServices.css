@@ -105,6 +105,7 @@
 .mm {
   width: 80%;
   height: auto;
+  cursor:default;
 }
 .popover-container {
   box-shadow: 0 2px 2px rgba(27, 44, 89, .4);
