@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.81fd1d32.chunk.css",
-    "main.js": "/middlemarch/static/js/main.78d58801.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.78d58801.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.974f683f.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.974f683f.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
-    "static/js/2.e58c2a48.chunk.js": "/middlemarch/static/js/2.e58c2a48.chunk.js",
-    "static/js/2.e58c2a48.chunk.js.map": "/middlemarch/static/js/2.e58c2a48.chunk.js.map",
+    "static/js/2.bd6d672f.chunk.js": "/middlemarch/static/js/2.bd6d672f.chunk.js",
+    "static/js/2.bd6d672f.chunk.js.map": "/middlemarch/static/js/2.bd6d672f.chunk.js.map",
     "index.html": "/middlemarch/index.html",
     "static/css/2.038361d8.chunk.css.map": "/middlemarch/static/css/2.038361d8.chunk.css.map",
     "static/css/main.81fd1d32.chunk.css.map": "/middlemarch/static/css/main.81fd1d32.chunk.css.map",
-    "static/js/2.e58c2a48.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.e58c2a48.chunk.js.LICENSE.txt",
+    "static/js/2.bd6d672f.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.bd6d672f.chunk.js.LICENSE.txt",
     "static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf": "/middlemarch/static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf",
     "static/media/AlexKim.4046f89d.png": "/middlemarch/static/media/AlexKim.4046f89d.png",
     "static/media/AlexMack.46248456.jpeg": "/middlemarch/static/media/AlexMack.46248456.jpeg",
@@ -85,7 +85,6 @@
     "static/media/news-lt.6b865558.png": "/middlemarch/static/media/news-lt.6b865558.png",
     "static/media/pico-new.187b23a6.jpg": "/middlemarch/static/media/pico-new.187b23a6.jpg",
     "static/media/private_capital-2-lt.0758f176.png": "/middlemarch/static/media/private_capital-2-lt.0758f176.png",
-    "static/media/private_capital_blank.819ed3d9.svg": "/middlemarch/static/media/private_capital_blank.819ed3d9.svg",
     "static/media/private_capital_filled.5bb38fba.png": "/middlemarch/static/media/private_capital_filled.5bb38fba.png",
     "static/media/privlo-new.3343644b.jpg": "/middlemarch/static/media/privlo-new.3343644b.jpg",
     "static/media/regulatory_compliance_solutions-dk.64a3c9c2.svg": "/middlemarch/static/media/regulatory_compliance_solutions-dk.64a3c9c2.svg",
@@ -103,8 +102,8 @@
   "entrypoints": [
     "static/js/runtime-main.e1c173c6.js",
     "static/css/2.038361d8.chunk.css",
-    "static/js/2.e58c2a48.chunk.js",
+    "static/js/2.bd6d672f.chunk.js",
     "static/css/main.81fd1d32.chunk.css",
-    "static/js/main.78d58801.chunk.js"
+    "static/js/main.974f683f.chunk.js"
   ]
 }
