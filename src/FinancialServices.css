@@ -73,7 +73,6 @@
   border-radius: 0%;
 }
 .share_btn{
-
   border-radius: 50%;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.40);
@@ -132,4 +131,8 @@
 }
 .finserv-div {
   align-self: center;
+}
+
+button.share_btn.focus {
+  cursor:default;
 }

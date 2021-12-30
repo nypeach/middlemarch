@@ -131,3 +131,6 @@
 .impinvest-div {
   align-self: center;
 }
+button.share_btn.focus {
+  cursor:default;
+}
