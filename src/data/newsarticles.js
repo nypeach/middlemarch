@@ -1,5 +1,4 @@
 import n101 from '../news/news/MCP Veransa Announcement 2021 12 16.pdf';
-// import n102 from '../news/news/';
 import n103 from '../news/news/Elevate PR - Elevate Secures 25M Investment from Kayne Partners - 2019-06-17.pdf';
 import n104 from '../news/news/Creamfinance FINRA Approved MM Advises Creamfinance on 21 million Equity Raise.pdf';
 import n105 from '../news/news/MM CPC Press Release 2018 06 14_Final.pdf';
@@ -10,10 +9,13 @@ import n109 from '../news/news/MM Privlo Announcement Final 2014 08 12.pdf';
 import n110 from '../news/news/MM PR Announcement Final 2013 02 12.pdf';
 import n111 from '../news/news/CapFusion-MM  PR Announcement 2016 05 31.pdf';
 import a201 from '../news/articles/MMP ESG Article  2021 12 14.pdf';
-import a202 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
-import a203 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
+// import a202 from '../news/articles/';
+import a203 from '../news/articles/US Investors Seek International  Fintechs.pdf';
 import a204 from '../news/articles/Evaluating and Managing Cyber Risk for Investors MM.pdf';
 import a205 from '../news/articles/TheAlternativeLendingReport_Middlemarch.pdf';
+import a207 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
+import a208 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
+
 
 var newsarticles = [
   {
@@ -27,7 +29,7 @@ var newsarticles = [
     'Type': 'NEWS',
     'Sort': 1.02,
     'Title': 'Sunseeker Raises $350M of Debt',
-    'Link': '',
+    'Link': 'https://www.prnewswire.com/news-releases/castlelake-provides-loan-to-allegiant-backed-sunseeker-resort-301400473.html',
     'Summary': 'Sunseeker, a division of Alligent Travel Company (NASDAQ: ALGT), has raised $130M of debt to support the development of Sunseeker Resort Charlotte Harbor in Florida.'
   },
   {
@@ -40,10 +42,10 @@ var newsarticles = [
   {
     'Type': 'NEWS',
     'Sort': 1.04,
-    'Title': 'Creamfinace Raises 21M Euros',
+    'Title': 'Creamfinace Raises €21M Euros',
     'Link': n104,
-    'Summary': `Creamfinance raised 21M Euros from Capitec Bank of South Africa to support the expansion of Cream's consumer lending programs in Europe and South America.`
-  },
+    'Summary': 'Creamfinance raised €21M Euros from Capitec Bank of South Africa to support the expansion of Cream\'s consumer lending programs in Europe and South America.'
+},
   {
     'Type': 'NEWS',
     'Sort': 1.05,
@@ -103,16 +105,16 @@ var newsarticles = [
   {
     'Type': 'ARTICLES',
     'Sort': 2.02,
-    'Title': 'Securing Capital in the Covid-19 Era',
-    'Link': a202,
-    'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
+    'Title': 'Middlemarch Seeks Co-Investors',
+    'Link': "a202",
+    'Summary': 'Middlemarch Seeks Co-Investors'
   },
   {
     'Type': 'ARTICLES',
     'Sort': 2.03,
-    'Title': 'Market Reception of Public Fintechs',
+    'Title': 'US Investors Seek International Fintechs',
     'Link': a203,
-    'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
+    'Summary': 'US Investors Seek International Fintechs'
   },
   {
     'Type': 'ARTICLES',
@@ -136,6 +138,20 @@ var newsarticles = [
     'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
   },
   {
+    'Type': 'ARTICLES',
+    'Sort': 2.07,
+    'Title': 'Securing Capital in the Covid-19 Era',
+    'Link': a207,
+    'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
+  },
+  {
+    'Type': 'ARTICLES',
+    'Sort': 2.08,
+    'Title': 'Market Reception of Public Fintechs',
+    'Link': a208,
+    'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
+  },
+  {
     'Type': 'EVENTS',
     'Sort': 3.01,
     'Title': '2022 LendIt (May 25-26, 2022)',
@@ -145,13 +161,20 @@ var newsarticles = [
   {
     'Type': 'EVENTS',
     'Sort': 3.02,
+    'Title': 'Fintech MeetUp 2022',
+    'Link': 'https://www.fintechmeetup.com/?gclid=CjwKCAiAzrWOBhBjEiwAq85QZ_4BKM3WDIkGU86KGt3ANOCD0qfNhSbR4q8ZzcxvG_5ZE-90FLG_PBoCr70QAvD_BwE',
+    'Summary': ''
+  },
+  {
+    'Type': 'EVENTS',
+    'Sort': 3.03,
     'Title': 'ABS East (Dec 13-14, 2021)',
     'Link': 'https://www.imn.org/structured-finance/conference/ABS-East-2021/',
     'Summary': 'Middlemarch is attending ABS East and meeting with prospective clients and investors in Miami.'
   },
   {
     'Type': 'EVENTS',
-    'Sort': 3.03,
+    'Sort': 3.04,
     'Title': 'Opal Lending Conf. (Dec 8-10, 2021)',
     'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2021/',
     'Summary': 'Middlemarch is participating on the venture capital panel as well as hosting a fireside chat about customer acquisition costs at the Makretplace Lending Conference.'
