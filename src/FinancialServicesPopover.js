@@ -5,7 +5,7 @@ import fintech from './images/financialServices/fintech-dk.svg';
 import assetmgmt from './images/financialServices/asset_management-dk.svg';
 import alternativefinance from './images/financialServices/alternative_finance-dk.svg';
 import capitalmkts from './images/financialServices/capital_markets-dk.svg';
-import insurance from './images/financialServices/insurance-dk.svg';
+import blockchain from './images/financialServices/blockchain-dk.svg';
 import { OverlayTrigger, Popover } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
@@ -14,7 +14,7 @@ const IndustryFocusPopover = () => {
 
   const focus1 = (
     <Popover id="focus1" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Fin Tech</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">Fintech</Popover.Header>
       <Popover.Body className="popover-text">
         Using technology to reshape how financial services are delivered. Focus on both tech-enabled financial services and the associated software platforms that serve the financial services industry across a variety of sub-sectors.
       </Popover.Body>
@@ -59,9 +59,9 @@ const IndustryFocusPopover = () => {
 
   const focus6 = (
     <Popover id="focus6" className="popover-container">
-      <Popover.Header as="h3" className="popover-header">Insurance</Popover.Header>
+      <Popover.Header as="h3" className="popover-header">DeFi and Blockchain</Popover.Header>
       <Popover.Body className="popover-text">
-        Market dislocations and technology enable new entrants to deliver insurance and related services more effectively.
+        Innovative Smart Contract-based technologies that enable buyers, sellers, lenders, and borrowers of financial products to interact directly without the use of intermediaries such as bankers, brokers, or other institutions.
       </Popover.Body>
     </Popover>
   );
@@ -75,14 +75,14 @@ const IndustryFocusPopover = () => {
 
       <div className="item0">
         <button className="mm_btn">
-        <Image className="mm" src={middlemarch} alt="middlemarch" />
+          <Image className="mm" src={middlemarch} alt="middlemarch" />
         </button>
       </div>
 
       <div className="item1">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={fintech} alt="fin tech" />
+            <Image className="focus-img" src={fintech} alt="fintech" />
           </button>
         </OverlayTrigger>
       </div>
@@ -122,7 +122,7 @@ const IndustryFocusPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" style={{marginBottom:"2.0rem"}} src={insurance} alt="business services" />
+            <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={blockchain} alt="business services" />
           </button>
         </OverlayTrigger>
       </div>

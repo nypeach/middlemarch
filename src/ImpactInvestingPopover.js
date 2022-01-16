@@ -118,7 +118,7 @@ const ImpactInvestingPopover = () => {
       <div className="item6">
         <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
           <button className="share_btn focus">
-            <Image className="focus-img" src={diversity} alt="fin tech" />
+            <Image className="focus-img" src={diversity} alt="fintech" />
           </button>
         </OverlayTrigger>
 
