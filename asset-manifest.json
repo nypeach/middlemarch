@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.83cc67e0.chunk.css",
-    "main.js": "/middlemarch/static/js/main.f5e699b6.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.f5e699b6.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.0c0a92d6.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.0c0a92d6.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -53,6 +53,7 @@
     "static/media/articles-lt.e1f47f2c.png": "/middlemarch/static/media/articles-lt.e1f47f2c.png",
     "static/media/asset_management-dk.24e22e8d.svg": "/middlemarch/static/media/asset_management-dk.24e22e8d.svg",
     "static/media/bench-new.cbec1f3c.jpg": "/middlemarch/static/media/bench-new.cbec1f3c.jpg",
+    "static/media/blockchain-dk.317b1d43.svg": "/middlemarch/static/media/blockchain-dk.317b1d43.svg",
     "static/media/business_process_outsourcing-bk.817e450b.svg": "/middlemarch/static/media/business_process_outsourcing-bk.817e450b.svg",
     "static/media/business_svc-lt.5a92eb3c.png": "/middlemarch/static/media/business_svc-lt.5a92eb3c.png",
     "static/media/capfusion-new.12bc77ae.jpg": "/middlemarch/static/media/capfusion-new.12bc77ae.jpg",
@@ -75,7 +76,6 @@
     "static/media/icon_only-transparent.50da98e8.svg": "/middlemarch/static/media/icon_only-transparent.50da98e8.svg",
     "static/media/impact_investing-lt.90eb07e2.png": "/middlemarch/static/media/impact_investing-lt.90eb07e2.png",
     "static/media/inpact_investment-dk.7bd45efa.svg": "/middlemarch/static/media/inpact_investment-dk.7bd45efa.svg",
-    "static/media/insurance-dk.49a7ceac.svg": "/middlemarch/static/media/insurance-dk.49a7ceac.svg",
     "static/media/Landing.css": "/middlemarch/static/media/landing.f080fbfa.jpeg",
     "static/media/logo.d3832568.png": "/middlemarch/static/media/logo.d3832568.png",
     "static/media/marketing_services-dk.98f9b0cf.svg": "/middlemarch/static/media/marketing_services-dk.98f9b0cf.svg",
@@ -104,6 +104,6 @@
     "static/css/2.038361d8.chunk.css",
     "static/js/2.bd6d672f.chunk.js",
     "static/css/main.83cc67e0.chunk.css",
-    "static/js/main.f5e699b6.chunk.js"
+    "static/js/main.0c0a92d6.chunk.js"
   ]
 }
