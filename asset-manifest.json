@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.83cc67e0.chunk.css",
-    "main.js": "/middlemarch/static/js/main.0c0a92d6.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.0c0a92d6.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.2ade50fb.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.2ade50fb.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -47,6 +47,7 @@
     "static/media/SashaGrutman.4edf3005.jpeg": "/middlemarch/static/media/SashaGrutman.4edf3005.jpeg",
     "static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.818f7cea.pdf": "/middlemarch/static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.818f7cea.pdf",
     "static/media/TheAlternativeLendingReport_Middlemarch.ec9ef1da.pdf": "/middlemarch/static/media/TheAlternativeLendingReport_Middlemarch.ec9ef1da.pdf",
+    "static/media/US Investors Seek International  Fintechs.1b763d73.pdf": "/middlemarch/static/media/US Investors Seek International  Fintechs.1b763d73.pdf",
     "static/media/UrbanFinancial-300w.261f2220.jpeg": "/middlemarch/static/media/UrbanFinancial-300w.261f2220.jpeg",
     "static/media/alternative_energy-dk.b90ad30c.svg": "/middlemarch/static/media/alternative_energy-dk.b90ad30c.svg",
     "static/media/alternative_finance-dk.d2c6a094.svg": "/middlemarch/static/media/alternative_finance-dk.d2c6a094.svg",
@@ -61,7 +62,7 @@
     "static/media/cashedge-new.820ec0c0.jpg": "/middlemarch/static/media/cashedge-new.820ec0c0.jpg",
     "static/media/channel-300w.5862c0f3.jpeg": "/middlemarch/static/media/channel-300w.5862c0f3.jpeg",
     "static/media/ContactUs.css": "/middlemarch/static/media/coins.a7729163.png",
-    "static/media/cream-300w.b8513e1c.jpeg": "/middlemarch/static/media/cream-300w.b8513e1c.jpeg",
+    "static/media/creamfinance-2022.a5c781cd.jpg": "/middlemarch/static/media/creamfinance-2022.a5c781cd.jpg",
     "static/media/creditmax-new.29064933.jpg": "/middlemarch/static/media/creditmax-new.29064933.jpg",
     "static/media/currenex-new.d49a77b6.jpg": "/middlemarch/static/media/currenex-new.d49a77b6.jpg",
     "static/media/diversity-dk.5518422f.svg": "/middlemarch/static/media/diversity-dk.5518422f.svg",
@@ -83,7 +84,7 @@
     "static/media/mutuo-300w.79b21efb.jpeg": "/middlemarch/static/media/mutuo-300w.79b21efb.jpeg",
     "static/media/new-new.15b0bb3a.jpg": "/middlemarch/static/media/new-new.15b0bb3a.jpg",
     "static/media/news-lt.6b865558.png": "/middlemarch/static/media/news-lt.6b865558.png",
-    "static/media/pico-new.187b23a6.jpg": "/middlemarch/static/media/pico-new.187b23a6.jpg",
+    "static/media/pico-2022.45def8f3.jpg": "/middlemarch/static/media/pico-2022.45def8f3.jpg",
     "static/media/private_capital-2-lt.0758f176.png": "/middlemarch/static/media/private_capital-2-lt.0758f176.png",
     "static/media/private_capital_filled.5bb38fba.png": "/middlemarch/static/media/private_capital_filled.5bb38fba.png",
     "static/media/privlo-new.3343644b.jpg": "/middlemarch/static/media/privlo-new.3343644b.jpg",
@@ -104,6 +105,6 @@
     "static/css/2.038361d8.chunk.css",
     "static/js/2.bd6d672f.chunk.js",
     "static/css/main.83cc67e0.chunk.css",
-    "static/js/main.0c0a92d6.chunk.js"
+    "static/js/main.2ade50fb.chunk.js"
   ]
 }
