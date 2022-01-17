@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/middlemarch/static/css/main.83cc67e0.chunk.css",
-    "main.js": "/middlemarch/static/js/main.2ade50fb.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.2ade50fb.chunk.js.map",
+    "main.js": "/middlemarch/static/js/main.26317cbd.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.26317cbd.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -38,6 +38,7 @@
     "static/media/MM PR Announcement Final 2013 02 12.87587fbc.pdf": "/middlemarch/static/media/MM PR Announcement Final 2013 02 12.87587fbc.pdf",
     "static/media/MM Privlo Announcement Final 2014 08 12.48e29acb.pdf": "/middlemarch/static/media/MM Privlo Announcement Final 2014 08 12.48e29acb.pdf",
     "static/media/MMP ESG Article  2021 12 14.03cd6fab.pdf": "/middlemarch/static/media/MMP ESG Article  2021 12 14.03cd6fab.pdf",
+    "static/media/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.f677d552.pdf": "/middlemarch/static/media/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.f677d552.pdf",
     "static/media/Mutuo Press Release -2021 12 19.62548fd9.pdf": "/middlemarch/static/media/Mutuo Press Release -2021 12 19.62548fd9.pdf",
     "static/media/NexisCard-300w.3d23d6a0.jpeg": "/middlemarch/static/media/NexisCard-300w.3d23d6a0.jpeg",
     "static/media/OliverRothauser.75c512b8.jpeg": "/middlemarch/static/media/OliverRothauser.75c512b8.jpeg",
@@ -105,6 +106,6 @@
     "static/css/2.038361d8.chunk.css",
     "static/js/2.bd6d672f.chunk.js",
     "static/css/main.83cc67e0.chunk.css",
-    "static/js/main.2ade50fb.chunk.js"
+    "static/js/main.26317cbd.chunk.js"
   ]
 }
