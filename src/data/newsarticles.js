@@ -9,13 +9,12 @@ import n109 from '../news/news/MM Privlo Announcement Final 2014 08 12.pdf';
 import n110 from '../news/news/MM PR Announcement Final 2013 02 12.pdf';
 import n111 from '../news/news/CapFusion-MM  PR Announcement 2016 05 31.pdf';
 import a201 from '../news/articles/MMP ESG Article  2021 12 14.pdf';
-// import a202 from '../news/articles/';
+import a202 from '../news/articles/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.pdf';
 import a203 from '../news/articles/US Investors Seek International  Fintechs.pdf';
 import a204 from '../news/articles/Evaluating and Managing Cyber Risk for Investors MM.pdf';
 import a205 from '../news/articles/TheAlternativeLendingReport_Middlemarch.pdf';
 import a207 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
 import a208 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
-
 
 var newsarticles = [
   {
@@ -106,79 +105,79 @@ var newsarticles = [
     'Type': 'ARTICLES',
     'Sort': 2.02,
     'Title': 'Middlemarch Seeks Co-Investors',
-    'Link': "a202",
-    'Summary': 'Middlemarch Seeks Co-Investors'
-  },
-  {
-    'Type': 'ARTICLES',
+    'Link': a202,
+    'Summary': 'Middlemarch Capital Partners seeks LP investors to participate in the firm\'s co- investment funds alongside lead sponsors'
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.03,
-    'Title': 'US Investors Seek International Fintechs',
-    'Link': a203,
-    'Summary': 'US Investors Seek International Fintechs'
-  },
-  {
-    'Type': 'ARTICLES',
+      'Title': 'US Investors Seek International Fintechs',
+        'Link': a203,
+          'Summary': 'International fintechs that prepare themselves properly for capital raises can secure equity and debt from valued-added US investors '
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.04,
-    'Title': 'Evaluating and Managing Cyber Risk ',
-    'Link': a204,
-    'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
-  },
-  {
-    'Type': 'ARTICLES',
+      'Title': 'Evaluating and Managing Cyber Risk ',
+        'Link': a204,
+          'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.05,
-    'Title': 'Customer Acqusition in Fin. Services',
-    'Link': a205,
-    'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
-  },
-  {
-    'Type': 'ARTICLES',
+      'Title': 'Customer Acqusition in Fin. Services',
+        'Link': a205,
+          'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.06,
-    'Title': 'Identifying LBO Candidates (Video)',
-    'Link': 'https://www.youtube.com/watch?v=ESsLk1vPGHM&list=PLc_3xizSvjgG56y3I4NQvXSnmFf3uczeu&index=2',
-    'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
-  },
-  {
-    'Type': 'ARTICLES',
+      'Title': 'Identifying LBO Candidates (Video)',
+        'Link': 'https://www.youtube.com/watch?v=ESsLk1vPGHM&list=PLc_3xizSvjgG56y3I4NQvXSnmFf3uczeu&index=2',
+          'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.07,
-    'Title': 'Securing Capital in the Covid-19 Era',
-    'Link': a207,
-    'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
-  },
-  {
-    'Type': 'ARTICLES',
+      'Title': 'Securing Capital in the Covid-19 Era',
+        'Link': a207,
+          'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
+},
+{
+  'Type': 'ARTICLES',
     'Sort': 2.08,
-    'Title': 'Market Reception of Public Fintechs',
-    'Link': a208,
-    'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
-  },
-  {
-    'Type': 'EVENTS',
+      'Title': 'Market Reception of Public Fintechs',
+        'Link': a208,
+          'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
+},
+{
+  'Type': 'EVENTS',
     'Sort': 3.01,
-    'Title': '2022 LendIt (May 25-26, 2022)',
-    'Link': 'https://www.lendit.com/usa/2022',
-    'Summary': 'Middlemarch is attending LendIt and will be meeting with prospective clients and investors in New York.'
-  },
-  {
-    'Type': 'EVENTS',
+      'Title': '2022 LendIt (May 25-26, 2022)',
+        'Link': 'https://www.lendit.com/usa/2022',
+          'Summary': 'Middlemarch is attending LendIt and will be meeting with prospective clients and investors in New York.'
+},
+{
+  'Type': 'EVENTS',
     'Sort': 3.02,
-    'Title': 'Fintech MeetUp 2022',
-    'Link': 'https://www.fintechmeetup.com/?gclid=CjwKCAiAzrWOBhBjEiwAq85QZ_4BKM3WDIkGU86KGt3ANOCD0qfNhSbR4q8ZzcxvG_5ZE-90FLG_PBoCr70QAvD_BwE',
-    'Summary': ''
-  },
-  {
-    'Type': 'EVENTS',
+      'Title': 'Fintech MeetUp 2022',
+        'Link': 'https://www.fintechmeetup.com/?gclid=CjwKCAiAzrWOBhBjEiwAq85QZ_4BKM3WDIkGU86KGt3ANOCD0qfNhSbR4q8ZzcxvG_5ZE-90FLG_PBoCr70QAvD_BwE',
+          'Summary': 'Middlemarch is attending virtually this year\'s Fintech MeetUp where we look forward to connecting with companies seeking capital and support with M & A.'
+},
+{
+  'Type': 'EVENTS',
     'Sort': 3.03,
-    'Title': 'ABS East (Dec 13-14, 2021)',
-    'Link': 'https://www.imn.org/structured-finance/conference/ABS-East-2021/',
-    'Summary': 'Middlemarch is attending ABS East and meeting with prospective clients and investors in Miami.'
-  },
-  {
-    'Type': 'EVENTS',
+      'Title': 'ABS East (Dec 13-14, 2021)',
+        'Link': 'https://www.imn.org/structured-finance/conference/ABS-East-2021/',
+          'Summary': 'Middlemarch is attending ABS East and meeting with prospective clients and investors in Miami.'
+},
+{
+  'Type': 'EVENTS',
     'Sort': 3.04,
-    'Title': 'Opal Lending Conf. (Dec 8-10, 2021)',
-    'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2021/',
-    'Summary': 'Middlemarch is participating on the venture capital panel as well as hosting a fireside chat about customer acquisition costs at the Makretplace Lending Conference.'
-  },
+      'Title': 'Opal Lending Conf. (Dec 8-10, 2021)',
+        'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2021/',
+          'Summary': 'Middlemarch is participating on the venture capital panel as well as hosting a fireside chat about customer acquisition costs at the Makretplace Lending Conference.'
+},
 ];
 
 export { newsarticles };

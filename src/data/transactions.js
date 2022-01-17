@@ -133,7 +133,7 @@ var transactions =
       'Description': 'Online Consumer Lender',
       'MM': 'MM',
       'Type': 'Equity Raise',
-      'Amount': '20,000,000',
+      'Amount': '21,000,000',
       'Year': 2016,
       'Investor': 'Capitec Bank',
       'Order': 10
