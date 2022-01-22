@@ -8,13 +8,15 @@ import n108 from '../news/news/FPAY-MM  PR Announcement 2015 03 17_Final.pdf';
 import n109 from '../news/news/MM Privlo Announcement Final 2014 08 12.pdf';
 import n110 from '../news/news/MM PR Announcement Final 2013 02 12.pdf';
 import n111 from '../news/news/CapFusion-MM  PR Announcement 2016 05 31.pdf';
-import a201 from '../news/articles/MMP ESG Article  2021 12 14.pdf';
-import a202 from '../news/articles/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.pdf';
-import a203 from '../news/articles/US Investors Seek International  Fintechs.pdf';
-import a204 from '../news/articles/Evaluating and Managing Cyber Risk for Investors MM.pdf';
-import a205 from '../news/articles/TheAlternativeLendingReport_Middlemarch.pdf';
-import a207 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
-import a208 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
+import a201 from '../news/articles/Sustainability MMP Article 2022 01 20b.pdf';
+import a202 from '../news/articles/MMP ESG Article  2021 12 14.pdf';
+import a203 from '../news/articles/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.pdf';
+import a204 from '../news/articles/US Investors Seek International  Fintechs.pdf';
+import a205 from '../news/articles/Evaluating and Managing Cyber Risk for Investors MM.pdf';
+import a206 from '../news/articles/TheAlternativeLendingReport_Middlemarch.pdf';
+import a208 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
+import a209 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
+
 
 var newsarticles = [
   {
@@ -97,57 +99,64 @@ var newsarticles = [
   {
     'Type': 'ARTICLES',
     'Sort': 2.01,
-    'Title': 'Investing in Yard Waste Recycling ',
+    'Title': 'How Waste Became A Case For ESG Investing',
     'Link': a201,
-    'Summary': 'Yard waste recycling represents an attractive sector for impact investing. Middlemarch identifies key insights about investing in this sector.'
+    'Summary': 'How Middlemarch advised and invested in Veransa, a yard waste recycling company that produces organic compost as a substitute for chemical fertilizer.'
   },
   {
     'Type': 'ARTICLES',
     'Sort': 2.02,
-    'Title': 'Middlemarch Seeks Co-Investors',
+    'Title': 'Investing in Yard Waste Recycling ',
     'Link': a202,
-    'Summary': 'Middlemarch Capital Partners seeks LP investors to participate in the firm\'s co- investment funds alongside lead sponsors'
-},
-{
-  'Type': 'ARTICLES',
+    'Summary': 'Yard waste recycling represents an attractive sector for impact investing. Middlemarch identifies key insights about investing in this sector.'
+  },
+  {
+    'Type': 'ARTICLES',
     'Sort': 2.03,
-      'Title': 'US Investors Seek International Fintechs',
-        'Link': a203,
-          'Summary': 'International fintechs that prepare themselves properly for capital raises can secure equity and debt from valued-added US investors '
+    'Title': 'Middlemarch Seeks Co-Investors',
+    'Link': a203,
+    'Summary': 'Middlemarch Capital Partners seeks LP investors to participate in the firm\'s co-investment funds alongside lead sponsors'
 },
 {
   'Type': 'ARTICLES',
     'Sort': 2.04,
-      'Title': 'Evaluating and Managing Cyber Risk ',
+      'Title': 'US Investors Seek International Fintechs',
         'Link': a204,
-          'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
+          'Summary': 'International fintechs that prepare themselves properly for capital raises can secure equity and debt from valued-added US investors '
 },
 {
   'Type': 'ARTICLES',
     'Sort': 2.05,
-      'Title': 'Customer Acqusition in Fin. Services',
+      'Title': 'Evaluating and Managing Cyber Risk ',
         'Link': a205,
-          'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
+          'Summary': 'Middlemarch Partner Sasha Grutman was intereviewed on the risks of cyber security in financial services'
 },
 {
   'Type': 'ARTICLES',
     'Sort': 2.06,
+      'Title': 'Customer Acqusition in Fin. Services',
+        'Link': a206,
+          'Summary': 'Middlemarch describes the best practices and challenges associated with managing customer acquisition expenses in financial services.'
+},
+{
+  'Type': 'ARTICLES',
+    'Sort': 2.07,
       'Title': 'Identifying LBO Candidates (Video)',
         'Link': 'https://www.youtube.com/watch?v=ESsLk1vPGHM&list=PLc_3xizSvjgG56y3I4NQvXSnmFf3uczeu&index=2',
           'Summary': 'Private Equity Profits Podcast interview of Sasha Grutman about his views on what makes for an attractive LBO candidate.'
 },
 {
   'Type': 'ARTICLES',
-    'Sort': 2.07,
+    'Sort': 2.08,
       'Title': 'Securing Capital in the Covid-19 Era',
-        'Link': a207,
+        'Link': a208,
           'Summary': 'Middlemarch identifies key success factors in capital raises for financial services companies seeking capital during the COVID-19 time period.'
 },
 {
   'Type': 'ARTICLES',
-    'Sort': 2.08,
+    'Sort': 2.09,
       'Title': 'Market Reception of Public Fintechs',
-        'Link': a208,
+        'Link': a209,
           'Summary': 'IPOs of fintechs such as Greensky and OnDeck Capital have had negative impacts on how alternative finance companies are perceived by institutional investors.'
 },
 {

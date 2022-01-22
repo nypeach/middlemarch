@@ -68,7 +68,7 @@ var team = [
   {
     'id': 5,
     'name': 'Alex Mack',
-    'title': 'Chief Financial Officer and Chief Compliance Officer',
+    'title': 'CFO & CCO',
     'email': 'amack@middlemarchllc.com',
     'phone': '917-923-1478',
     'linkedin': 'linkedin.com/in/alexmackcompliance',

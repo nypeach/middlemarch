@@ -38,6 +38,11 @@
   overflow: auto;
   background: rgba(255, 255, 255, 0.4);
 }
+.team-card {
+  border: 1px solid var(--heading-dark);
+  margin: 2.5rem;
+  max-width: 30rem;
+}
 .team-member {
   cursor: pointer;
 }
@@ -73,7 +78,6 @@
 .team-card-icon {
   line-height: 1.5;
   text-align: center;
-  margin-right: 2rem;
   color: var(--heading-light);
   font-size: 3rem;
 }
@@ -158,6 +162,27 @@ p.team-modal {
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .fa-phone:hover .tooltiptext {
+  visibility: visible;
+  font-family: var(--main-font);
+}
+
+.fa-phone .cardtiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: var(--heading-dark);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top: -37px;
+  left: -70px;
+  z-index: 1;
+}
+
+.fa-phone:hover .cardtiptext {
   visibility: visible;
   font-family: var(--main-font);
 }

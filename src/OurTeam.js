@@ -2,6 +2,7 @@ import './OurTeam.css';
 import OurTeamCard from './OurTeamCard';
 import {team} from './data/team.js';
 import { useState } from 'react';
+import { CardGroup, Row } from 'react-bootstrap';
 
 
 const OurTeam = (props) => {
@@ -17,8 +18,10 @@ const OurTeam = (props) => {
         </div>
         {/* ============================================================================ */}
 
-        <div className="team-card-div">
-          <div className="row g-5 p-5">
+        {/* <div className="team-card-div"> */}
+          {/* <div className="row g-5 p-5"> */}
+          {/* <Row md={2} lg={3} xl={4} className="g-5 p-5"> */}
+        <CardGroup style={{ margin: "2rem 15rem", padding: "2rem", justifyContent: "center", alignContent: "center"}}>
           {team.map(person =>
             <OurTeamCard
               key={person.id}
@@ -27,9 +30,12 @@ const OurTeam = (props) => {
               person={person}
             />
             )}
+            </CardGroup>
+          {/* </Row> */}
+
           </div>
-        </div>
-      </div>
+        {/* </div> */}
+      {/* </div> */}
     </section>
   )
 }
