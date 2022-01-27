@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/middlemarch/static/css/main.83cc67e0.chunk.css",
-    "main.js": "/middlemarch/static/js/main.26317cbd.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.26317cbd.chunk.js.map",
+    "main.css": "/middlemarch/static/css/main.5b6b1e16.chunk.css",
+    "main.js": "/middlemarch/static/js/main.f8681b12.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.f8681b12.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
-    "static/js/2.bd6d672f.chunk.js": "/middlemarch/static/js/2.bd6d672f.chunk.js",
-    "static/js/2.bd6d672f.chunk.js.map": "/middlemarch/static/js/2.bd6d672f.chunk.js.map",
+    "static/js/2.d18a6767.chunk.js": "/middlemarch/static/js/2.d18a6767.chunk.js",
+    "static/js/2.d18a6767.chunk.js.map": "/middlemarch/static/js/2.d18a6767.chunk.js.map",
     "index.html": "/middlemarch/index.html",
     "static/css/2.038361d8.chunk.css.map": "/middlemarch/static/css/2.038361d8.chunk.css.map",
-    "static/css/main.83cc67e0.chunk.css.map": "/middlemarch/static/css/main.83cc67e0.chunk.css.map",
-    "static/js/2.bd6d672f.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.bd6d672f.chunk.js.LICENSE.txt",
+    "static/css/main.5b6b1e16.chunk.css.map": "/middlemarch/static/css/main.5b6b1e16.chunk.css.map",
+    "static/js/2.d18a6767.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.d18a6767.chunk.js.LICENSE.txt",
     "static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf": "/middlemarch/static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf",
     "static/media/AlexKim.4046f89d.png": "/middlemarch/static/media/AlexKim.4046f89d.png",
     "static/media/AlexMack.46248456.jpeg": "/middlemarch/static/media/AlexMack.46248456.jpeg",
@@ -47,6 +47,7 @@
     "static/media/Photonic-300w.3be4a477.jpeg": "/middlemarch/static/media/Photonic-300w.3be4a477.jpeg",
     "static/media/SashaGrutman.4edf3005.jpeg": "/middlemarch/static/media/SashaGrutman.4edf3005.jpeg",
     "static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.818f7cea.pdf": "/middlemarch/static/media/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.818f7cea.pdf",
+    "static/media/Sustainability MMP Article 2022 01 20b.26d9545b.pdf": "/middlemarch/static/media/Sustainability MMP Article 2022 01 20b.26d9545b.pdf",
     "static/media/TheAlternativeLendingReport_Middlemarch.ec9ef1da.pdf": "/middlemarch/static/media/TheAlternativeLendingReport_Middlemarch.ec9ef1da.pdf",
     "static/media/US Investors Seek International  Fintechs.1b763d73.pdf": "/middlemarch/static/media/US Investors Seek International  Fintechs.1b763d73.pdf",
     "static/media/UrbanFinancial-300w.261f2220.jpeg": "/middlemarch/static/media/UrbanFinancial-300w.261f2220.jpeg",
@@ -104,8 +105,8 @@
   "entrypoints": [
     "static/js/runtime-main.e1c173c6.js",
     "static/css/2.038361d8.chunk.css",
-    "static/js/2.bd6d672f.chunk.js",
-    "static/css/main.83cc67e0.chunk.css",
-    "static/js/main.26317cbd.chunk.js"
+    "static/js/2.d18a6767.chunk.js",
+    "static/css/main.5b6b1e16.chunk.css",
+    "static/js/main.f8681b12.chunk.js"
   ]
 }
