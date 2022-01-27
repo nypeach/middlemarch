@@ -22,7 +22,7 @@ const OurFirm = (props) => {
           </Col>
         </Row>
         <Row>
-          <Col sm={6}>
+          <Col md={12} lg={6}>
             <Image className="our-firm-images" src={merchantBank} alt="Merchant Bank" onClick={props.onClickMerchBank} />
             <div><h2 className="heading-secondary-dk">Merchant Banking</h2></div>
             <p className="our-firm-merchPriv-text">
@@ -32,7 +32,7 @@ const OurFirm = (props) => {
               </button>
             </p>
           </Col>
-          <Col sm={6}>
+          <Col md={12} lg={6}>
             <Image className="our-firm-images" src={privateCap} alt="Merchant Bank" onClick={props.onClickPrivCap} />
             <div><h2 className="heading-secondary-dk">Private Capital</h2></div>
             <p className="our-firm-merchPriv-text">

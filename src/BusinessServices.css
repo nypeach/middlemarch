@@ -23,7 +23,7 @@
 }
 .grid-container > div {
   text-align: center;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 .item2, .item6 {
    margin-top: -2rem;
@@ -103,6 +103,14 @@
   background-image: -webkit-linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
   background-image: linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
 }
+.svg-focus {
+  color: #1E2C56;
+  background-image: -webkit-linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
+  background-image: linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+}
 .mm {
   width: 80%;
   height: auto;
@@ -131,7 +139,25 @@
 }
 .busserv-div {
   align-self: center;
+  justify-self: center;
 }
 button.share_btn.focus {
   cursor:default;
+}
+
+.svg-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.svg-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: white;
 }

@@ -66,79 +66,64 @@ const BusinessServicesPopover = () => {
     </Popover>
   );
   return (
-    <div style={{ backgroundColor: "pink"}} >
 
-      <svg viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+    <div className="grid-container">
 
-        <foreignObject x="65" y="20" width="18" height="18">
-          <OverlayTrigger trigger="hover" placement="left-end" overlay={focus1}>
-          <button className="svg-focus">
+      <div className="item0">
+        <button className="mm_btn">
+        <Image className="mm" src={middlemarch} alt="middlemarch" />
+        </button>
+      </div>
+
+      <div className="item1">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
+          <button className="share_btn focus">
             <Image className="focus-img" src={mktservices} alt="Marketing Services" />
           </button>
-          </OverlayTrigger>
-        </foreignObject>
+        </OverlayTrigger>
+      </div>
 
-        <foreignObject x="65" y="45" width="18" height="18">
-          <OverlayTrigger trigger="hover" placement="left-end" overlay={focus2}>
-            <button className="svg-focus">
-              <Image className="focus-img" src={aiBigData} alt="Artificial Intelligence, Big Data and Analytics" />
-            </button>
-          </OverlayTrigger>
-        </foreignObject>
+      <div className="item2">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
+          <button className="share_btn focus">
+            <Image className="focus-img" src={aiBigData} alt="Artificial Intelligence, Big Data and Analytics" />
+          </button>
+        </OverlayTrigger>
+      </div>
 
-        <foreignObject x="40" y="60" width="18" height="18">
-          <OverlayTrigger trigger="hover" placement="top-start" overlay={focus3}>
-            <button className="svg-focus">
-              <Image className="focus-img" src={regCompliance} alt="Regulatory and Compliance Solutions" />
-            </button>
-          </OverlayTrigger>
-        </foreignObject>
+      <div className="item3">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
+          <button className="share_btn focus">
+            <Image className="focus-img" src={regCompliance} alt="Regulatory and Compliance Solutions" />
+          </button>
+        </OverlayTrigger>
+      </div>
 
-        <foreignObject x="15" y="45" width="18" height="18">
-          <OverlayTrigger trigger="hover" placement="left-end" overlay={focus4}>
-            <button className="svg-focus">
-              <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={trainingEd} alt="Training and Education Services" />
-            </button>
-          </OverlayTrigger>
-        </foreignObject>
+      <div className="item4">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
+          <button className="share_btn focus">
+            <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={trainingEd} alt="Training and Education Services" />
+          </button>
+        </OverlayTrigger>
+      </div>
 
+      <div className="item5">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus5}>
+          <button className="share_btn focus">
+            <Image className="focus-img" src={transportLog} alt="Transportation and Logistics" />
+          </button>
+        </OverlayTrigger>
+      </div>
 
-      </svg>
+      <div className="item6">
+        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
+          <button className="share_btn focus">
+            <Image className="focus-img" src={busProcess} alt="Business Processing Outsourcing" />
+          </button>
+        </OverlayTrigger>
+
+      </div>
     </div>
-
-    // <div className="grid-container">
-
-    //   <div className="item0">
-    //     <button className="mm_btn">
-    //     <Image className="mm" src={middlemarch} alt="middlemarch" />
-    //     </button>
-    //   </div>
-
-    //   <div className="item4">
-    //     <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
-    //       <button className="share_btn focus">
-    //         <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={trainingEd} alt="Training and Education Services" />
-    //       </button>
-    //     </OverlayTrigger>
-    //   </div>
-
-    //   <div className="item5">
-    //     <OverlayTrigger trigger="hover" placement="right-end" overlay={focus5}>
-    //       <button className="share_btn focus">
-    //         <Image className="focus-img" src={transportLog} alt="Transportation and Logistics" />
-    //       </button>
-    //     </OverlayTrigger>
-    //   </div>
-
-    //   <div className="item6">
-    //     <OverlayTrigger trigger="hover" placement="right-end" overlay={focus6}>
-    //       <button className="share_btn focus">
-    //         <Image className="focus-img" src={busProcess} alt="Business Processing Outsourcing" />
-    //       </button>
-    //     </OverlayTrigger>
-
-    //   </div>
-    // </div>
 
   )
 

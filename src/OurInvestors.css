@@ -18,6 +18,26 @@
   height: 10vh;
   text-align: center;
 }
+.investors-both {
+ box-shadow: 7px 7px 7px var(--background-grad-dk);
+ border: var(--background-grad-dk,0.5) solid .5px;
+}
+.blarg {
+  background-image: linear-gradient(to right bottom,var(--landing), var(--landing)), url(./images/coins.png);
+}
+.investors-left {
+  background-image: linear-gradient(to right bottom,var(--landing), var(--landing)), url(./images/coins.png);
+  border: var(--background-grad-dk,0.5) solid .5px;
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  min-width: 550px;
+  max-width: 550px;
+}
+.investors-right{
+  min-width: 550px;
+  max-width: 550px;
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  border: var(--background-grad-dk,0.5) solid .5px;
+}
 
 .invest-container {
   margin: 10rem 25rem;
@@ -78,3 +98,4 @@ font-size: 2.5rem;
          left: 35%;
        } /* And even larger */
   }
+
