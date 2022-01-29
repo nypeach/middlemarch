@@ -80,7 +80,7 @@ const IndustryFocusPopover = () => {
       </div>
 
       <div className="item1">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
+        <OverlayTrigger trigger="hover" placement="bottom-start" overlay={focus1}>
           <button className="share_btn focus">
             <Image className="focus-img" src={fintech} alt="fintech" />
           </button>
@@ -88,7 +88,7 @@ const IndustryFocusPopover = () => {
       </div>
 
       <div className="item2">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
+        <OverlayTrigger trigger="hover" placement="left-start" overlay={focus2}>
           <button className="share_btn focus">
             <Image className="focus-img" src={alternativefinance} alt="specialty finance" />
           </button>
@@ -96,7 +96,7 @@ const IndustryFocusPopover = () => {
       </div>
 
       <div className="item3">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
+        <OverlayTrigger trigger="hover" placement="left-start" overlay={focus3}>
           <button className="share_btn focus">
             <Image className="focus-img" src={txnprocess} alt="transaction processing" />
           </button>
@@ -104,7 +104,7 @@ const IndustryFocusPopover = () => {
       </div>
 
       <div className="item4">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
+        <OverlayTrigger trigger="hover" placement="top-start" overlay={focus4}>
           <button className="share_btn focus">
             <Image className="focus-img" src={capitalmkts} alt="electronic cap" />
           </button>

@@ -14,16 +14,17 @@
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 0px;
-  height: 99%;
-  width: 90%;
+  height: 60rem;
+  width: 60rem;
   align-items: center;
   justify-items: center;
   margin-left: 3rem;
   margin-top: 3rem;
 }
+
 .grid-container > div {
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
 }
 .item2, .item6 {
    margin-top: -2rem;
@@ -66,14 +67,15 @@
   vertical-align: middle;
   overflow: hidden;
   font-weight: bold;
+  /* width: 15rem;
+  height:15rem; */
   width: 15rem;
-  height:15rem;
+  height: 15rem;
 }
 .mm_btn {
   border-radius: 0%;
 }
 .share_btn{
-
   border-radius: 50%;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.40);
@@ -111,6 +113,8 @@
 .popover-container {
   box-shadow: 0 2px 2px rgba(27, 44, 89, .4);
   border: .5px solid rgba(27, 44, 89, .4);
+  max-width: 40rem;
+  width: auto;
 }
 .popover-header {
   font-size: 2rem;
@@ -122,16 +126,21 @@
   font-size: 2rem;
   font-family: var(--main-font);
 }
+.impinvest-col {
+  align-self:center;
+  min-width: 60rem;
+}
 .impinvest-text {
   font-size: 2.5rem;
   font-weight: 500;
-  margin-right: 10rem;
   line-height: 1.5;
-  margin-bottom: 4rem;
+  margin: 4rem 4rem 4rem 0rem;
 }
 .impinvest-div {
   align-self: center;
+  margin-top: 4rem;
 }
+
 button.share_btn.focus {
   cursor:default;
 }

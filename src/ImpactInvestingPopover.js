@@ -76,7 +76,7 @@ const ImpactInvestingPopover = () => {
       </div>
 
       <div className="item1">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus1}>
+        <OverlayTrigger trigger="hover" placement="bottom-start" overlay={focus1}>
           <button className="share_btn focus">
             <Image className="focus-img" style={{ marginBottom: "2.0rem" }} src={waste} alt="business services" />
           </button>
@@ -84,7 +84,7 @@ const ImpactInvestingPopover = () => {
       </div>
 
       <div className="item2">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus2}>
+        <OverlayTrigger trigger="hover" placement="left-start" overlay={focus2}>
           <button className="share_btn focus">
             <Image className="focus-img" src={altEnergy} alt="specialty finance" />
           </button>
@@ -92,7 +92,7 @@ const ImpactInvestingPopover = () => {
       </div>
 
       <div className="item3">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus3}>
+        <OverlayTrigger trigger="hover" placement="left-start" overlay={focus3}>
           <button className="share_btn focus">
             <Image className="focus-img" src={ecology} alt="electronic cap" />
           </button>
@@ -100,7 +100,7 @@ const ImpactInvestingPopover = () => {
       </div>
 
       <div className="item4">
-        <OverlayTrigger trigger="hover" placement="right-end" overlay={focus4}>
+        <OverlayTrigger trigger="hover" placement="top-start" overlay={focus4}>
           <button className="share_btn focus">
             <Image className="focus-img" src={transportation} alt="transaction processing" />
           </button>

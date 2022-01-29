@@ -23,12 +23,11 @@ const FinancialServices = (props) => {
 
       <Modal.Body>
        <Container fluid>
-         <Row>
-            <Col md={12} lg={6}>
+          <Row>
+            <Col className="finserv-col">
               <FinancialServicesPopover />
               </Col>
-            <Col md={12} lg={6} className="finserv-div">
-              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+            <Col className="finserv-col">
               <div className="finserv-text">Middlemarch Partners have deep domain expertise in financial services, where its partners have served as investment bankers, private equity investors, and fintech business operators for the last 30 years.</div>
               <div className="finserv-text">Middlemarch Partners have supported the growth of both public and privately-held financial services companies in fintech, alternative finance, capital markets, and transaction processing through capital raises, M&amp;A, and post-transaction advisory services.</div>
             </Col>

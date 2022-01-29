@@ -24,13 +24,12 @@ const ImpactInvesting = (props) => {
       <Modal.Body>
        <Container fluid>
          <Row>
-            <Col lg={6}>
+            <Col className="impinvest-col">
               <ImpactInvestingPopover />
               </Col>
-            <Col lg={6} className="impinvest-div">
-              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+            <Col className="impinvest-col">
               <div className="impinvest-text">Impact investing, for Middlemarch Partners, involves businesses that create measurable economic improvements to our environment and our society.</div>
-              <div className="impinvest-text">Middlemarch Partners’ impact investing efforts focus on environmental services as well as businesses that generate strong profits while addressing social and governance objectives as well.</div>
+              <div className="impinvest-text">Middlemarch Partners' impact investing efforts focus on environmental services as well as businesses that generate strong profits while addressing social and governance objectives as well.</div>
             </Col>
          </Row>
        </Container>

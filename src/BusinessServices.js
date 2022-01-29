@@ -24,11 +24,10 @@ const BusinessServices = (props) => {
       <Modal.Body>
        <Container fluid>
          <Row>
-            <Col lg={12} xl={6} className="busserv-div" style={{padding: "2rem"}}>
+            <Col className="busserv-col">
               <BusinessServicesPopover />
               </Col>
-            <Col lg={6} xl={6} className="busserv-div">
-              {/* <h2 className="heading-secondary-dk">Financial Services</h2> */}
+            <Col className="busserv-col">
               <div className="busserv-text">Middlemarch Partners has facilitated multiple public and private transactions in business services, both as bankers and as private equity investors.</div>
               <div className="busserv-text">The firm has focused on fast-growing business services companies that are exploiting market dislocations or have developed differentiated service offerings.</div>
             </Col>

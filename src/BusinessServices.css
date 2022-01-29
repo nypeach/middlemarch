@@ -14,16 +14,17 @@
   grid-template-rows: repeat(10, 1fr);
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 0px;
-  height: 99%;
-  width: 90%;
+  height: 60rem;
+  width: 60rem;
   align-items: center;
   justify-items: center;
   margin-left: 3rem;
   margin-top: 3rem;
 }
+
 .grid-container > div {
   text-align: center;
-  /* font-size: 30px; */
+  font-size: 2rem;
 }
 .item2, .item6 {
    margin-top: -2rem;
@@ -66,14 +67,15 @@
   vertical-align: middle;
   overflow: hidden;
   font-weight: bold;
+  /* width: 15rem;
+  height:15rem; */
   width: 15rem;
-  height:15rem;
+  height: 15rem;
 }
 .mm_btn {
   border-radius: 0%;
 }
 .share_btn{
-
   border-radius: 50%;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.40);
@@ -103,14 +105,6 @@
   background-image: -webkit-linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
   background-image: linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
 }
-.svg-focus {
-  color: #1E2C56;
-  background-image: -webkit-linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
-  background-image: linear-gradient(var(--heading-light) 10%, #1E2C56 100%);
-  border-radius: 50%;
-  width: 18px;
-  height: 18px;
-}
 .mm {
   width: 80%;
   height: auto;
@@ -119,6 +113,8 @@
 .popover-container {
   box-shadow: 0 2px 2px rgba(27, 44, 89, .4);
   border: .5px solid rgba(27, 44, 89, .4);
+  max-width: 40rem;
+  width: auto;
 }
 .popover-header {
   font-size: 2rem;
@@ -130,34 +126,21 @@
   font-size: 2rem;
   font-family: var(--main-font);
 }
+.busserv-col {
+  align-self:center;
+  min-width: 60rem;
+}
 .busserv-text {
   font-size: 2.5rem;
   font-weight: 500;
-  margin-right: 10rem;
   line-height: 1.5;
-  margin-bottom: 4rem;
+  margin: 4rem 4rem 4rem 0rem;
 }
 .busserv-div {
   align-self: center;
-  justify-self: center;
-}
-button.share_btn.focus {
-  cursor:default;
+  margin-top: 4rem;
 }
 
-.svg-wrapper {
-  position: relative;
-  width: 100px;
-  height: 100px;
-}
-.svg-text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  color: white;
+button.share_btn.focus {
+  cursor:default;
 }
