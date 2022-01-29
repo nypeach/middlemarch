@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/middlemarch/static/css/main.8b60f4b5.chunk.css",
-    "main.js": "/middlemarch/static/js/main.446cdcd0.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.446cdcd0.chunk.js.map",
+    "main.css": "/middlemarch/static/css/main.7fa94239.chunk.css",
+    "main.js": "/middlemarch/static/js/main.11149223.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.11149223.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.78a2e486.chunk.js.map": "/middlemarch/static/js/2.78a2e486.chunk.js.map",
     "index.html": "/middlemarch/index.html",
     "static/css/2.038361d8.chunk.css.map": "/middlemarch/static/css/2.038361d8.chunk.css.map",
-    "static/css/main.8b60f4b5.chunk.css.map": "/middlemarch/static/css/main.8b60f4b5.chunk.css.map",
+    "static/css/main.7fa94239.chunk.css.map": "/middlemarch/static/css/main.7fa94239.chunk.css.map",
     "static/js/2.78a2e486.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.78a2e486.chunk.js.LICENSE.txt",
     "static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf": "/middlemarch/static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf",
     "static/media/AlexKim.4046f89d.png": "/middlemarch/static/media/AlexKim.4046f89d.png",
@@ -106,7 +106,7 @@
     "static/js/runtime-main.e1c173c6.js",
     "static/css/2.038361d8.chunk.css",
     "static/js/2.78a2e486.chunk.js",
-    "static/css/main.8b60f4b5.chunk.css",
-    "static/js/main.446cdcd0.chunk.js"
+    "static/css/main.7fa94239.chunk.css",
+    "static/js/main.11149223.chunk.js"
   ]
 }
