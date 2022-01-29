@@ -63,7 +63,7 @@ const ContactUs = (props) => {
           <Row md={1} lg={2} xl={3} className="contact-row">
 
             <Col className="contact-left">
-              <Card style={{ height: "550px", background: "none"}}>
+              <Card style={{ background: "none"}}>
                 <Card.Body>
                   <Card.Title className="contact-card-title">CONNECTICUT OFFICE</Card.Title>
                   <Card.Text className="contact-card-text">
@@ -89,7 +89,7 @@ const ContactUs = (props) => {
             </Col>
 
             <Col className="contact-middle">
-              <Card style={{ height: "550px", background: "none"}}>
+              <Card style={{ background: "none"}}>
                 <Card.Body>
                   <Card.Title className="contact-card-title">NEW YORK OFFICE</Card.Title>
                   <Card.Text className="contact-card-text">
@@ -106,7 +106,7 @@ const ContactUs = (props) => {
                     <br></br>
                     <i className="fas fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>212-913-9660</em></strong></i>
                   </Card.Text>
-                  <div className="gmap-div">
+                  <div className="gmap-div" style={{marginBottom: "1.5rem"}}>
                     <iframe title="Connecticut Office" className="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.11358640147!2d-73.53422348482826!3d41.04464507929712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c29f61d87b8a65%3A0x6237354b63450802!2s700%20Canal%20St%2C%20Stamford%2C%20CT%2006902!5e0!3m2!1sen!2sus!4v1640475781399!5m2!1sen!2sus" width="325" height="225" frameBorder="0" style={{ border: 0 }} allowFullScreen="" aria-hidden="false" tabIndex="0" loading="lazy" />
                   </div>
                 </Card.Body>
@@ -115,11 +115,11 @@ const ContactUs = (props) => {
 
             <Col className="contact-right">
 
-              <Card style={{ height: "550px", background: "none" }}>
+              <Card style={{ background: "none", marginBottom: "2rem" }}>
                 <div className="contact-card-box">
                 <Card.Body>
                   <Card.Title className="contact-card-join">JOIN OUR MAILING LIST</Card.Title>
-                  <Card.Text style={{margin: "2rem 1rem"}}>
+                  <Card.Text style={{margin: "1rem 1rem"}}>
                     {showPartner ?
                       <Alert
                         style={{
