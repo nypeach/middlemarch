@@ -17,7 +17,6 @@ import a206 from '../news/articles/TheAlternativeLendingReport_Middlemarch.pdf';
 import a208 from '../news/articles/Securing Growth Capital for Alternative Finance Companies in the COVID-19 Era.pdf';
 import a209 from '../news/articles/AM-opinion-Tech-Lend-080919 sg.pdf';
 
-
 var newsarticles = [
   {
     'Type': 'NEWS',
@@ -162,27 +161,41 @@ var newsarticles = [
 {
   'Type': 'EVENTS',
     'Sort': 3.01,
+      'Title': 'Opal Marketplace Lending Conference (Dec. 7-9, 2022)',
+        'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2022/',
+          'Summary': 'Middlemarch will be participating as a speaker and look forward to engaging with companies attending the conference.'
+},
+{
+  'Type': 'EVENTS',
+    'Sort': 3.02,
+      'Title': 'Money 2020 Conference (Oct. 23-36, 2022)',
+        'Link': 'https://us.money2020.com',
+          'Summary': 'Middlemarch will be attending Money 2020 and will be meeting with clients, investors, and companies seeking growth capital.'
+},
+{
+  'Type': 'EVENTS',
+    'Sort': 3.03,
       'Title': '2022 LendIt (May 25-26, 2022)',
         'Link': 'https://www.lendit.com/usa/2022',
           'Summary': 'Middlemarch is attending LendIt and will be meeting with prospective clients and investors in New York.'
 },
 {
   'Type': 'EVENTS',
-    'Sort': 3.02,
+    'Sort': 3.04,
       'Title': 'Fintech MeetUp 2022',
         'Link': 'https://www.fintechmeetup.com/?gclid=CjwKCAiAzrWOBhBjEiwAq85QZ_4BKM3WDIkGU86KGt3ANOCD0qfNhSbR4q8ZzcxvG_5ZE-90FLG_PBoCr70QAvD_BwE',
           'Summary': 'Middlemarch is attending virtually this year\'s Fintech MeetUp where we look forward to connecting with companies seeking capital and support with M & A.'
 },
 {
   'Type': 'EVENTS',
-    'Sort': 3.03,
+    'Sort': 3.05,
       'Title': 'ABS East (Dec 13-14, 2021)',
         'Link': 'https://www.imn.org/structured-finance/conference/ABS-East-2021/',
           'Summary': 'Middlemarch is attending ABS East and meeting with prospective clients and investors in Miami.'
 },
 {
   'Type': 'EVENTS',
-    'Sort': 3.04,
+    'Sort': 3.06,
       'Title': 'Opal Lending Conf. (Dec 8-10, 2021)',
         'Link': 'https://opalgroup.net/conference/marketplace-lending-alternative-financing-summit-2021/',
           'Summary': 'Middlemarch is participating on the venture capital panel as well as hosting a fireside chat about customer acquisition costs at the Makretplace Lending Conference.'

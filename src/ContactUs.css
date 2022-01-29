@@ -269,7 +269,7 @@ align-self: flex-end;
 .contact-card-contact {
   font-size: 2rem;
   margin-bottom: 3rem;
-  color: var(--heading-medium);
+  color: var(--heading-dark);
   font-weight: 500;
 }
 .contact-footer {
