@@ -19,16 +19,10 @@ const PrivateCapital = (props) => {
         {/* ============================================================================ */}
         <Container fluid style={{ paddingLeft: "0", paddingRight:"0" }}>
           <Row style={{padding: "3rem", alignItems: "center"}}>
-            <Col lg={6} className="private-capital-img-container">
-            {/* <Image style={{maxWidth: "70%"}} src={privCap} /> */}
+            <Col className="private-capital-col">
               <Image className="private-capital-image" src={privCap} />
-              {/* <div className="img-all img-top"><div className="img-text">Merchant Bank Sourced Deals</div></div>
-              <div className="img-all img-right"><div className="img-text">Deep Domain Expertise</div></div>
-              <div className="img-all img-bottom"><div className="img-text">Active Advisor Orientation</div></div>
-              <div className="img-all img-center"><div className="img-text">Middlemarch Capital Partners</div></div>
-              <div className="img-all img-left"><div className="img-text">Co-Investor/ Lead Investor</div></div> */}
             </Col>
-            <Col lg={6}>
+            <Col className="private-capital-col">
               <div className="private-capital-text">The principals of Middlemarch Capital Partners, the firm’s investment arm, can either co-invest alongside top-tier sponsors in deals sourced as merchant bankers or lead investments in companies whose characteristics and capital needs are particularly well matched to Middlemarch’s skills and interests.</div>
 
               <div className="private-capital-text">Middlemarch Capital Partners invests its own principals’ capital and sources limited partner investment funding from family offices, institutional investors, private funds, and high net worth individuals.  These limited partners have come to trust the investment acumen of the Middlemarch team.</div>

@@ -22,7 +22,7 @@ const FinancialServices = (props) => {
       </Modal.Header>
 
       <Modal.Body>
-       <Container fluid>
+        <Container fluid>
           <Row>
             <Col className="finserv-col">
               <FinancialServicesPopover />
