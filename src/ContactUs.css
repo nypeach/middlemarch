@@ -31,19 +31,14 @@
 }
 .contact-div {
   margin: 2rem 15rem;
-  height: 80vh;
+  min-height: 80vh;
   display:block;
   overflow: auto;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 7px 7px 7px var(--background-grad-dk);
   border: var(--background-grad-dk) solid 1px;
 }
-.contact-container {
-  /* background: rgba(255, 255, 255, 0.6);
-  box-shadow: 7px 7px 7px var(--background-grad-dk);
-  border: var(--background-grad-dk) solid 1px; */
-  height: 100%;
-}
+
 .contact-col {
   padding: 2rem 0;
 }
@@ -169,7 +164,6 @@ align-self: flex-end;
 }
 .contact-form-box {
   font-size: 1.75rem;
-  margin: 2rem 6rem;
 }
 .alert-success .contact, .alert-danger .contact {
   position: absolute;
@@ -186,6 +180,7 @@ align-self: flex-end;
   height: 100%;
   font-size: 1.25rem;
   color: var(--heading-dark);
+  margin-bottom: .5rem;
 }
 @media screen and (min-width:1200px) {
   .footer-top {
@@ -222,4 +217,62 @@ align-self: flex-end;
 .fa-phone:hover .tooltiptext {
   visibility: visible;
   font-family: var(--main-font);
+}
+.contact-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.contact-row {
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 7px 7px 7px var(--background-grad-dk);
+  border: var(--background-grad-dk) solid 1px;
+}
+.contact-card {
+  background: none;
+}
+
+.contact-left, .contact-middle, .contact-right {
+  min-width: 425px;
+  max-width: 425px;
+}
+.contact-right {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+.contact-card-title, .contact-card-text {
+  color: var(--heading-dark);
+  font-family: var(--main-font)
+}
+.contact-card-title {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.contact-card-text, .contact-card-contact {
+ text-align: center;
+}
+.contact-card-text {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+}
+.contact-card-join {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--heading-dark);
+}
+.contact-card-box {
+  margin: 2rem 0rem;
+  box-shadow: inset 0 0 10px var(--heading-medium);
+}
+
+.contact-card-contact {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--heading-medium);
+  font-weight: 500;
+}
+.contact-footer {
+ max-width: 1275px;
+ justify-content: center;
 }
