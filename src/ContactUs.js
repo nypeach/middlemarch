@@ -72,13 +72,13 @@ const ContactUs = (props) => {
                       Stamford, Connecticut 06902
                       <br></br>
                   </Card.Text>
-                  <Card.Text className="contact-card-contact">
+                  <Card.Text className="contact-card-text">
                     <i className="fas fa-envelope-square" style={{ cursor: "pointer" }} onClick={(e) => {
                       e.preventDefault();
                       window.open("mailto:info@middlemarchllc.com")
-                    }}></i>&nbsp;&nbsp;&nbsp;&nbsp;<em>info@middlemarchllc.com</em>
+                    }}></i>&nbsp;&nbsp;&nbsp;&nbsp;info@middlemarchllc.com
                     <br></br>
-                    <i className="fas fa-phone" >&nbsp;&nbsp;&nbsp;&nbsp;<em>212-913-9660</em></i>
+                    <i className="fas fa-phone" >&nbsp;&nbsp;&nbsp;&nbsp;212-913-9660</i>
                   </Card.Text>
                     <div className="gmap-div">
                     <iframe title="Connecticut Office" className="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.11358640147!2d-73.53422348482826!3d41.04464507929712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c29f61d87b8a65%3A0x6237354b63450802!2s700%20Canal%20St%2C%20Stamford%2C%20CT%2006902!5e0!3m2!1sen!2sus!4v1640475781399!5m2!1sen!2sus" width="325" height="225" frameBorder="0" style={{ border: 0 }} allowFullScreen="" aria-hidden="false" tabIndex="0" loading="lazy" />
@@ -98,13 +98,13 @@ const ContactUs = (props) => {
                     New York, New York 10017
                     <br></br>
                   </Card.Text>
-                  <Card.Text className="contact-card-contact">
+                  <Card.Text className="contact-card-text">
                     <i className="fas fa-envelope-square" style={{ cursor: "pointer" }} onClick={(e) => {
                       e.preventDefault();
                       window.open("mailto:info@middlemarchllc.com")
-                    }}></i>&nbsp;&nbsp;&nbsp;&nbsp;<em>info@middlemarchllc.com</em>
+                    }}></i>&nbsp;&nbsp;&nbsp;&nbsp;info@middlemarchllc.com
                     <br></br>
-                    <i className="fas fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>212-913-9660</em></strong></i>
+                    <i className="fas fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;<strong>212-913-9660</strong></i>
                   </Card.Text>
                   <div className="gmap-div" style={{marginBottom: "1.5rem"}}>
                     <iframe title="Connecticut Office" className="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.11358640147!2d-73.53422348482826!3d41.04464507929712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c29f61d87b8a65%3A0x6237354b63450802!2s700%20Canal%20St%2C%20Stamford%2C%20CT%2006902!5e0!3m2!1sen!2sus!4v1640475781399!5m2!1sen!2sus" width="325" height="225" frameBorder="0" style={{ border: 0 }} allowFullScreen="" aria-hidden="false" tabIndex="0" loading="lazy" />

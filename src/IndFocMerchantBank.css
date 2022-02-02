@@ -30,7 +30,7 @@
 .mb-li {
   text-align: left;
   line-height: 6.5rem;
-  margin: 0rem 5rem 0rem 5rem;
+  /* margin: 0rem 5rem 0rem 5rem; */
 }
 /* @media screen and (min-width: 1200px) {
   .mb-col-r {
@@ -187,9 +187,11 @@ p.mb-modal {
 .mb-row2-col1 {
   /* background-color: mediumslateblue; */
   align-self: start;
+  justify-self: center;
   text-align: left;
   min-width: 60rem;
   max-width: 60rem;
+  margin: 0 3rem;
 }
 .mb-row2-col1-row {
   cursor: pointer;
@@ -226,6 +228,8 @@ p.mb-modal {
   justify-self: center;
   min-width: 60rem;
   max-width: 60rem;
+  text-align: left;
+  margin: 0 3rem;
 }
 .mb-row2-col1-h2, .mb-row2-col2-h2 {
   font-size: 3rem;

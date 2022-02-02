@@ -7,7 +7,7 @@ const Hamburger = (props) => {
 
     <>
       <Button variant="flat" size="xxl" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span className="navbar-toggler-icon" style={{ width: "100%" }}></span></Button>
-      <div className="offcanvas offcanvas-end" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style={{ width: "20vw" }}>
+      <div className="offcanvas offcanvas-end offcanvas-width" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div className="offcanvas-header">
           GO TO ...
           <i className="far fa-times-circle" data-bs-dismiss="offcanvas"></i>
@@ -17,8 +17,8 @@ const Hamburger = (props) => {
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickLanding()}>HOME</div>
           {/* <div id="offcanvasRightLabel" className="offcanvas-right-label">OUR FIRM</div> */}
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurFirm()}>OUR FIRM</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickMerchBank()}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchant Banking</div>
-          <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickPrivCap()}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Private Capital</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label-inner" onClick={() => props.onClickMerchBank()}>Merchant Banking</div>
+          <div id="offcanvasRightLabel" className="offcanvas-right-label-inner" onClick={() => props.onClickPrivCap()}>Private Capital</div>
           {/* <Nav.Link href="#" onClick={() => onClickOurTeam()}>OUR TEAM</Nav.Link> */}
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickOurTeam()}>OUR TEAM</div>
           <div id="offcanvasRightLabel" className="offcanvas-right-label" onClick={() => props.onClickTransactions()}>TRANSACTIONS</div>
