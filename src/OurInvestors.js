@@ -114,7 +114,7 @@ const OurInvestors = (props) => {
                         dismissible
                       >
                         <Alert.Heading>INVALID EMAIL OR PASSWORD!</Alert.Heading>
-                        <p>
+                    <p className="alert-p">
                           Please contact Middlemarch Partners to reset your account.
                         </p>
                       </Alert>
@@ -130,7 +130,7 @@ const OurInvestors = (props) => {
                         dismissible
                       >
                         <Alert.Heading>THANK YOU!!</Alert.Heading>
-                        <p>
+                    <p className="alert-p">
                           You have successfully sent your request!
                         </p>
                       </Alert>

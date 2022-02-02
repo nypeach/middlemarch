@@ -130,8 +130,8 @@ const ContactUs = (props) => {
                         onClose={() => setShowPartner(false)}
                         dismissible
                       >
-                        <Alert.Heading>INVALID EMAIL OR PASSWORD!</Alert.Heading>
-                        <p>
+                        <Alert.Heading style={{textAlign: "left"}}>INVALID EMAIL OR PASSWORD!</Alert.Heading>
+                          <p className="contact-alert-p">
                           Please contact Middlemarch Partners to reset your account.
                         </p>
                       </Alert>
@@ -150,8 +150,8 @@ const ContactUs = (props) => {
                         onClose={() => setShowBecome(false)}
                         dismissible
                       >
-                        <Alert.Heading>THANK YOU!!</Alert.Heading>
-                        <p>
+                          <Alert.Heading style={{ textAlign: "left" }}>THANK YOU!!</Alert.Heading>
+                          <p className="contact-alert-p">
                           You have successfully sent your request!
                         </p>
                       </Alert>

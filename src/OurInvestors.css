@@ -99,3 +99,6 @@ font-size: 2.5rem;
        } /* And even larger */
   }
 
+  .alert-p {
+    text-align: left;
+  }

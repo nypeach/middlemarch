@@ -278,3 +278,7 @@ align-self: flex-end;
  margin-left: 2rem;
  margin-right: 2rem;
 }
+
+.contact-alert-p {
+  text-align: left;
+}
