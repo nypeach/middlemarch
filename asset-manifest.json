@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/middlemarch/static/css/main.1d832c3a.chunk.css",
-    "main.js": "/middlemarch/static/js/main.0c772103.chunk.js",
-    "main.js.map": "/middlemarch/static/js/main.0c772103.chunk.js.map",
+    "main.css": "/middlemarch/static/css/main.17ab059b.chunk.css",
+    "main.js": "/middlemarch/static/js/main.a0dc169a.chunk.js",
+    "main.js.map": "/middlemarch/static/js/main.a0dc169a.chunk.js.map",
     "runtime-main.js": "/middlemarch/static/js/runtime-main.e1c173c6.js",
     "runtime-main.js.map": "/middlemarch/static/js/runtime-main.e1c173c6.js.map",
     "static/css/2.038361d8.chunk.css": "/middlemarch/static/css/2.038361d8.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.78a2e486.chunk.js.map": "/middlemarch/static/js/2.78a2e486.chunk.js.map",
     "index.html": "/middlemarch/index.html",
     "static/css/2.038361d8.chunk.css.map": "/middlemarch/static/css/2.038361d8.chunk.css.map",
-    "static/css/main.1d832c3a.chunk.css.map": "/middlemarch/static/css/main.1d832c3a.chunk.css.map",
+    "static/css/main.17ab059b.chunk.css.map": "/middlemarch/static/css/main.17ab059b.chunk.css.map",
     "static/js/2.78a2e486.chunk.js.LICENSE.txt": "/middlemarch/static/js/2.78a2e486.chunk.js.LICENSE.txt",
     "static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf": "/middlemarch/static/media/AM-opinion-Tech-Lend-080919 sg.3a1cfee2.pdf",
     "static/media/AlexKim.4046f89d.png": "/middlemarch/static/media/AlexKim.4046f89d.png",
@@ -37,7 +37,6 @@
     "static/media/MM CPC Press Release 2018 06 14_Final.97866720.pdf": "/middlemarch/static/media/MM CPC Press Release 2018 06 14_Final.97866720.pdf",
     "static/media/MM PR Announcement Final 2013 02 12.87587fbc.pdf": "/middlemarch/static/media/MM PR Announcement Final 2013 02 12.87587fbc.pdf",
     "static/media/MM Privlo Announcement Final 2014 08 12.48e29acb.pdf": "/middlemarch/static/media/MM Privlo Announcement Final 2014 08 12.48e29acb.pdf",
-    "static/media/MMP ESG Article  2021 12 14.03cd6fab.pdf": "/middlemarch/static/media/MMP ESG Article  2021 12 14.03cd6fab.pdf",
     "static/media/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.f677d552.pdf": "/middlemarch/static/media/Middlemarch Capital seeks co-investment partners for fintech deals _ Debtwire.f677d552.pdf",
     "static/media/Mutuo Press Release -2021 12 19.62548fd9.pdf": "/middlemarch/static/media/Mutuo Press Release -2021 12 19.62548fd9.pdf",
     "static/media/NexisCard-300w.3d23d6a0.jpeg": "/middlemarch/static/media/NexisCard-300w.3d23d6a0.jpeg",
@@ -106,7 +105,7 @@
     "static/js/runtime-main.e1c173c6.js",
     "static/css/2.038361d8.chunk.css",
     "static/js/2.78a2e486.chunk.js",
-    "static/css/main.1d832c3a.chunk.css",
-    "static/js/main.0c772103.chunk.js"
+    "static/css/main.17ab059b.chunk.css",
+    "static/js/main.a0dc169a.chunk.js"
   ]
 }
